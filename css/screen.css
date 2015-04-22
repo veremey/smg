@@ -22,6 +22,15 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 
+.out { position: relative; min-height: 100%; height: auto !important; height: 100%; *zoom: 1; }
+.out:after { content: " "; display: table; clear: both; }
+
+.l_center { width: 1000px; *zoom: 1; }
+.l_center:after { content: " "; display: table; clear: both; }
+
+.header { position: fixed; background-color: rgba(0, 0, 0, 0.9); *zoom: 1; }
+.header:after { content: " "; display: table; clear: both; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
