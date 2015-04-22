@@ -54,6 +54,10 @@ body
 	line-height: 1.4
 
 $n: transparent
+$yellow: #ffd739
+
+a
+	text-decoration: none
 // common blocks
 .out
 	position: relative
@@ -63,16 +67,89 @@ $n: transparent
 	+clr
 .l_center
 	width: 1000px
+	margin: 0 auto
 	+clr
 
 .header
+	width: 100%
 	position: fixed
+	top: 0
 	background-color: rgba(0, 0, 0, .9)
+	z-index: 9999
 	+clr
+	&__menu
+		font-size: 0
+		float: left
+		margin-top: 30px
+		margin-left: 100px
+		li
+			display: inline-block
+			&:hover
+				> a
+					border-color: $yellow
+					&:before
+						display: none
+				+ li a:before
+					display: none
+			a
+				position: relative
+				display: block
+				padding: 0 10px
+				line-height: 36px
+				font-size: 12px
+				color: #FFF
+				text-transform: uppercase
+				border: 3px solid $n
+				-webkit-border-radius: 21px
+				border-radius: 21px
+				&:before
+					content: ""
+					position: absolute
+					left: -3px
+					top: 10px
+					width: 1px
+					height: 15px
+					background-color: #fff
+			&:first-child a::before
+				display: none
+	&__contact
+		width: 175px
+		float: right
+		margin-top: 27px
+		+clr
+		&_tel
+			float: right
+			color: #FFF
+			text-transform: uppercase
+			font-size: 20px
+		&_mail
+			float: right
+			color: $yellow
+			font-size: 13px
+.logo
+	float: left
+	margin: 20px 0
+	+s(logo)
+	h1
+		+hide-text
 
-
-
-
+.key
+	position: relative
+	top: -50px
+	+clr
+	&__img
+		position: absolute
+		+coverdiv
+	h2
+		text-align: center
+		font-size: 46px
+		color: #0E1314
+		margin: 50px 30px 30px
+	&__list
+		width: 700px
+		margin: 0 auto
+		li
+			list-style-image: url("../img/list__img.png")
 
 
 
