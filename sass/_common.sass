@@ -203,9 +203,16 @@ a
 			img
 				height: 600px
 				width: auto
-		&_mask
+		&_mask,
+		.bg__green,
+		.bg__pink,
+		.bg__blue,
+		.bg__purple,
+		.bg__sun,
+		.bg__sea,
+		.bg__gold,
+		.bg__aqua
 			opacity: 0
-			background-color: rgba(103, 182, 11, .75)
 			+coverdiv
 			left: 20%
 		&_center
@@ -236,13 +243,20 @@ a
 		width: 50%
 		overflow: hidden
 		&:hover
-			.portfolio__small_mask
+			.portfolio__small_mask,
+			.bg__green,
+			.bg__pink,
+			.bg__blue,
+			.bg__purple,
+			.bg__sun,
+			.bg__sea,
+			.bg__gold,
+			.bg__aqua
 				opacity: 1
 				+tr(.3s)
 				left: 0
 		&_mask
 			opacity: 0
-			background-color: rgba(103, 182, 11, .75)
 			+coverdiv
 			left: 20%
 		&_center
@@ -280,7 +294,15 @@ a
 		width: 50%
 		overflow: hidden
 		&:hover
-			.portfolio__small_mask
+			.portfolio__small_mask,
+			.bg__green,
+			.bg__pink,
+			.bg__blue,
+			.bg__purple,
+			.bg__sun,
+			.bg__sea,
+			.bg__gold,
+			.bg__aqua
 				opacity: 1
 				+tr(.3s)
 				left: 0
@@ -305,7 +327,15 @@ a
 		width: 100%
 		overflow: hidden
 		&:hover
-			.portfolio__small_mask
+			.portfolio__small_mask,
+			.bg__green,
+			.bg__pink,
+			.bg__blue,
+			.bg__purple,
+			.bg__sun,
+			.bg__sea,
+			.bg__gold,
+			.bg__aqua
 				opacity: 1
 				+tr(.3s)
 				left: 0
@@ -338,26 +368,29 @@ a
 	float: left
 	height: 300px
 	+clr
-
 .btn
 	padding: 15px 40px
 	font-size: 17px
 	color: #474747
-
 .btn__yellow
 	background-color: #ffd739
 
-
-
-
-
-
-
-
-
-
-
-
+.bg__green
+	background-color: rgba(103, 182, 11, .75)
+.bg__pink
+	background-color: rgba(203,59, 113, .75)
+.bg__blue
+	background-color: rgba(2, 128, 184, .75)
+.bg__purple
+	background-color: rgba(101, 85, 185, .75)
+.bg__sun
+	background-color: rgba(198, 136, 40, .75)
+.bg__sea
+	background-color: rgba(59, 95, 151, .75)
+.bg__gold
+	background-color: rgba(208, 236, 115, .75)
+.bg__aqua
+	background-color: rgba(30, 166, 155, .75)
 
 
 
