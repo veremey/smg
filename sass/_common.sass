@@ -190,8 +190,8 @@ a
 		overflow: hidden
 		&:hover
 			.portfolio__big_mask
-				display: block
-				+tr(.8s)
+				opacity: 1
+				+tr(.3s)
 				left: 0
 		&_wrap
 			position: absolute
@@ -204,7 +204,7 @@ a
 				height: 600px
 				width: auto
 		&_mask
-			display: none
+			opacity: 0
 			background-color: rgba(103, 182, 11, .75)
 			+coverdiv
 			left: 20%
@@ -237,11 +237,14 @@ a
 		overflow: hidden
 		&:hover
 			.portfolio__small_mask
-				display: block
+				opacity: 1
+				+tr(.3s)
+				left: 0
 		&_mask
-			display: none
+			opacity: 0
 			background-color: rgba(103, 182, 11, .75)
 			+coverdiv
+			left: 20%
 		&_center
 			width: 300px
 			height: auto
@@ -278,7 +281,9 @@ a
 		overflow: hidden
 		&:hover
 			.portfolio__small_mask
-				display: block
+				opacity: 1
+				+tr(.3s)
+				left: 0
 		&_wrap
 			position: absolute
 			width: 500px
