@@ -70,6 +70,7 @@ a
 	height: 100%
 	+clr
 .l_center
+	position: relative
 	width: 1000px
 	margin: 0 auto
 	+clr
@@ -172,13 +173,14 @@ a
 		z-index: 4
 		padding-top: 175px
 .big__title
+	position: relative
 	text-align: center
 	font-size: 46px
 	color: #0e1314
 	margin: 50px 30px
 	i
 		position: absolute
-		bottom: 31px
+		bottom: -19px
 		left: 50%
 		width: 108px
 		height: 5px
@@ -401,15 +403,44 @@ a
 
 
 .client
+	position: relative
+	+clr
+	&__slider
+		width: 1000px //940
+		+clr
+	&__wrap
+		float: left
+		position: relative
+		width: 25%
+		height: 160px
+		overflow: hidden
+		+gray
+		&:hover
+			+gray-zero
+		&_img
+			position: absolute
+			width: 200px
+			height: 160px
+			left: 50%
+			top: 50%
+			margin-top: -40px
+			line-height: 160px
+			margin-left: -100px
+			text-align: center
+.cycle__prev
+	position: absolute
+	top: 62%
+	left: -20px
+	+s(prev)
+.cycle__next
+	position: absolute
+	top: 62%
+	right: -20px
+	+s(next)
 
 
-
-
-
-
-
-
-
+.comment
+	height: 610px
 
 
 
