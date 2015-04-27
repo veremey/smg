@@ -59,7 +59,9 @@ a { text-decoration: none; }
 .key__list:after { content: " "; display: table; clear: both; }
 .key__list li { float: left; list-style-image: url("../img/list__img.png"); font-size: 20px; margin-bottom: 20px; color: #656565; }
 .key__container { position: relative; z-index: 4; padding-top: 175px; }
-.key__container h2 { text-align: center; font-size: 46px; color: #0e1314; margin: 50px 30px; }
+
+.big__title { text-align: center; font-size: 46px; color: #0e1314; margin: 50px 30px; }
+.big__title i { position: absolute; bottom: 31px; left: 50%; width: 108px; height: 5px; margin-left: -54px; background-color: #ffd739; }
 
 .portfolio { height: 1200px; vertical-align: top; *zoom: 1; }
 .portfolio__big { position: relative; float: left; height: 600px; width: 50%; overflow: hidden; }
