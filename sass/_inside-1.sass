@@ -19,10 +19,39 @@
 			margin: 0 auto
 			font-size: 22px
 			// max-width: 945px
+	.comment__prev,
+	.comment__next
+		z-index: 10
 
-
-
-
+.big
+	position: relative
+	background-color: #FFF
+	min-height: 1300px
+	height: auto
+	+clr
+	.key__img
+		bottom: 0
+	&__img
+		float: right
+		margin: 50px 0 35px
+.bild
+	width: 380px
+	float: left
+	margin-top: 50px
+	li
+		display: block
+		margin: 0 0 140px 35px
+		list-style-image: url("../img/list__img.png")
+		h2
+			font-size: 24px
+			line-height: 21px
+			color: #0E1314
+			+eb
+		p
+			font-size: 14px
+			color: #5F5F5F
+			margin-top: 15px
+			+el
 
 
 

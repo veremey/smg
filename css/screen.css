@@ -32,6 +32,8 @@ a { text-decoration: none; }
 .l_center { position: relative; width: 1000px; margin: 0 auto; *zoom: 1; }
 .l_center:after { content: " "; display: table; clear: both; }
 
+.b_center { position: relative; width: 1234px; margin: 0 auto; z-index: 3; }
+
 .header { width: 100%; position: fixed; top: 0; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header__menu { font-size: 0; float: left; margin-top: 30px; margin-left: 100px; }
@@ -202,3 +204,14 @@ a { text-decoration: none; }
 .spin .big__title { color: white; }
 .spin__container { position: relative; margin-top: 150px; z-index: 10; text-align: center; }
 .spin__container p { color: white; margin: 0 auto; font-size: 22px; }
+.spin .comment__prev, .spin .comment__next { z-index: 10; }
+
+.big { position: relative; background-color: white; min-height: 1300px; height: auto; *zoom: 1; }
+.big:after { content: " "; display: table; clear: both; }
+.big .key__img { bottom: 0; }
+.big__img { float: right; margin: 50px 0 35px; }
+
+.bild { width: 380px; float: left; margin-top: 50px; }
+.bild li { display: block; margin: 0 0 140px 35px; list-style-image: url("../img/list__img.png"); }
+.bild li h2 { font-size: 24px; line-height: 21px; color: #0e1314; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 700; }
+.bild li p { font-size: 14px; color: #5f5f5f; margin-top: 15px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
