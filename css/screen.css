@@ -44,8 +44,8 @@ a { text-decoration: none; }
 .header__menu li:first-child a::before { display: none; }
 .header__contact { width: 175px; float: right; margin-top: 27px; *zoom: 1; }
 .header__contact:after { content: " "; display: table; clear: both; }
-.header__contact_tel { float: right; color: white; text-transform: uppercase; font-size: 20px; }
-.header__contact_mail { float: right; color: #ffd739; font-size: 13px; }
+.header__contact_tel { float: right; color: white; text-transform: uppercase; font-size: 20px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.header__contact_mail { float: right; color: #ffd739; font-size: 13px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
 
 .logo { float: left; margin: 20px 0; background: url('../img/icons-s7731b70b43.png') 0 -163px no-repeat; width: 162px; height: 57px; }
 .logo h1 { font: 0/0 a; text-shadow: none; color: transparent; }
@@ -54,13 +54,14 @@ a { text-decoration: none; }
 .key:after { content: " "; display: table; clear: both; }
 .key__img { position: absolute; text-align: center; width: 3000px; left: 50%; margin-left: -1500px; z-index: 1; }
 .key__wrap { width: 700px; margin: 0 auto; }
-.key__list { width: 250px; float: left; margin-right: 130px; *zoom: 1; }
+.key__list { width: 260px; float: left; margin-right: 130px; *zoom: 1; }
+.key__list p { font-size: 20px; margin-left: 10px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
 .key__list:nth-child(2n) { margin-right: 0; }
 .key__list:after { content: " "; display: table; clear: both; }
 .key__list li { float: left; list-style-image: url("../img/list__img.png"); font-size: 20px; margin-bottom: 20px; color: #656565; }
 .key__container { position: relative; z-index: 4; padding-top: 175px; }
 
-.big__title { position: relative; text-align: center; font-size: 46px; color: #0e1314; margin: 50px 30px; text-transform: uppercase; }
+.big__title { position: relative; text-align: center; font-size: 46px; color: #0e1314; margin: 50px 30px; text-transform: uppercase; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 700; }
 .big__title i { position: absolute; bottom: -19px; left: 50%; width: 108px; height: 5px; margin-left: -54px; background-color: #ffd739; }
 
 .portfolio { height: 1200px; vertical-align: top; *zoom: 1; }
@@ -70,7 +71,7 @@ a { text-decoration: none; }
 .portfolio__big_wrap img { height: 600px; width: auto; }
 .portfolio__big_mask, .portfolio__big .bg__green, .portfolio__big .bg__pink, .portfolio__big .bg__blue, .portfolio__big .bg__purple, .portfolio__big .bg__sun, .portfolio__big .bg__sea, .portfolio__big .bg__gold, .portfolio__big .bg__aqua { opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: 20%; }
 .portfolio__big_center { width: 450px; height: auto; text-align: center; -webkit-transition: opacity 2.5s ease; -moz-transition: opacity 2.5s ease; -ms-transition: opacity 2.5s ease; -o-transition: opacity 2.5s ease; transition: opacity 2.5s ease; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.portfolio__big_center h3 { text-transform: uppercase; color: white; font-size: 30px; }
+.portfolio__big_center h3 { text-transform: uppercase; color: white; font-size: 30px; line-height: 28px; font-family: Arial, sans-serif; }
 .portfolio__big_center p { width: 450px; color: white; font-size: 16px; margin-top: 15px; }
 .portfolio__big .btn { margin-top: 50px; }
 .portfolio__small { position: relative; float: left; height: 300px; width: 50%; overflow: hidden; }
@@ -195,3 +196,9 @@ a { text-decoration: none; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.spin { position: relative; top: 0; padding: 1px; height: 940px; overflow: hidden; *zoom: 1; }
+.spin:after { content: " "; display: table; clear: both; }
+.spin .big__title { color: white; }
+.spin__container { position: relative; margin-top: 150px; z-index: 10; text-align: center; }
+.spin__container p { color: white; margin: 0 auto; font-size: 22px; }

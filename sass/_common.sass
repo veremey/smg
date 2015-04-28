@@ -56,6 +56,19 @@ body
 $n: transparent
 $yellow: #ffd739
 
+=el
+	font-family: "Exo2", Arial, sans-serif
+	font-style: normal
+	font-weight: 300
+=er
+	font-family: "Exo2", Arial, sans-serif
+	font-style: normal
+	font-weight: 400
+=eb
+	font-family: "Exo2", Arial, sans-serif
+	font-style: normal
+	font-weight: 700
+
 
 .clear
 	clear: both
@@ -127,10 +140,12 @@ a
 			color: #FFF
 			text-transform: uppercase
 			font-size: 20px
+			+el
 		&_mail
 			float: right
 			color: $yellow
 			font-size: 13px
+			+el
 .logo
 	float: left
 	margin: 20px 0
@@ -156,9 +171,13 @@ a
 		width: 700px
 		margin: 0  auto
 	&__list
-		width: 250px
+		width: 260px
 		float: left
 		margin-right: 130px
+		p
+			font-size: 20px
+			margin-left: 10px
+			+el
 		&:nth-child(2n)
 			margin-right: 0
 		+clr
@@ -179,6 +198,7 @@ a
 	color: #0e1314
 	margin: 50px 30px
 	text-transform: uppercase
+	+eb
 	i
 		position: absolute
 		bottom: -19px
@@ -240,6 +260,8 @@ a
 				text-transform: uppercase
 				color: #FFF
 				font-size: 30px
+				line-height: 28px
+				font-family: Arial, sans-serif
 			p
 				width: 450px
 				color: #FFF
