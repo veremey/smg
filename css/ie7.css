@@ -1,0 +1,27 @@
+div.footer-lnk ul {
+	margin-top:25px;
+	margin-bottom:25px;
+	width:100%;
+}
+div.footer-lnk ul li{
+	display:inline;
+}
+div.footer-lnk ul li a{
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#A2A2A2;
+	font-family:gotham_bold;
+	font-weight:bold;
+	font-size:14px;
+	margin-right:50px;
+}
+div.cl44 img {
+	border:1px solid #EBEBEB;
+}
+div.cl46 {
+	border:1px solid #EBEBEB;
+}
+div.addtosearch {
+	top:0px;
+	position:relative;
+}

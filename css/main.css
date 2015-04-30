@@ -1,0 +1,553 @@
+/*p { font-size: 14px; margin-bottom: 10px; }*/
+.demo-list li { font-family: Courier; font-size: 12px; margin: 0 0 5px 20px; padding-left: 10px; background: url(../images/bullet-square.gif) 0 2px no-repeat; }
+#main-container { width: 1000px; margin: 20px auto; background: #b6aaec; }
+#menu-container { width: 300px; height: 2000px; float: left; background: #bad6dc; }
+#main-content { width: 700px; float: left; background: #edf0a6; }
+#menu-container ul li { margin-left: 20px; }
+
+.fade-in-on-load { display: none; }
+.error_list { color: #ff0000; font-weight: bold;}
+td, th{ border: 1px solid #903010; padding: 5px 10px 5px 10px; }
+
+.confirmation_list { color: #0000ff; font-weight: bold; padding-bottom:10px; }
+.non_display{display: none;}
+
+.tiny-text { width: 30px; }
+.normal-text { width: 100px; }
+
+.corn.expanded_cur_mem{
+  background-image: url("../img/top-corn_up_big.png");
+  height: 105px;
+}
+
+.select_variant{width: 500px;}
+.specialist_next_level
+{
+  cursor:pointer; 
+}
+.specialist_not_next_level
+{
+  cursor: pointer;
+}
+
+.address_next_level
+{
+  cursor:pointer; 
+}
+.address_not_next_level
+{
+  cursor: pointer;
+}
+.level_path{font-size: 10pt;}
+.browseAjaxLoad{background:url(../images/colorbox/loading.gif) no-repeat center center;}  
+.level_path .currentAct{text-decoration: none; color: black;cursor: default;}
+.table_post_job{ width: 700px;}
+.table_post_job th{ width: 250px;}
+ul.radio_list li
+{
+float:left;
+}
+
+.localarea_select_widget .localarea_column
+{
+  width: 200px;
+  height: 150px;
+  float: left;
+  overflow:auto;
+}
+.localarea_block_title
+{
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.specialism_select_widget_build .specialism_column_build
+{
+  width: 200px;
+  height: 150px;
+  float: left;
+  overflow:auto;
+}
+.specialism_block_title
+{
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.specialism_select_widget_build .item_row{ cursor:pointer; }
+.specialism_select_widget_build .selected_specialism
+{
+  background: #B6AAEC;
+}
+.upload_photo_wrap
+{
+  display: block; width: 100px; height: 20px; overflow: hidden;
+}
+.upload_photo_button{
+  width: 110px; height: 30px; position: relative; top: -5px; left: -5px;
+}
+.upload_photo input{
+  cursor: pointer;
+  left: -40px;
+  font-size: 27px; 
+  width: 120px; 
+  opacity: 0; 
+  filter:alpha(opacity: 0);  
+  position: relative; 
+  top: -40px; 
+}
+                        
+.insurance-block
+{
+    float: left;
+    position: relative;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.build_case_study_column{
+  float: left;
+}
+.case_study_column_body{
+  overflow: hidden;
+}
+.case_study_main_img img{
+  max-width: 441px;
+  max-height: 330px;
+}
+.company_logo_load img{
+  max-width: 139px;
+}
+.case_study_header.hidden{
+  display: none;
+}
+.case_study_header_up{
+  overflow: hidden;  
+}
+.case_study_header_title{
+  float: left;
+}
+.main_img_new_load_href.hidden{
+  display: none;
+}
+.error_list{
+  margin-top: 20px;
+  color: #FF8A00;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+
+.sales_team_widget{
+  overflow: hidden;
+}
+.sales_team_outter{
+  height: 200px;
+  overflow: auto;
+  width: 200px;
+}
+
+.call_module_outter{
+  overflow: hidden;
+}
+div.call_menu{
+  background: url("../img/static_menu-bg.png") repeat scroll 0 0 transparent;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  width: 160px;
+}
+div.call_menu .call_premenu{ 
+  background-image: url('../img/static_premenu-bg.png');
+  width: 160px;
+  height: 5px; 
+}
+div.call_menu .call_aftermenu{  
+  background-image: url('../img/static_aftermenu-bg.png');
+  width: 160px;
+  height: 5px;
+}
+div.call_menu .pre_line{
+  margin-bottom: 10px;
+}
+div.call_menu .menu_wrap{ 
+  padding: 15px; 
+}
+div.call_menu .menu_wrap a{
+  text-decoration: none;
+}
+div.call_menu .menu_item{
+  margin: 10px 0;
+}
+div.call_menu .not_active .cl1, div.call_menu .not_active .cl2{
+  color: #c2c2c2 !important;
+  cursor: default;
+}
+div.call_menu a{
+  text-decoration: none;
+}
+div.call_menu .cl2{
+  font-size: 18px;
+}
+div.call_content{
+  margin-left: 180px;
+}                                
+div.call_menu .a_item_lvl_1.current_menu .cl1, div.call_menu .a_item_lvl_1.current_menu .cl2, 
+div.call_menu .a_item_lvl_2.current_menu .cl1, div.call_menu .a_item_lvl_2.current_menu .cl2{  
+  color: #009edf;
+}
+div.call_menu a.a_item_lvl_1:hover .cl1, div.call_menu  a.a_item_lvl_1:hover .cl2,
+div.call_menu a.a_item_lvl_2:hover .cl1, div.call_menu  a.a_item_lvl_2:hover .cl2{
+  color: #009edf;   
+}
+div.call_menu .not_active a.a_item_lvl_1:hover .cl1, div.call_menu .not_active a.a_item_lvl_1:hover .cl2,
+div.call_menu .not_active a.a_item_lvl_2:hover .cl1, div.call_menu .not_active a.a_item_lvl_2:hover .cl2{
+  color: #c2c2c2;
+}
+div.call_menu .after_line {
+    margin-top: 10px;
+}
+div.call_menu .gray_line {
+  background-image: url("../img/grey-line.png");
+  background-repeat: repeat-x;
+  height: 4px;
+  margin-bottom: 10px;
+}
+div.call_menu .a_item_lvl_3.current_menu .cl1{
+  background: url('../img/menu_item3_right.png') no-repeat top right; 
+}
+div.call_menu .a_item_lvl_3 .cl1, div.call_menu .a_item_lvl_3 .cl2{
+  color: #a5a5a5;  
+  font-size: 14px;
+}
+div.call_menu .a_item_lvl_3.current_menu .cl1, div.call_menu .a_item_lvl_3.current_menu .cl2{
+  color: #5e5e5e;  
+  font-size: 14px;
+}
+div.call_menu .blue_line.after_current{
+  background: url('../img/darkblue-line_pre.png') no-repeat;
+  height: 10px;
+  margin-bottom: -5px;
+}
+div.call_menu .blue_line.current_line {
+  background: url('../img/blue-line_after.png') no-repeat !important;
+  height: 10px;
+  margin-top: -5px;
+}
+div.call_menu .not_active .blue_line{
+  background-image: url("../img/grey-line.png") !important;
+  background-repeat: repeat-x;
+  height: 4px;  
+}
+
+div.call_menu .not_active .blue_line.after_current{
+  background: url('../img/grey-line_pre.png') no-repeat !important;
+  height: 10px;
+  margin-bottom: -5px; 
+}
+
+div.call_content_wrap {
+  height: auto;
+  background: url('../img/call_content.png');
+  overflow: hidden;
+  padding: 30px 60px 40px 60px;
+  width: 770px;
+}    
+div.call_pre_content{
+  background-image: url('../img/call_pre-content.png');
+  width: 890px;
+  height: 5px;
+}
+div.call_after_content{
+  background-image: url('../img/call_after-content.png');
+  width: 890px;
+  height: 28px;
+}
+div.call_content_wrap .title{
+  color: #003679;
+  font-family: gotham_black;
+  font-size: 59px;
+}
+div.call_content_wrap .title_underline {
+  background-image: url("../img/grey-line.png");
+  background-repeat: repeat-x;
+  height: 4px;
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+div.call_content_wrap .call_label{
+  color: #009EE0;
+  font-family: gotham_bold;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+div.call_content_wrap .call_select select{
+  width: 220px;
+}
+div.call_content_wrap .call_select .selectBox-label{
+  font-family: Arial;
+  font-size: 14px;
+}
+div.call_content_wrap .selectBox-dropdown-menu a{
+  font-family: Arial;     
+}
+div.call_content_wrap .call_select{
+  margin-bottom: 30px;
+}
+div.call_content_wrap .call_date{
+  margin-bottom: 30px;
+}
+div.call_content_wrap .call_date .selectBox-label{   
+  font-family: Arial;   
+  font-size: 14px;  
+}
+div.call_content_wrap .underline_title{
+  color: #003679;
+  font-family: gotham_bold;
+  font-size: 21px;
+  margin-top: -18px;  
+  margin-bottom: 30px;
+}
+
+div.call_content_wrap .create_prospect_wrap input.cl170 {
+    height: 45px;
+    width: 320px;
+    color: #5B5B5B;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    behavior: url(PIE.htc);
+    border: 1px solid #BBBBBB;
+    border-radius: 7px 7px 7px 7px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 200;
+    float:left;
+    margin-bottom: 20px;
+}
+
+div.call_content_wrap .call_item_block {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+div.call_content_wrap .left_column{
+    width: 360px;
+}
+
+div.call_content_wrap .right_column_l{
+    float: left;
+    margin-left: 50px;
+    width: 360px;
+}
+
+div.call_content_wrap .create_prospect_wrap .cl99{
+    width: 240px;  
+}
+
+div.call_content_wrap .create_prospect_wrap .cl99 a {
+    color: #5B5B5B;
+    font-family: gotham_bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+div.call_content_wrap .create_prospect_wrap .cl99 img {
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+div.call_content_wrap .create_prospect_wrap .new_email_button{
+    margin-bottom: 20px !important;
+}
+
+div.call_content_wrap .create_prospect_wrap input.cl170.last{
+  margin-bottom: 10px;  
+}
+
+div.call_content_wrap .create_prospect_wrap .phone_numbers input.cl170{
+    margin-right: 15px;
+    width: 200px;  
+}
+
+div.call_content_wrap .create_prospect_wrap .new_phone_button{
+    margin-bottom: 20px !important;
+}
+
+div.call_content_wrap .prospect_company_form{
+    overflow: hidden;
+}
+
+div.call_content_wrap a.b-select_box{
+    margin-bottom: 20px;
+}
+
+div.call_content_wrap a.b-select_box.last{
+    margin-bottom: 10px;
+}
+
+div.call_content_wrap .title_block {
+    color: #003679;
+    font-family: gotham_bold;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+div.call_content_wrap input.create_prospect {
+    background-color: transparent;
+    background-image: url("../img/create_prospect.png");
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    height: 49px;
+    line-height: 45px;
+    margin-top: -10px;
+    padding-left: 15px;
+    width: 283px;
+}
+
+div.call_content_wrap input.amend_prospect {
+    background-color: transparent;
+    background-image: url("../img/call_result.png");
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    margin-top: -10px;
+    padding-left: 15px;
+    width: 291px;
+    font-family: gotham_bold;
+    font-size: 21px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+div.call_content_wrap input.create_prospect_and_call {
+    background-color: transparent;
+    background-image: url("../img/create_prospect_and_call.png");
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    height: 49px;
+    line-height: 45px;
+    margin-top: 20px;
+    padding-left: 15px;
+    width: 403px;
+}
+
+div.call_content_wrap .right_buttons{
+    float: right;
+    width: 440px;
+}
+
+div.call_content_wrap .new_prospect_person_button{
+    margin-top: -10px;
+}
+
+div.call_content_wrap .prospect_person_form{
+    overflow: hidden;
+}
+
+div.call_content_wrap .title_left{
+    float: left;
+    width: 100px;
+}
+
+div.call_content_wrap .forename_right{
+    float: left;
+    width: 235px;
+}
+
+div.call_content_wrap input.cl170.short_forename{
+    width: 220px;
+}
+
+div.call_content_wrap .create_prospect_wrap .error_list {
+    margin-top: -16px !important;
+    padding: 0px !important;
+    display: inline;
+}
+
+div.call_content_wrap .create_prospect_wrap a.phone_type_edit{
+    display: table-caption !important;
+}
+
+div.call_content_wrap .person_margin{
+  height: 50px;
+}
+
+div.call_content_wrap .create_prospect_wrap .new_specialism_button {
+    margin-bottom: 20px !important;
+}
+
+div.call_content_wrap .other_contacts input.cl170 {
+    height: 45px;
+    width: 320px;
+    color: #5B5B5B;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    behavior: url(PIE.htc);
+    border: 1px solid #BBBBBB;
+    border-radius: 7px 7px 7px 7px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 200;
+    float:left;
+    margin-bottom: 20px;
+}
+div.call_content_wrap .other_contacts .error_list {
+    margin-top: -16px !important;
+    padding: 0px !important;
+    display: inline;
+}
+div.call_content_wrap .other_contacts a.phone_type_edit{
+    display: table-caption !important;
+}
+div.call_content_wrap .other_contacts .new_web_url_button {
+    margin-bottom: 20px !important;
+}
+div.call_content_wrap .other_contacts .cl99{
+    width: 240px;  
+}
+
+div.call_content_wrap .other_contacts .cl99 a {
+    color: #5B5B5B;
+    font-family: gotham_bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+div.call_content_wrap .other_contacts .cl99 img {
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+div.call_content_wrap .other_contacts .new_email_button{
+    margin-bottom: 20px !important;
+}
+
+div.call_content_wrap .other_contacts input.cl170.last{
+  margin-bottom: 10px;  
+}
+
+div.call_content_wrap .other_contacts .phone_numbers input.cl170{
+    margin-right: 15px;
+    width: 200px;  
+}
+
+div.call_content_wrap .other_contacts .new_phone_button{
+    margin-bottom: 20px !important;
+}
+
+div.call_content_wrap .other_contacts .zone-right{
+    width: 640px;
+}
+
+div.call_content_wrap .other_contacts .call_item_block{
+    width: 350px;
+}

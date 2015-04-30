@@ -1,0 +1,200 @@
+.title, .wheader, #header, #ajax_indicator_placeholder, .directdeb1a-trail, .footer, #sfWebDebug, .bottcontactdd, .bottlinedd, .bacsdd, .print, .yesnobutton, .cancel, .footer-content, .question, div.directdeb9-content .cl168.new {display: none}
+html, body {display: block;}
+
+div.directdeb6-content {
+    padding-left: 50px;
+    width: 1060px;
+    height: 1500px;
+    background-image: url('../img/directdeb6-bg.png');
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 10px;
+    position: relative;
+}
+div.directdeb6-content .text {
+padding-top: 60px;
+width: 485px;
+float: left;
+}
+div.directdeb6-content .cl147 {
+color: #5B5B5B;
+font-family: gotham_bold;
+font-size: 14px;
+line-height: 18px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+div.directdeb6-content.my .cl147 {
+margin-top: 5px;
+width: 430px;
+}
+div.directdeb6-content .cl146 {
+font-size: 21px;
+color: #009EDF;
+font-family: gotham_bold;
+}
+div.directdeb6-content .cl149 {
+width: 265px;
+height: 45px;
+line-height: 45px;
+color: #5B5B5B;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+border: 2px solid #CACACA;
+border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-khtml-border-radius: 7px;
+behavior: url(PIE.htc);
+z-index: 200;
+position: relative;
+padding-left: 15px;
+margin-top: 10px;
+margin-bottom: 13px;
+}
+div.directdeb6-content .cl152 {
+color: #5B5B5B;
+font-family: Arial;
+font-size: 13px;
+font-weight: bold;
+line-height: 18px;
+margin-bottom: 7px;
+}
+div.directdeb6-content .cl151 {
+width: 450px;
+height: 80px;
+}
+div.directdeb6-content .cl150 {
+width: 70px;
+height: 45px;
+line-height: 45px;
+color: #5B5B5B;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+border: 2px solid #CACACA;
+border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-khtml-border-radius: 7px;
+behavior: url(PIE.htc);
+z-index: 200;
+position: relative;
+padding-left: 15px;
+margin-top: 10px;
+margin-bottom: 20px;
+float: left;
+margin-right: 10px;
+}
+
+div.directdeb6-content .cornerok {
+background-image: url('../img/icons/icon-scroll-down.png');
+background-repeat: no-repeat;
+float: right;
+height: 7px;
+position: relative;
+right: 10px;
+top: 20px;
+width: 10px;
+}
+div.directdeb6-content .year {
+width: 80px;
+}
+div.directdeb6-content.my .cl143 {
+font-family: Arial;
+font-size: 14px;
+color: #5B5B5B;
+font-weight: bold;
+border: 2px solid #CACACA;
+border-radius: 7px 7px 7px 7px;
+behavior: url(PIE.htc);
+position: relative;
+z-index: 200;
+padding: 15px;
+width: 249px;
+line-height: 16px;
+margin-top: 10px;
+}
+div.directdeb9-content .dd9table {
+border: 2px solid #5B5B5B;
+height: 650px;
+border-radius: 7px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-khtml-border-radius: 7px;
+behavior: url(PIE.htc);
+z-index: 200;
+margin: 60px;
+position: absolute;
+width: 940px;
+}
+div.directdeb9-content .delogo {
+position: absolute;
+background-image: url('../img/icons/logo-direct-debit.png');
+background-repeat: no-repeat;
+width: 160px;
+height: 51px;
+right: 60px;
+top: 20px;
+}
+div.directdeb9-content .cl159 {
+margin-top: 30px;
+margin-left: 60px;
+}
+div.directdeb9-content .cl160 {
+color: #5B5B5B;
+font-family: gotham_bold;
+font-size: 21px;
+line-height: 25px;
+}
+div.directdeb9-content .cl161 {
+float: left;
+width: 420px;
+}
+div.directdeb9-content .cl163 {
+color: #5B5B5B;
+font-size: 13px;
+font-family: Arial;
+font-weight: bold;
+line-height: 18px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+div.directdeb9-content .cl164 {
+color: #5B5B5B;
+font-size: 21px;
+font-family: gotham_bold;
+margin-bottom: 10px;
+}
+div.directdeb9-content .cl165 {
+line-height: 45px;
+color: #5B5B5B;
+font-family: Arial;
+font-size: 14px;
+font-weight: bold;
+border: 2px solid #CACACA;
+border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+-khtml-border-radius: 7px;
+behavior: url(PIE.htc);
+z-index: 200;
+position: relative;
+padding-left: 15px;
+margin-bottom: 20px;
+width: 340px;
+}
+div.directdeb9-content .cl162 {
+width: 340px;
+float: left;
+margin-top: 103px;
+}
+div.directdeb9-content .cl166 {
+color: #5B5B5B;
+font-family: Arial;
+font-weight: bold;
+font-size: 13px;
+line-height: 18px;
+margin-bottom: 20px;
+}

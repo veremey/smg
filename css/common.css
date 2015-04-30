@@ -1,0 +1,362 @@
+/* ======================== Typography ==================== */
+
+body.hiw {
+    background-image:url('../img/bg-hiw.png');
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+p.validation-error {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff8a00;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 59px;
+}
+
+/* ======================== Buttons ==================== */
+/* ----- default buton ---- */
+.btn {
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -o-border-radius: 9px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+    box-shadow: -2px -2px 3px rgba(3, 3, 3, 0.25) inset;
+    background-color: #009ee0;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.btn a, .btn input {
+    border: none;
+    background: none;
+    color: #f3f3f3;
+    cursor: pointer;
+    display: block;
+    font-family: Gotham,Arial,sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: normal;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+/*----- Transparent Buttons -----*/
+.btntransp {
+    background-color: transparent;
+    text-transform: none;
+    padding: 2px 7px 3px 8px;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.btntransp a, .btntransp input {
+    border: none;
+    background: none;
+    color: #a2a2a2;
+    cursor: pointer;
+    display: block;
+    font-family: Gotham,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    text-decoration: none;
+    white-space: normal;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+/* ----- buton sizes ---- */
+.btn-small {
+    padding: 13px 10px 15px 13px;
+    text-transform: none;
+}
+
+.btn-small a, .btn-small input {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.btn-micro {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    padding: 2px 7px 3px 8px;
+    text-transform: none;
+}
+
+.btn-micro a, .btn-micro input {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    text-transform: none;
+}
+
+/* ----- buton colors ---- */
+.btn-color2 {
+    background-color: #003679;
+}
+
+.btn-color3 {
+    background-color: #335e94;
+}
+
+.btn-color4 {
+    background-color: #c1c1c1;
+}
+
+.btn-color4 a, .btn-color4 input {
+    color: #5b5b5b;
+}
+
+.btn-color5 {
+    background-color: #a2a2a2;
+}
+
+.btn-color5 a, .btn-color5 input {
+    color: #ffffff;
+}
+
+/* ----- buton - other variations ---- */
+.btn-alignleft {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-full-width {
+    display: block;
+}
+
+.btn-full-width a, 
+.btn-full-width input {
+    padding-left: 0;
+    width: 100%;
+}
+
+/*------- Buttons with icons ----------*/
+.btn-icon {
+    text-align: left;
+}
+
+.btn-icon a,
+.btn-icon input {
+    padding-right: 50px;
+    text-align: left;
+    display: block;
+    min-height: 25px;
+}
+
+.btn-icon-small {
+    text-align: left;
+}
+
+.btn-icon-left {
+    text-align: left;
+}
+.btn-icon-left a,
+.btn-icon-left input {
+    padding-left: 50px;
+    text-align: left;
+    display: block;
+    min-height: 25px;
+}
+
+.btn-icon-small a,
+.btn-icon-small input {
+    padding-right: 28px;
+    text-align: left;
+    display: block;
+    min-height: 23px;
+}
+
+.btn-icon-small-left {
+    text-align: left;
+}
+
+.btn-icon-small-left a,
+.btn-icon-small-left input {
+    padding-left: 28px;
+    text-align: left;
+    display: block;
+    min-height: 23px;
+}
+
+.btn-icon-micro {
+    text-align: left;
+}
+
+.btn-icon-micro a,
+.btn-icon-micro input {
+    padding-right: 21px;
+    text-align: left;
+    display: block;
+    min-height: 15px;
+}
+
+.btn-icon-micro-left {
+    text-align: left;
+}
+
+.btn-icon-micro-left a,
+.btn-icon-micro-left input {
+    padding-left: 21px;
+    text-align: left;
+    display: block;
+    min-height: 15px;
+}
+
+.btn-search a,
+.btn-search input {
+    background: url("../img/icons/icon-search.png") 100% center no-repeat;
+}
+
+.btn-search-small a,
+.btn-search-small input {
+    background: url("../img/icons/icon-search-small.png") 100% center no-repeat;
+}
+
+.btn-arrow a,
+.btn-arrow input {
+    background: url("../img/icons/icon-arrow.png") 100% center no-repeat;
+}
+
+.btn-arrow-small a,
+.btn-arrow-small input {
+    background: url("../img/icons/icon-arrow-small.png") 100% center no-repeat;
+}
+
+.btn-arrow-micro a,
+.btn-arrow-micro input {
+    background: url("../img/icons/icon-arrow-micro.png") 100% center no-repeat;
+}
+
+.btn-arrowtip a,
+.btn-arrowtip input {
+    background: url("../img/icons/icon-arrowtip.png") 100% center no-repeat;
+}
+
+.btn-arrowtip-small a,
+.btn-arrowtip-small input {
+    background: url("../img/icons/icon-arrowtip-small.png") 100% center no-repeat;
+}
+
+.btn-arrowtip-micro a,
+.btn-arrowtip-micro input {
+    background: url("../img/icons/icon-arrowtip-micro.png") 100% center no-repeat;
+}
+
+.btn-arrowtip-micro-blue a,
+.btn-arrowtip-micro-blue input {
+    background: url("../img/icons/icon-arrowtip-micro-blue.png") 100% center no-repeat;
+}
+
+.btn-arrowtip-micro-grey a,
+.btn-arrowtip-micro-grey input {
+    background: url("../img/icons/icon-arrowtip-micro-grey.png") 100% center no-repeat;
+}
+
+.btn-arrowtip-micro-grey2 a,
+.btn-arrowtip-micro-grey2 input {
+    background: url("../img/icons/icon-arrowtip-micro-grey2.png") 100% center no-repeat;
+}
+
+.btn-close-small a,
+.btn-close-small input {
+    background: url("../img/icons/icon-close-small.png") 100% center no-repeat;
+}
+
+.btn-add-small a,
+.btn-add-small input {
+    background: url("../img/icons/icon-add-small.png") 0% center no-repeat;
+}
+
+.btn-add-small-left a,
+.btn-add-small-left input {
+    background: url("../img/icons/icon-add-small.png") 0% center no-repeat;
+}
+
+/* ======================== Text Fields ==================== */
+/* ----- default field ---- */
+.fld {
+    height: 45px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -o-border-radius: 9px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px rgba(187, 187, 187, 0.25) inset;
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.fld input {
+    border: none;
+    background: none;
+    color: #5b5b5b;
+    display: block;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    white-space: normal;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.fld-full-width {
+    display: block;
+}
+
+.fld-alignleft {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fld-full-width input {
+    padding-left: 0;
+    width: 100%;
+}
+
+.fld-error {
+    border: 2px solid #fc9f30;
+}

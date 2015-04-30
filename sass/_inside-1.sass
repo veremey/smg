@@ -18,7 +18,7 @@
 			color: #FFF
 			margin: 0 auto
 			font-size: 22px
-			// max-width: 945px
+			font-family: Arial, sans-serif
 	.comment__prev,
 	.comment__next
 		z-index: 10
@@ -28,6 +28,7 @@
 	background-color: #FFF
 	min-height: 1300px
 	height: auto
+	overflow: hidden
 	+clr
 	.key__img
 		bottom: 0
@@ -39,8 +40,8 @@
 	float: left
 	margin-top: 50px
 	li
-		display: block
-		margin: 0 0 140px 35px
+		padding-left: 10px
+		margin: 0 0 140px 25px
 		list-style-image: url("../img/list__img.png")
 		h2
 			font-size: 24px
@@ -52,9 +53,28 @@
 			color: #5F5F5F
 			margin-top: 15px
 			+el
+.new_site
+	position: relative
+	margin: 0 auto
+	z-index: 10
+	+clr
 
+.him
+	background-image: url('../img/bg-hiw.png')
 
-
+.box
+	position: relative
+	box-shadow: 0 1px 50px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset
+.box:after
+	position: absolute
+	width: 92%
+	height: 15%
+	left: 4%
+	border-radius: 1%
+	z-index: -1
+	bottom: 1%
+	content: ""
+	box-shadow: 0 9px 18px rgba(0,0,0,0.4)
 
 
 
