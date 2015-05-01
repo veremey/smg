@@ -1622,42 +1622,71 @@ function init () {
             $(element.parentNode).find('ul[class="error_list"]').hide(); // в этом div скрываем показанное сообщение ранее, в случае успеха
 
         checkHasClass(element, 'error', false);  //удаляем подсветку
-    }
+    };
+
+
+};
+
 
 
 // слайдер проворачивающий экземпляры сайтов
 
 
-    function init_cycle() {
-        if ($(".js-slider").length > 0) {
-
-            $(".js-slider").each(function(){
-                var slider_1 = $(this).find('.js-cycle-1');
-                var slider_2 = $(this).find('.js-cycle-2');
-                var prev_nav = $(this).find('.js-cycle-prev');
-                var next_nav = $(this).find('.js-cycle-next');
-                slider_1.cycle({
-                    prev: prev_nav,
-                    next: next_nav
-                });
-                slider_2.cycle();
-
-                var slideshows = $(this).find('.js-slider-cycle').on('cycle-next cycle-prev', function(e, opts) {
-                    // advance the other slideshow
-                    slideshows.not(this).cycle('goto', opts.currSlide);
-                });
-
-                slider_2.find(".cycle-slide").click(function(){
-                    var index = slider_2.data('cycle.API').getSlideIndex(this);
-                    slideshows.cycle('goto', index);
-                });
-            });
-        }
-    }
-    init_cycle();
 
 
 
-}
+
+
+
+
 	console.log($('body').html());
+});
+
+
+
+$(document).ready(function(){
+
+ $('.js-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.js-carousel-preview',
+    responsive: [
+      {
+        breakpoint: 758,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        fade: false,
+        }
+      }
+    ]
+  });
+  $('.js-carousel-preview').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    asNavFor: '.js-carousel',
+    dots: false,
+    arrows: true,
+    infinite: true,
+    centerMode: false,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6
+        }
+      }
+    ]
+  });
+
+  $(".js-carousel-preview .slick-slide").on("click",function (){
+    $(this).parent().find(".slick-slide").removeClass("is-active");
+    $(this).addClass("is-active")
+    return false;
+  });
 });
