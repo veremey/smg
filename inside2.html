@@ -12,15 +12,9 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="http://malsup.github.io/jquery.cycle2.js"></script>
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 </head>
 <body>
 
-<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
-<script src="http://malsup.github.io/jquery.cycle2.tile.js"></script>
 
 <!-- BEGIN  out-->
 <div class="out">
@@ -57,90 +51,82 @@
 
 
 <div id="main">
-	<script src="http://malsup.github.io/jquery.cycle2.carousel.js"></script>
-	<script src="http://malsup.github.io/jquery.cycle2.tile.js"></script>
 
-	<style>
-	* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-	#cycle-1 div { width:100%; }
-	#cycle-2 .cycle-slide { border:3px solid #fff; }
-	#cycle-2 .cycle-slide-active { border:3px solid #004; }
-
-	#slideshow-1,#slideshow-2 { width: 50%; max-width: 600px; margin: auto }
-	#slideshow-2 { margin-top: 10px }
-	.cycle-slideshow img { width: 100%; height: auto; display: block; }
-	</style>
-
-
-	<div id="slideshow-1">
-		<p>
-			<a href="#" class="cycle-prev">&laquo; prev</a> | <a href="#" class="cycle-next">next &raquo;</a>
-			<span class="custom-caption"></span>
-		</p>
-		<div id="cycle-1" class="cycle-slideshow"
-			data-cycle-slides="> div"
-			data-cycle-timeout="0"
-			data-cycle-prev="#slideshow-1 .cycle-prev"
-			data-cycle-next="#slideshow-1 .cycle-next"
-			data-cycle-caption="#slideshow-1 .custom-caption"
-			data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}"
-			data-cycle-fx="tileBlind"
-			>
-			<div><img src="img/in1.png" width=500 height=500></div>
-			<div><img src="img/ins.png" width=500 height=500></div>
-			<div><img src="img/in1.png" width=500 height=500></div>
-			<div><img src="img/ins.png" width=500 height=500></div>
-			<div><img src="img/in1.png" width=500 height=500></div>
-			<div><img src="img/ins.png" width=500 height=500></div>
-			<div><img src="img/in1.png" width=500 height=500></div>
-			<div><img src="img/ins.png" width=500 height=500></div>
-			<div><img src="img/in1.png" width=500 height=500></div>
+	<div class="prod__left">
+		<div class="slider js-slider">
+			<div class="js-slider-cycle slider__top js-cycle-1"
+				data-cycle-slides="> div"
+				data-cycle-timeout="0"
+				data-cycle-fx="fade"
+				data-cycle-speed="200"
+				>
+				<div class="slider__item">
+						<img src="img/in1.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/ins.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/in1.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/ins.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/in1.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/ins.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/in1.png">
+				</div>
+				<div class="slider__item">
+						<img src="img/ins.png">
+				</div>
+			</div>
+			<div class="js-slider-cycle slider__bottom js-cycle-2"
+				data-cycle-slides="> div"
+				data-cycle-timeout="0"
+				data-cycle-speed="200"
+				data-cycle-fx="carousel"
+				data-cycle-carousel-visible="5"
+				data-cycle-slide-active-class="is-active"
+				data-allow-wrap="false"
+				>
+				<div class="slider__item">
+					<img src="img/in1.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/ins.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/in1.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/ins.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/in1.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/ins.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/in1.png" width="35" height="35">
+				</div>
+				<div class="slider__item">
+					<img src="img/ins.png" width="35" height="35">
+				</div>
+			</div>
+			<button class="btn-prev js-cycle-prev"></button>
+			<button class="btn-next js-cycle-next"></button>
+		</div>
+		<div class="prod__links">
+			<a href="#">Видео</a>
+			<a href="#">3D - Модель</a>
 		</div>
 	</div>
-
-	<div id="slideshow-2">
-		<div id="cycle-2" class="cycle-slideshow"
-			data-cycle-slides="> div"
-			data-cycle-timeout="0"
-			data-cycle-prev="#slideshow-2 .cycle-prev"
-			data-cycle-next="#slideshow-2 .cycle-next"
-			data-cycle-caption="#slideshow-2 .custom-caption"
-			data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}"
-			data-cycle-fx="carousel"
-			data-cycle-carousel-visible="5"
-			data-cycle-carousel-fluid=true
-			data-allow-wrap="false"
-			>
-			<div><img src="img/in1.png"  width=100 height=100></div>
-			<div><img src="img/ins.png"  width=100 height=100></div>
-			<div><img src="img/in1.png"  width=100 height=100></div>
-			<div><img src="img/ins.png"  width=100 height=100></div>
-			<div><img src="img/in1.png"  width=100 height=100></div>
-			<div><img src="img/ins.png"  width=100 height=100></div>
-			<div><img src="img/in1.png"  width=100 height=100></div>
-			<div><img src="img/ins.png"  width=100 height=100></div>
-			<div><img src="img/in1.png"  width=100 height=100></div>
-		</div>
-		<p>
-				<a href="#" class="cycle-prev">&laquo; prev</a> | <a href="#" class="cycle-next">next &raquo;</a>
-				<span class="custom-caption"></span>
-		</p>
-	</div>
-	<script>
-		jQuery(document).ready(function($){
-
-		var slideshows = $('.cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
-				// advance the other slideshow
-				slideshows.not(this).cycle('goto', opts.currSlide);
-		});
-
-		$('#cycle-2 .cycle-slide').click(function(){
-				var index = $('#cycle-2').data('cycle.API').getSlideIndex(this);
-				slideshows.cycle('goto', index);
-		});
-
-		});
-	</script>
 </div>
 <div class="clear"></div>
 </div>
@@ -150,25 +136,6 @@
 <!-- END out-->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://www.google-analytics.com/urchin.js"></script>
-<script>
-jQuery(document).ready(function($){
 
-var slideshows = $('.cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
-		// advance the other slideshow
-		slideshows.not(this).cycle('goto', opts.currSlide);
-});
-
-$('#cycle-2 .cycle-slide').click(function(){
-		var index = $('#cycle-2').data('cycle.API').getSlideIndex(this);
-		slideshows.cycle('goto', index);
-});
-
-});
-</script>
-<!-- google analytics -->
-<script src="http://www.google-analytics.com/urchin.js"></script>
-<script>_uacct = "UA-850242-2"; urchinTracker();</script>
 </body>
 </html>

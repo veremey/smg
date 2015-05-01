@@ -259,4 +259,13 @@ pre .special { color: #0367fd; background: #ffff8c; display: inline-block; paddi
 
 .bg__in2 { background-color: #a095c7; height: 645px; }
 
-#main { margin-top: -150px; }
+#main { position: relative; margin-top: -150px; *zoom: 1; }
+#main:after { content: " "; display: table; clear: both; }
+#main .slider { position: relative; margin: 0 auto; width: 1150px; *zoom: 1; }
+#main .slider:after { content: " "; display: table; clear: both; }
+#main .slider__top { margin-bottom: 20px; }
+#main .slider__top .slider__item { height: 320px; width: 100%; text-align: center; line-height: 320px; }
+#main .slider__top .slider__item img { vertical-align: middle; }
+#main .slider__bottom { margin: 0 auto; width: 280px; }
+#main .slider__bottom .slider__item { margin-right: 8px; width: 48px; height: 48px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; overflow: hidden; line-height: 48px; text-align: center; cursor: pointer; border: 1px solid #e5e5e5; -webkit-transition: border-color 0.2s linear; -moz-transition: border-color 0.2s linear; -o-transition: border-color 0.2s linear; transition: border-color 0.2s linear; }
+#main .slider__bottom .slider__item img { vertical-align: middle; }
