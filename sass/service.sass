@@ -1,28 +1,22 @@
 .service
+	min-width: 1200px
+	width: 100%
 	margin-top: 98px
 	overflow: hidden
 .sidebar
+	position: relative
 	width: 25%
 	// min-width: 480px
 	float: left
 	font-size: 0
+	background-color: #FFF
+	z-index: 5
 	li
 		position: relative
 		height: 125px
 		border: 1px solid #EFEFEF
 		border-left: 0px
 		border-top: 0px
-		// i
-		// 	position: absolute
-		// 	// top: 54px
-		// 	// line-height: 125px
-		// 	left: 50px
-		// 	-webkit-transform: translate(-50%, -50%)
-		// 	-moz-transform: translate(-50%, -50%)
-		// 	-ms-transform: translate(-50%, -50%)
-		// 	-o-transform: translate(-50%, -50%)
-		// 	transform: translate(-50%, -50%)
-		// 	display: inline-block
 		&:hover
 			&:before
 				width: 100%
@@ -80,12 +74,41 @@
 	position: relative
 	float: left
 	width: 75%
-	min-height: 1008px - 465px
-	// padding: 245px 210px 220px 148px
+	min-height: 1008px
 	+clr
+	&_wrap
+		position: relative
+		width: 74%
+		margin: 180px auto 200px
+		z-index: 2
+		+clr
+		img
+			float: left
+			width: 26%
+			height: auto
+	&_contant
+		float: right
+		width: 70%
+		h2
+			font-size: 42px
+			color: #0E1314
+			font-weight: bold
+			margin-bottom: 30px
+		p
+			font-size: 15px
+			color: #5F5F5F
+
+
+
 .dsgn
-	background-image: url("../img/dsgn__bg.png")
-	-webkit-background-size: contain
-	-o-background-size: contain
-	background-size: contain
-	+coverdiv
+	position: relative
+	width: 100%
+	height: 100%
+	z-index: 1
+	&__img
+		position: absolute
+		top: 0
+		left: 50%
+		width: 1500px
+		margin-left: -1250px
+		text-align: center
