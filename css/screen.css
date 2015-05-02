@@ -282,13 +282,16 @@ a { text-decoration: none; }
 .carousel__main img { width: 100%; }
 .carousel__preview { height: 750px; background-color: #fccc50; text-align: center; }
 .carousel__preview .slick-slide { cursor: pointer; margin: 0 30px; width: 275px !important; }
+@media only screen and (max-width: 1400px) { .carousel__preview .slick-slide { margin: 0 20px; } }
 .carousel__preview .slick-slide:hover img { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .carousel__preview .slick-slide.is-active { margin: 0 30px; width: 275px !important; }
 .carousel__preview .slick-slide.is-active:after { display: block; }
 .carousel__preview .slick-slide.is-active img { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .carousel__preview .slick-slide:after { content: ""; position: absolute; display: none; z-index: 2; top: 0; right: 0; bottom: 0; left: 0; }
-.carousel__preview .slick-slide img { margin: 0 auto; box-shadow: 0 1px 50px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
-.carousel__preview .slick-list { margin-top: -50px; padding-top: 155px; z-index: 2; }
+.carousel__preview .slick-slide img { margin: 0 auto; box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
+@media only screen and (max-width: 1400px) { .carousel__preview .slick-slide img { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 0 20px rgba(0, 0, 0, 0.1) inset; } }
+.carousel__preview .slick-list { margin-top: -50px; padding-top: 155px; z-index: 2; height: 55%; max-width: 1680px; }
+@media only screen and (max-width: 1400px) { .carousel__preview .slick-list { max-width: 1265px; margin: -50px auto 0; } }
 .carousel__preview .slick-prev { left: 0px; }
 .carousel__preview .slick-prev:before { content: ""; position: absolute; top: 50%; margin-top: -25px; left: 0px; z-index: 10; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; background: url('../img/icons-s5cc7607775.png') 0 -1184px no-repeat; width: 30px; height: 50px; }
 .carousel__preview .slick-prev:hover:before { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
