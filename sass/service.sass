@@ -129,6 +129,8 @@
 		width: 25%
 		height: 480px
 		overflow: hidden
+		+r(1200)
+			height: 300px
 		&:hover
 			.job__mask
 				opacity: 1
@@ -142,9 +144,13 @@
 		top: 0
 		text-align: center
 		margin-left: -250px
+		+r(1200)
+			height: 300px
 		img
 			width: auto
 			height: 480px
+			+r(1200)
+				height: 300px
 	&__mask,
 	.bg__green,
 	.bg__pink,
@@ -164,6 +170,8 @@
 			color: #F4CE36
 			font-size: 20px
 			text-transform: uppercase
+			+r(1200)
+				margin: 70px auto 10px
 		p
 			display: block
 			width: 80%
