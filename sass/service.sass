@@ -1,6 +1,4 @@
 .service
-	min-width: 1200px
-	width: 100%
 	margin-top: 98px
 	overflow: hidden
 .sidebar
@@ -17,20 +15,23 @@
 		border: 1px solid #EFEFEF
 		border-left: 0px
 		border-top: 0px
+		overflow: hidden
 		&:hover
 			&:before
-				width: 100%
-				+tr(.2s)
+				top: 0px
+				left: 0
+				transition: top .1s, left .2s .2s
+				// +tr(left 2s)
 			i
 				+gray
 		&:before
 			content: ""
 			background-color: #ffd739
 			position: absolute
-			top: 0
-			left: 0
+			top: -130px
+			left: -270px
 			height: 100%
-			width: 0
+			width: 100%
 	a
 		position: relative
 		display: block
@@ -86,9 +87,8 @@
 			float: left
 			width: 26%
 			height: auto
+			margin: 0 30px 25px 0
 	&_contant
-		float: right
-		width: 70%
 		h2
 			font-size: 42px
 			color: #0E1314

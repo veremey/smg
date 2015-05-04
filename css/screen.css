@@ -21,7 +21,7 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; min-width: 1200px; }
 
 .clear { clear: both; height: 0; }
 
@@ -44,7 +44,7 @@ a { text-decoration: none; }
 .main__next { position: absolute; top: 360px; right: 0; margin-top: -23px; z-index: 5; background: url('../img/icons-s43606f3cee.png') 0 0 no-repeat; width: 32px; height: 46px; }
 .main__next:hover { opacity: 0.8; }
 
-.header { width: 100%; position: fixed; top: 0; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; *zoom: 1; }
+.header { min-width: 1200px; width: 100% !important; position: fixed; top: 0; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
 .header__menu { font-size: 0; float: left; margin-top: 30px; margin-left: 100px; }
 .header__menu li { display: inline-block; }
@@ -251,13 +251,13 @@ a { text-decoration: none; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-.service { min-width: 1200px; width: 100%; margin-top: 98px; overflow: hidden; }
+.service { margin-top: 98px; overflow: hidden; }
 
 .sidebar { position: relative; width: 25%; float: left; font-size: 0; background-color: white; z-index: 5; }
-.sidebar li { position: relative; height: 125px; border: 1px solid #efefef; border-left: 0px; border-top: 0px; }
-.sidebar li:hover:before { width: 100%; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
+.sidebar li { position: relative; height: 125px; border: 1px solid #efefef; border-left: 0px; border-top: 0px; overflow: hidden; }
+.sidebar li:hover:before { top: 0px; left: 0; transition: top 0.1s, left 0.2s 0.2s; }
 .sidebar li:hover i { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
-.sidebar li:before { content: ""; background-color: #ffd739; position: absolute; top: 0; left: 0; height: 100%; width: 0; }
+.sidebar li:before { content: ""; background-color: #ffd739; position: absolute; top: -130px; left: -270px; height: 100%; width: 100%; }
 .sidebar a { position: relative; display: block; width: 68.75%; font-size: 16px; font-weight: bold; color: #474747; padding: 45px 55px 30px 90px; text-transform: uppercase; z-index: 4; }
 .sidebar a i { position: absolute; top: 60px; left: 50px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: inline-block; }
 .sidebar .is-active { background-color: #ffd739; }
@@ -282,8 +282,7 @@ a { text-decoration: none; }
 .service__item:after { content: " "; display: table; clear: both; }
 .service__item_wrap { position: relative; width: 74%; margin: 180px auto 200px; z-index: 2; *zoom: 1; }
 .service__item_wrap:after { content: " "; display: table; clear: both; }
-.service__item_wrap img { float: left; width: 26%; height: auto; }
-.service__item_contant { float: right; width: 70%; }
+.service__item_wrap img { float: left; width: 26%; height: auto; margin: 0 30px 25px 0; }
 .service__item_contant h2 { font-size: 42px; color: #0e1314; font-weight: bold; margin-bottom: 30px; }
 .service__item_contant p { font-size: 15px; color: #5f5f5f; }
 
@@ -313,8 +312,7 @@ a { text-decoration: none; }
 .spin__container p { color: white; margin: 0 auto; font-size: 22px; font-family: Arial, sans-serif; }
 .spin .comment__prev, .spin .comment__next { z-index: 10; }
 
-.big { position: relative; background-color: white; min-height: 1300px; height: auto; overflow: hidden; *zoom: 1; }
-.big:after { content: " "; display: table; clear: both; }
+.big { position: relative; background-color: white; min-height: 1300px; height: auto; overflow: hidden; }
 .big .key__img { bottom: 0; }
 .big__img { float: right; margin: 50px 0 35px; }
 
