@@ -1,25 +1,26 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+    $(".mapin__letter").hide();
+  $(".js__write").on("click", function(){
+		$(this).parents().find('.mapin__letter').show(".mapin__letter");
+  });
+  $(".js__send").on("click", function(){
+    $(this).parents().find('.mapin__letter_return').addClass('is_active');
+	});
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
+
 
 
 var myMap;
 
 // Дождёмся загрузки API и готовности DOM.
+
+
+
 ymaps.ready(init);
+
+
+
 
 function init () {
     // Создание экземпляра карты и его привязка к контейнеру с
@@ -30,6 +31,18 @@ function init () {
         center: [55.746993, 37.608284], // Москва
         zoom: 17
     });
+
+
+
+
+
+
+
+
+
+
+
+
 
     document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
@@ -1690,3 +1703,4 @@ $(document).ready(function(){
     return false;
   });
 });
+

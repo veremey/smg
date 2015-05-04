@@ -494,12 +494,12 @@ a
 .cycle__prev
 	position: absolute
 	top: 62%
-	left: -20px
+	left: -30px
 	+s(prev)
 .cycle__next
 	position: absolute
 	top: 62%
-	right: -20px
+	right: -30px
 	+s(next)
 
 
@@ -622,6 +622,7 @@ a
 		font-family: Arial, sans-serif
 		margin-bottom: 5px
 	&__letter
+		// display: none ///////
 		position: relative
 		width: 570px
 		height: 328px
@@ -638,9 +639,13 @@ a
 				margin: 30px auto
 		&_return
 			display: none
+			background-color: #FFF
+			margin: 10px
 			z-index: 200
 			+coverdiv
 			text-align: center
+			width: 95%
+			height: 95%
 			i
 				position: absolute
 				top: 45px
@@ -690,10 +695,13 @@ a
 
 
 
+//####   MAP  ####
 
 
-
-
+.ymaps-2-1-23-zoom,
+.ymaps-2-1-23-button_size_s .ymaps-2-1-23-button__text,
+.ymaps-2-1-23-search__input
+	display: none !important
 
 
 
