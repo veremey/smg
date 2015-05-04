@@ -18,9 +18,8 @@
 		overflow: hidden
 		&:hover
 			&:before
-				top: 0px
 				left: 0
-				transition: top .1s, left .2s .2s
+				transition: left .2s
 				// +tr(left 2s)
 			i
 				+gray
@@ -28,8 +27,8 @@
 			content: ""
 			background-color: #ffd739
 			position: absolute
-			top: -130px
-			left: -270px
+			top: 0
+			left: -500px
 			height: 100%
 			width: 100%
 	a
@@ -118,9 +117,9 @@
 
 .job
 	position: relative
-	min-width: 1200px
-	max-width: 2000px
-	width: 100%
+	min-width: 1200px// ??
+	max-width: 2000px // ??
+	width: 100% //??
 	margin-top: 50px
 	+clr
 	&__item
