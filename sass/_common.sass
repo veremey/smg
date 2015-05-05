@@ -95,6 +95,8 @@ a
 	z-index: 9999
 	height: 97px
 	+clr
+	+r(1140)
+		position: relative
 	&__menu
 		font-size: 0
 		float: left
@@ -365,6 +367,74 @@ a
 		position: relative
 		&:before
 			display: block
+		img
+			opacity: 1
+			+tr(all 1s)
+			-webkit-animation: none
+			-moz-animation: none
+			-o-animation: none
+			animation: none
+
+.pentagon
+	position: relative
+	width: 0px
+	height: 0px
+	img
+		position: absolute
+		animation: spin 2s linear infinite
+	.p1
+		left: 50%
+		margin-left: -244px
+		+tr(.5s)
+		opacity: 0
+	.p2
+		left: -477px
+		top: -115px
+		+rotate(65)
+		+tr(.5s)
+		opacity: 0
+	.p3
+		left: -513px
+		top: -359px
+		+rotate(123)
+		+tr(.5s)
+		opacity: 0
+	.p4
+		left: -278px
+		top: -539px
+		+rotate(182)
+		+tr(.5s)
+		opacity: 0
+	.p5
+		left: -181px
+		top: -460px
+		+rotate(223)
+		+tr(.5s)
+		opacity: 0
+	.p6
+		left: 235px
+		top: -187px
+		+rotate(297)
+		+tr(.5s)
+		opacity: 0
+
+
+@keyframes spin
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(360deg)
+
+
+
+
+
+
+
+
+
+
+
 
 // .process__6 a:after
 // 	display: block
@@ -373,6 +443,26 @@ a
 // 	left: 20px
 // 	z-index: 300
 // 	+s(bird)
+
+
+
+// .pentagon
+// 	position: relative
+// 	width: 54px
+// 	border-width: 50px 18px 0
+// 	border-style: solid
+// 	border-color: red transparent
+
+// .pentagon:before
+// 	content: ""
+// 	position: absolute
+// 	height: 0
+// 	width: 0
+// 	top: -85px
+// 	left: -18px
+// 	border-width: 0 45px 35px
+// 	border-style: solid
+// 	border-color: transparent transparent red
 
 
 

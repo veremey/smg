@@ -8,7 +8,11 @@ head.ready(function() {
     $(this).parents().find('.mapin__letter_return').addClass('is_active');
 	});
 
-
+    $(".process__list li a").on("click", function(){
+      $(this).allParent().removeClass('.is_active');
+      $(this).parent().addClass("is_active");
+      preventDefault;
+    });
 
 
 var myMap;

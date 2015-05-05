@@ -50,6 +50,7 @@ a { text-decoration: none; }
 
 .header { min-width: 1200px; width: 100% !important; position: fixed; top: 0; background-color: rgba(0, 0, 0, 0.9); z-index: 9999; height: 97px; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 1140px) { .header { position: relative; } }
 .header__menu { font-size: 0; float: left; margin-top: 30px; margin-left: 100px; }
 .header__menu li { display: inline-block; }
 .header__menu li:hover > a { border-color: #ffd739; }
@@ -111,7 +112,19 @@ a { text-decoration: none; }
 .process__6_num { position: absolute; top: 35px; left: 300px; }
 .process .is_active { position: relative; }
 .process .is_active:before { display: block; }
+.process .is_active img { opacity: 1; -moz-transition: all 1s; -o-transition: all 1s; -webkit-transition: all 1s; transition: all 1s; -webkit-animation: none; -moz-animation: none; -o-animation: none; animation: none; }
 
+.pentagon { position: relative; width: 0px; height: 0px; }
+.pentagon img { position: absolute; animation: spin 2s linear infinite; }
+.pentagon .p1 { left: 50%; margin-left: -244px; -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; opacity: 0; }
+.pentagon .p2 { left: -477px; top: -115px; -ms-transform: rotate(65deg); -webkit-transform: rotate(65deg); transform: rotate(65deg); -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; opacity: 0; }
+.pentagon .p3 { left: -513px; top: -359px; -ms-transform: rotate(123deg); -webkit-transform: rotate(123deg); transform: rotate(123deg); -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; opacity: 0; }
+.pentagon .p4 { left: -278px; top: -539px; -ms-transform: rotate(182deg); -webkit-transform: rotate(182deg); transform: rotate(182deg); -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; opacity: 0; }
+.pentagon .p5 { left: -181px; top: -460px; -ms-transform: rotate(223deg); -webkit-transform: rotate(223deg); transform: rotate(223deg); -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; opacity: 0; }
+.pentagon .p6 { left: 235px; top: -187px; -ms-transform: rotate(297deg); -webkit-transform: rotate(297deg); transform: rotate(297deg); -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; opacity: 0; }
+
+@keyframes spin { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
 .portfolio { height: 1200px; vertical-align: top; *zoom: 1; }
 .portfolio__big { position: relative; float: left; height: 600px; width: 50%; overflow: hidden; }
 .portfolio__big:hover .portfolio__big_mask { opacity: 1; -moz-transition: 0.3s; -o-transition: 0.3s; -webkit-transition: 0.3s; transition: 0.3s; left: 0; }
