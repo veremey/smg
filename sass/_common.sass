@@ -259,7 +259,6 @@ a
 	position: relative
 	height: 875px
 	background-color: #FFF
-	+clr
 	&__img
 		position: absolute
 		width: 650px
@@ -270,7 +269,6 @@ a
 		text-align: center
 	&__list
 		position: relative
-		font-size: 0
 		li
 			position: relative
 			display: inline-block
@@ -293,19 +291,85 @@ a
 	&__1,
 	&__5,
 	&__6
-		padding-right: 50px
-		text-align: right
+		a
+			margin-right: 50px
+			text-align: right
 	&__2,
 	&__3,
-	&__4,
+	&__4
+		a
+			padding-left: 50px
+		i
+			position: absolute
+			top: 13px
+			left: 0px
+			+s(w5)
 	&__1
-		top: 0
-		left: 305px
+		top: 20px
+		left: 345px
+		&_num
+			position: absolute
+			top: 75px
+			left: 242px
 	&__2
-		top: 0
-		left: 305px
+		top: 100px
+		left: 610px
+		&_num
+			position: absolute
+			top: 60px
+			left: -35px
+	&__3
+		top: 366px
+		left: 430px
+		&_num
+			position: absolute
+			top: 25px
+			left: -50px
+	&__4
+		top: 595px
+		left: -50px
+		&_num
+			position: absolute
+			top: -38px
+			left: 15px
+	&__5
+		top: 500px
+		left: -810px
+		&_num
+			position: absolute
+			top: -8px
+			left: 300px
+	&__6
+		top: 120px
+		left: 120px
+		a
+			position: relative
+		&:before
+			font-size: 30px
+			position: absolute
+			top: 0px
+			left: 20px
+			z-index: 300
+			width: 50px
+			height: 30px
+			background-color: red
+		&_num
+			position: absolute
+			top: 35px
+			left: 300px
+	// .is_active
+	// 	position: relative
+	// 	a
+	// 		&:after
+	// 			display: block
 
-
+// .process__6 a:after
+// 	display: block
+// 	position: absolute
+// 	top: 0px
+// 	left: 20px
+// 	z-index: 300
+// 	+s(bird)
 
 
 
