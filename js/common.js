@@ -15,17 +15,37 @@ head.ready(function() {
     });
 
 
+// *********  Плавное перелистывание стр ****
+
+$(document).ready(function() {
+
+   $(document).on('click', '#portf', function () {
+        $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 1000 );
+        return false;
+    });
+
+   $(document).on('click', '#cont', function () {
+        $('html, body').animate({ scrollTop: $('#mapin').offset().top }, 1000 );
+        return false;
+    });
+
+   $(document).on('click', '#write', function () {
+        $('html, body').animate({ scrollTop: $('#mapin__contakt').offset().top }, 1000 );
+        return false;
+    });
+
+});
+
+//  *** конец скрипта "Плавное перелистывание
+
+//  #####  Карта  ######
+
+
+
 var myMap;
 
 // Дождёмся загрузки API и готовности DOM.
-
-
-
 ymaps.ready(init);
-
-
-
-
 function init () {
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
@@ -35,17 +55,6 @@ function init () {
         center: [55.746993, 37.608284], // Москва
         zoom: 17
     });
-
-
-
-
-
-
-
-
-
-
-
 
 
     document.getElementById('destroyButton').onclick = function () {
@@ -149,6 +158,16 @@ function init () {
         seleniumAjaxMonitor.AjaxInProgress=0;
         $("#ajax_indicator_placeholder").hide();
     }
+
+
+
+
+// ###################
+
+// вставка с сайта  get-a-bilder
+// ###############
+
+
 
     $(document).ready(function()
     {
