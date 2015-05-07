@@ -60,6 +60,10 @@ function init () {
         // Для уничтожения используется метод destroy.
         myMap.destroy();
     };
+
+
+
+
   }
 
 
