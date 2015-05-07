@@ -20,4 +20,6 @@ ymaps.ready(function () {
       balloonShadow: false
     });
     myMap.geoObjects.add(myPlacemark);
+    myMap.behaviors
+        .disable(['rightMouseButtonMagnifier','scrollZoom'])
 });
