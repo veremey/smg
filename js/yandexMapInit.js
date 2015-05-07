@@ -27,24 +27,16 @@ ymaps.ready(init);
 
     myPlacemark = new ymaps.Placemark([55.747181, 37.60964], {
       iconLayout: 'default#image',
-        iconImageHref: '../img/location.png',
-        iconImageSize: [78, 63],
-        iconImageOffset: [-3, -42],
+      iconImageHref: 'img/location.png',
+      iconImageSize: [78, 63],
+      iconImageOffset: [-3, -42],
       balloonContent: '<span class="ymap__title">Представительство </span><span class="ymap__gray">нашей компании</span><p>Москва, Лебяжий переулок, д.8</p><p>+7 (495) 697-06-02</p><p><a href="mailto:support@softmg.ru">support@softmg.ru</a></p>'
     }, {
       balloonShadow: false
     });
-    //second mark
 
 
-    myMap.geoObjects
-      .add(myPlacemark)
-      .add(myPlacemark2)
-      .add(myPlacemark3);
-
-
-
+    myMap.geoObjects.add(myPlacemark);
 
   }
-
 

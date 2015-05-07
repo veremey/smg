@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 //  *** конец скрипта "Плавное перелистывание
 
-//  #####  Карта  ######
+//  #####  Карта start ######
 
 
 
@@ -56,11 +56,22 @@ function init () {
         zoom: 17
     });
 
-
     document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
         myMap.destroy();
     };
+  }
+
+
+
+
+
+  //  #####  Карта AND ######
+
+
+
+
+
 
     $(document).ready(function(){
         init_ajax_monitor();
@@ -97,8 +108,6 @@ function init () {
         });
 
         $('#bottom-navigation .static-links').hide();
-
-
     });
 
 
@@ -1486,7 +1495,7 @@ function init () {
          window.location = baseUrl + 'directory/'+ county_slug + '/' + district_slug + '/' + spec_slug;
          return false;
      });
-
+//
     });
 
      function specialistAutocomplete (el) {
@@ -1529,6 +1538,7 @@ function init () {
 
 
     /* ----------- Ajax-валидация введенных пользователем значений в полях формы регистрации ---- */
+
      function attach_reg_ajax_validation()
     {
         // при изменении значения поля
@@ -1574,7 +1584,6 @@ function init () {
             });
         });
     }
-
 
     function ProcessErrorMessage(current_element, type_data, error, additional_element)
     {
@@ -1661,18 +1670,11 @@ function init () {
     };
 
 
-};
+// };
 
 
 
-// слайдер проворачивающий экземпляры сайтов
-
-
-
-
-
-
-
+// ***** слайдер проворачивающий экземпляры сайтов  ****
 
 
 	console.log($('body').html());
