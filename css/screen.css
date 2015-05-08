@@ -252,6 +252,15 @@ a { text-decoration: none; }
 .letter__text:-moz-placeholder, .letter__text::-moz-placeholder { color: silver; opacity: 1; }
 .letter__text::-webkit-input-placeholder { color: silver; }
 
+.letter__form_name, .letter__form_tel { float: left; text-align: left; }
+.letter__form_name .has-error, .letter__form_tel .has-error { border-color: #f3aaaa; }
+.letter__form_name .has-error + label, .letter__form_tel .has-error + label { font-size: 11px; color: #f3aaaa; text-align: left; }
+
+.letter__form_name { width: 240px; }
+
+.letter__form_tel { width: 260px; }
+.letter__form_tel label { margin-left: 20px; }
+
 .footer { background-color: black; text-align: center; }
 .footer p { color: gray; font-size: 13px; font-family: Arial, sans-serif; line-height: 55px; }
 

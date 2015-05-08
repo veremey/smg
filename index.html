@@ -437,11 +437,13 @@
 			</div>
 			<div class="mapin__letter">
 				<div class="mapin__letter_contant is_active">
-					<form action="">
-						<input type="text" name="name" class="letter__name" placeholder="Ваше имя" required>
-						<label for="name"></label>
-						<input type="text" name="tel" class="letter__tel" placeholder="Ваш телефон" required>
-						<label for="tel"></label>
+					<form class="js-validate">
+						<div class="letter__form_name">
+							<input type="text" name="name" class="letter__name" placeholder="Ваше имя" required><br>
+						</div>
+						<div class="letter__form_tel">
+							<input type="text" name="tel" class="letter__tel" placeholder="Ваш телефон" required><br>
+						</div>
 						<textarea name="" class="letter__text" cols="0" rows="0" placeholder="Ваше сообщение" ></textarea>
 						<input type="submit" class="btn btn__yellow " value="Отправить">
 					</form>

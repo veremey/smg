@@ -910,8 +910,23 @@ a
 	font-family: Arial, sans-serif
 	+placeholder-color(#c0c0c0)
 	resize: none
+.letter__form_name,
+.letter__form_tel
+	float: left
+	text-align: left
+	.has-error
+		border-color: #f3aaaa
+		+ label
+			font-size: 11px
+			color: #F3AAAA
+			text-align: left
 
-
+.letter__form_name
+	width: 240px
+.letter__form_tel
+	width: 260px
+	label
+		margin-left: 20px
 
 
 .footer
