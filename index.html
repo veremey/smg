@@ -439,12 +439,14 @@
 				<div class="mapin__letter_contant is_active">
 					<form class="js-validate">
 						<div class="letter__form_name">
-							<input type="text" name="name" class="letter__name" placeholder="Ваше имя" required><br>
+							<input type="text" name="username" class="letter__name" placeholder="Ваше имя" required><br>
 						</div>
 						<div class="letter__form_tel">
 							<input type="text" name="tel" class="letter__tel" placeholder="Ваш телефон" required><br>
 						</div>
-						<textarea name="" class="letter__text" cols="0" rows="0" placeholder="Ваше сообщение" ></textarea>
+						<div class="letter__form_text">
+							<textarea name="text_area" class="letter__text" cols="0" rows="0" placeholder="Ваше сообщение" required></textarea>
+						</div>
 						<input type="submit" class="btn btn__yellow " value="Отправить">
 					</form>
 				</div>

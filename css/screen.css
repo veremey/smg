@@ -252,9 +252,9 @@ a { text-decoration: none; }
 .letter__text:-moz-placeholder, .letter__text::-moz-placeholder { color: silver; opacity: 1; }
 .letter__text::-webkit-input-placeholder { color: silver; }
 
-.letter__form_name, .letter__form_tel { float: left; text-align: left; }
-.letter__form_name .has-error, .letter__form_tel .has-error { border-color: #f3aaaa; }
-.letter__form_name .has-error + label, .letter__form_tel .has-error + label { font-size: 11px; color: #f3aaaa; text-align: left; }
+.letter__form_name, .letter__form_tel, .letter__form_text { float: left; text-align: left; }
+.letter__form_name .has-error, .letter__form_tel .has-error, .letter__form_text .has-error { border-color: #f3aaaa; }
+.letter__form_name .has-error + label, .letter__form_tel .has-error + label, .letter__form_text .has-error + label { font-size: 11px; color: #f3aaaa; text-align: left; }
 
 .letter__form_name { width: 240px; }
 

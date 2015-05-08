@@ -1758,7 +1758,7 @@ $(document).ready(function() {
               email: true
             },
             tel: {
-              minlength: 2,
+              minlength: 5,
             },
             address: {
               minlength: 2
@@ -1769,6 +1769,9 @@ $(document).ready(function() {
             field: {
               required: true
             },
+            text_area:{
+              minlength: 4
+            }
             // fruit: {
             //   required: true
             // }
@@ -1791,13 +1794,18 @@ $(document).ready(function() {
             any: 'Заполните поле',
             company: 'Заполните поле',
             tel: {
-              required: '* введите Ваш терефон',
+              required: '* Введите Ваш терефон',
+              minlength: 'Минимум 5 символов'
             },
-            name: {
-              required: '* введите Ваше имя',
+            username: {
+              required: '* Введите Ваше имя',
             },
             message: {
               required: 'Заполните поле',
+              minlength: 'Заполните поле',
+            },
+            text_area: {
+              required: '* Заполните поле',
               minlength: 'Заполните поле'
             }
           }
