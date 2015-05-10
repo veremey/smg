@@ -8,10 +8,10 @@ head.ready(function() {
     $(this).parents().find('.mapin__letter_return').addClass('is_active');
 	});
 
-    $(".process__list li a").on("click", function(){
-      $(this).allParent().removeClass('.is_active');
-      $(this).parent().addClass("is_active");
-      preventDefault;
+    $(".proccess__click").on("click", function(){
+      $(this).siblings().removeClass('is_active');
+      $(this).addClass("is_active");
+      return false;
     });
 
 
@@ -56,10 +56,10 @@ function init () {
         zoom: 17
     });
 
-    document.getElementById('destroyButton').onclick = function () {
-        // Для уничтожения используется метод destroy.
-        myMap.destroy();
-    };
+    // document.getElementById('destroyButton').onclick = function () {
+    //     // Для уничтожения используется метод destroy.
+    //     myMap.destroy();
+    // };
 
 
 
@@ -1169,7 +1169,6 @@ function init () {
         }
       }
     }
-
     function initCustomCenter()
     {
       $('.custom_center').each(function()
@@ -1306,7 +1305,7 @@ function init () {
           if ($('.b-select_box').length) $("select.b-select_box").selectBox();
           initBuildForm();
         });
-      }
+      };
 
 
 

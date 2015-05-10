@@ -237,30 +237,32 @@ a
 		text-align: center
 	&__list
 		position: relative
+		width: 100%
+		height: 870px
+		overflow: hidden
 		li
 			position: relative
 			display: inline-block
-			width: 250px
+			// width: 250px
+			width: 320px
 			height: 105px
 			font-size: 15px
 			vertical-align: top
 		a
-			display: block
+			display: inline-block
 			position: relative
-			margin-top: 10px
-			height: 67px
 			color: #565656
 			+el
 		i
 			position: absolute
-			top: 3px
-			right: -50px
-			+s(w2)
+			top: 10px
+			right: 0
+			// +s(w2)
 	&__1,
 	&__5,
 	&__6
 		a
-			margin-right: 50px
+			padding: 5px 50px 5px 5px
 			text-align: right
 	&__2,
 	&__3,
@@ -269,9 +271,8 @@ a
 			padding-left: 50px
 		i
 			position: absolute
-			top: 13px
+			top: 5px
 			left: 0px
-			+s(w5)
 	&__1
 		top: 20px
 		left: 345px
@@ -287,9 +288,11 @@ a
 			position: absolute
 			top: 75px
 			left: 242px
+		&_pic
+			+s(w9)
 	&__2
 		top: 100px
-		left: 610px
+		left: 540px
 		&:before
 			content: ""
 			display: none
@@ -302,9 +305,11 @@ a
 			position: absolute
 			top: 60px
 			left: -35px
+		&_pic
+			+s(w1)
 	&__3
-		top: 366px
-		left: 430px
+		top: 367px
+		left: 291px
 		&:before
 			content: ""
 			display: none
@@ -317,9 +322,11 @@ a
 			position: absolute
 			top: 25px
 			left: -50px
+		&_pic
+			+s(w5)
 	&__4
-		top: 595px
-		left: -50px
+		top: 594px
+		left: -260px
 		&:before
 			content: ""
 			display: none
@@ -332,9 +339,11 @@ a
 			position: absolute
 			top: -38px
 			left: 15px
+		&_pic
+			+s(w7)
 	&__5
-		top: 500px
-		left: -810px
+		top: 394px
+		left: 202px
 		&:before
 			content: ""
 			display: none
@@ -347,9 +356,11 @@ a
 			position: absolute
 			top: -8px
 			left: 300px
+		&_pic
+			+s(w6)
 	&__6
 		top: 120px
-		left: 120px
+		left: -203px
 		&:before
 			content: ""
 			display: none
@@ -364,17 +375,21 @@ a
 			position: absolute
 			top: 35px
 			left: 300px
+		&_pic
+			+s(w06)
+			right: -20px!important
 	.is_active
 		position: relative
 		&:before
 			display: block
 		img
 			opacity: 1
-			+tr(all 1s)
+			+tr(all .6s)
 			-webkit-animation: none
 			-moz-animation: none
 			-o-animation: none
 			animation: none
+
 
 .pentagon
 	position: relative
@@ -382,12 +397,12 @@ a
 	height: 0px
 	img
 		position: absolute
-		animation: spin 2s linear infinite
 	.p1
 		left: 50%
 		margin-left: -244px
 		+tr(.5s)
 		opacity: 0
+		+rotate(0)
 	.p2
 		left: -477px
 		top: -115px
