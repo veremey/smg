@@ -222,13 +222,21 @@ a
 		background-color: #FFD739
 
 
+
+
+.process__cyrcle
+	width: 1200px
+	margin: 0 auto
+	position: relative
+	+clr
+
 .port
 	position: absolute
 	background-image: url("../img/pol1.png")
 	width: 435px
 	height: 442px
 	top: 93px
-	left: 412px
+	left: 344px
 	z-index: 300
 	+rotate(-8)
 
@@ -247,8 +255,9 @@ a
 		text-align: center
 	&__list
 		position: relative
-		width: 100%
+		width: 1200px
 		height: 870px
+		margin: 0 auto
 		overflow: hidden
 		li
 			position: relative
@@ -283,8 +292,6 @@ a
 				content: ""
 				position: absolute
 				top: -5px
-				left: 0
-				right: 0
 				width: 0
 				bottom: -18px
 				background-color: #FDF6DF
@@ -297,6 +304,7 @@ a
 			text-align: right
 			&:before
 				bottom: -15px
+				right: 0
 			i
 				position: absolute
 				top: 10px
@@ -306,13 +314,15 @@ a
 	&__4
 		a
 			padding: 0 10px 0 60px
+			&:before
+				left: 0
 		i
 			position: absolute
 			top: 5px
 			left: 10px
 	&__1
 		top: 20px
-		left: 345px
+		left: 270px
 		&:before
 			content: ""
 			display: none
@@ -329,7 +339,7 @@ a
 			+s(w9)
 	&__2
 		top: 99px
-		left: 634px
+		left: 560px
 		&:before
 			content: ""
 			display: none
@@ -346,7 +356,9 @@ a
 			+s(w1)
 	&__3
 		top: 366px
-		left: 474px
+		left: 401px
+		a
+			padding-right: 9px
 		&:before
 			content: ""
 			display: none
@@ -364,7 +376,7 @@ a
 			z-index: 10
 	&__4
 		top: 615px
-		left: 43px
+		left: -33px
 		&:before
 			content: ""
 			display: none
@@ -380,11 +392,9 @@ a
 		&_pic
 			+s(w7)
 			z-index: 10
-		a:hover::after
-			left: 96%!important
 	&__5
 		top: 500px
-		left: -797px
+		left: -872px
 		&:before
 			content: ""
 			display: none
@@ -401,7 +411,7 @@ a
 			+s(w6)
 	&__6
 		top: 120px
-		left: 122px
+		left: 45px
 		a
 			padding-right: 70px
 		&:before
@@ -435,11 +445,15 @@ a
 				+scale(-1)
 			&:before
 				width: 100%
+				left: 0
+				right: 0
 				+tr(.8s)
 		.process__list_container
 			height: auto
 			border: 2px solid #F3BE1E
-
+	&__4.is_active
+		a:after
+			left: 95%!important  //корректировка
 
 
 

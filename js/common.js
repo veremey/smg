@@ -38,7 +38,7 @@ head.ready(function() {
         "-webkit-transform" : "rotate(-8deg)",
          "transform" : "rotate(-8deg)",
          'top' : '85px',
-         'left' : '420px'
+         'left' : '345px'
       });
       return false;
     });
@@ -51,7 +51,7 @@ head.ready(function() {
         "-webkit-transform" : "rotate(55deg)",
          "transform" : "rotate(55deg)",
          'top' : '81px',
-         'left' : '439px'
+         'left' : '360px'
       });
       return false;
     });
@@ -65,7 +65,7 @@ head.ready(function() {
         "-webkit-transform" : "rotate(110deg)",
          "transform" : "rotate(110deg)",
          'top' : '111px',
-         'left' : '465px'
+         'left' : '390px'
       });
       return false;
     });
@@ -77,20 +77,19 @@ head.ready(function() {
         "-webkit-transform" : "rotate(173deg)",
          "transform" : "rotate(173deg)",
          'top' : '131px',
-         'left' : '468px'
+         'left' : '375px'
       });
       return false;
     });
 
 
-
     $(".process__5").hover(function(){
       $(this).parents().find('.port').css({
-        "-ms-transform" : "rotate(226deg)",
-        "-webkit-transform" : "rotate(226deg)",
-         "transform" : "rotate(226deg)",
-         'top' : '131px',
-         'left' : '437px'
+        "-ms-transform" : "rotate(231deg)",
+        "-webkit-transform" : "rotate(231deg)",
+         "transform" : "rotate(231deg)",
+         'top' : '135px',
+         'left' : '350px'
       });
       return false;
     });
@@ -103,7 +102,7 @@ head.ready(function() {
         "-webkit-transform" : "rotate(289deg)",
          "transform" : "rotate(289deg)",
          'top' : '111px',
-         'left' : '417px'
+         'left' : '335px'
       });
       return false;
     });
@@ -117,17 +116,17 @@ head.ready(function() {
 $(document).ready(function() {
 
    $(document).on('click', '#portf', function () {
-        $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 1000 );
+        $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 2000 );
         return false;
     });
 
    $(document).on('click', '#cont', function () {
-        $('html, body').animate({ scrollTop: $('#mapin').offset().top }, 1000 );
+        $('html, body').animate({ scrollTop: $('#mapin').offset().top }, 3000 );
         return false;
     });
 
    $(document).on('click', '#write', function () {
-        $('html, body').animate({ scrollTop: $('#mapin__contakt').offset().top }, 1000 );
+        $('html, body').animate({ scrollTop: $('#mapin__contakt').offset().top }, 3000 );
         return false;
     });
 
