@@ -17,6 +17,90 @@ head.ready(function() {
     $(".proccess__click").on("click", function(){
       $(this).siblings().removeClass('is_active');
       $(this).addClass("is_active");
+      $(this).parents().find('.port').css({
+        '-moz-transition' : 'all 1s',
+        '-o-transition' : 'all 1s',
+        '-webkit-transition' : 'all 1s;',
+        'transition' : 'all 1s',
+      });
+      return false;
+    });
+
+
+
+
+    $(".process__1").on("click", function(){
+      $(this).parents().find('.port').css({
+        "-ms-transform" : "rotate(-8deg)",
+        "-webkit-transform" : "rotate(-8deg)",
+         "transform" : "rotate(-8deg)",
+         'top' : '85px',
+         'left' : '420px'
+      });
+      return false;
+    });
+
+
+
+    $(".process__2").on("click", function(){
+      $(this).parents().find('.port').css({
+        "-ms-transform" : "rotate(55deg)",
+        "-webkit-transform" : "rotate(55deg)",
+         "transform" : "rotate(55deg)",
+         'top' : '81px',
+         'left' : '439px'
+      });
+      return false;
+    });
+
+
+
+
+    $(".process__3").on("click", function(){
+      $(this).parents().find('.port').css({
+        "-ms-transform" : "rotate(110deg)",
+        "-webkit-transform" : "rotate(110deg)",
+         "transform" : "rotate(110deg)",
+         'top' : '111px',
+         'left' : '465px'
+      });
+      return false;
+    });
+
+
+    $(".process__4").on("click", function(){
+      $(this).parents().find('.port').css({
+        "-ms-transform" : "rotate(173deg)",
+        "-webkit-transform" : "rotate(173deg)",
+         "transform" : "rotate(173deg)",
+         'top' : '131px',
+         'left' : '468px'
+      });
+      return false;
+    });
+
+
+
+    $(".process__5").on("click", function(){
+      $(this).parents().find('.port').css({
+        "-ms-transform" : "rotate(226deg)",
+        "-webkit-transform" : "rotate(226deg)",
+         "transform" : "rotate(226deg)",
+         'left' : '437px'
+      });
+      return false;
+    });
+
+
+
+    $(".process__6").on("click", function(){
+      $(this).parents().find('.port').css({
+        "-ms-transform" : "rotate(289deg)",
+        "-webkit-transform" : "rotate(289deg)",
+         "transform" : "rotate(289deg)",
+         'top' : '111px',
+         'left' : '417px'
+      });
       return false;
     });
 

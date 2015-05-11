@@ -117,13 +117,13 @@ a { text-decoration: none; }
 .process__5_pic { background: url('../img/icons-s08d53691d5.png') 0 -2142px no-repeat; width: 35px; height: 34px; }
 .process__6 { top: 120px; left: -203px; }
 .process__6:before { content: ""; display: none; position: absolute; top: 20px; left: 278px; z-index: 300; width: 50px; height: 30px; background: url('../img/icons-s08d53691d5.png') 0 -223px no-repeat; width: 25px; height: 48px; }
-.process__6_num { position: absolute; top: 35px; left: 300px; }
+.process__6_num { position: absolute; top: 35px; left: 308px; }
 .process__6_pic { background: url('../img/icons-s08d53691d5.png') 0 -1897px no-repeat; width: 54px; height: 29px; right: -20px !important; }
 .process .is_active { position: relative; }
 .process .is_active:before { display: block; }
 .process .is_active img { opacity: 1; -moz-transition: all 1s; -o-transition: all 1s; -webkit-transition: all 1s; transition: all 1s; -webkit-animation: none; -moz-animation: none; -o-animation: none; animation: none; }
 
-.pentagon { position: relative; width: 500px; height: 500px; }
+.pentagon { position: relative; width: 0px; height: 0px; }
 .pentagon img { position: absolute; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .pentagon .p1 { left: 71px; top: 22px; -ms-transform: rotate(-8deg); -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
 .pentagon .p2 { left: -426px; top: -60px; -ms-transform: rotate(53deg); -webkit-transform: rotate(53deg); transform: rotate(53deg); }
