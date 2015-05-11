@@ -10,11 +10,14 @@ head.ready(function() {
 	});
 
 
+
+
+
 // Крутилка
 
 
 
-    $(".proccess__click").on("click", function(){
+    $(".proccess__click").hover(function(){
       $(this).siblings().removeClass('is_active');
       $(this).addClass("is_active");
       $(this).parents().find('.port').css({
@@ -29,7 +32,7 @@ head.ready(function() {
 
 
 
-    $(".process__1").on("click", function(){
+    $(".process__1").hover(function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(-8deg)",
         "-webkit-transform" : "rotate(-8deg)",
@@ -42,7 +45,7 @@ head.ready(function() {
 
 
 
-    $(".process__2").on("click", function(){
+    $(".process__2").hover(function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(55deg)",
         "-webkit-transform" : "rotate(55deg)",
@@ -56,7 +59,7 @@ head.ready(function() {
 
 
 
-    $(".process__3").on("click", function(){
+    $(".process__3").hover(function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(110deg)",
         "-webkit-transform" : "rotate(110deg)",
@@ -68,7 +71,7 @@ head.ready(function() {
     });
 
 
-    $(".process__4").on("click", function(){
+    $(".process__4").hover(function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(173deg)",
         "-webkit-transform" : "rotate(173deg)",
@@ -81,11 +84,12 @@ head.ready(function() {
 
 
 
-    $(".process__5").on("click", function(){
+    $(".process__5").hover(function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(226deg)",
         "-webkit-transform" : "rotate(226deg)",
          "transform" : "rotate(226deg)",
+         'top' : '131px',
          'left' : '437px'
       });
       return false;
@@ -93,7 +97,7 @@ head.ready(function() {
 
 
 
-    $(".process__6").on("click", function(){
+    $(".process__6").hover(function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(289deg)",
         "-webkit-transform" : "rotate(289deg)",
@@ -105,7 +109,7 @@ head.ready(function() {
     });
 
 
-
+// Крутилка  END
 
 
 // *********  Плавное перелистывание стр ****

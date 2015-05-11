@@ -254,7 +254,7 @@ a
 			position: relative
 			display: inline-block
 			// width: 250px
-			width: 320px
+			// width: 320px
 			height: 105px
 			font-size: 15px
 			vertical-align: top
@@ -262,27 +262,51 @@ a
 			display: inline-block
 			position: relative
 			color: #565656
+			z-index: 5
 			+el
-		i
-			position: absolute
-			top: 10px
-			right: 0
-			// +s(w2)
+			&:hover
+				&:after
+					+tr(.5s)
+					left: 93%
+					+scale(-1)
+			&:after
+				content: ""
+				position: absolute
+				top: -5px
+				left: 0
+				+s(dart)
+				z-index: 4
+			&:before
+				content: ""
+				position: absolute
+				top: -5px
+				left: 0
+				right: 0
+				width: 100%
+				bottom: -18px
+				background-color: #FDF6DF
+				z-index: -1
 	&__1,
 	&__5,
 	&__6
 		a
-			padding: 5px 50px 5px 5px
+			padding: 5px 60px 0px 10px
 			text-align: right
+			&:before
+				bottom: -15px
+			i
+				position: absolute
+				top: 10px
+				right: 8px
 	&__2,
 	&__3,
 	&__4
 		a
-			padding-left: 50px
+			padding: 0 10px 0 60px
 		i
 			position: absolute
 			top: 5px
-			left: 0px
+			left: 10px
 	&__1
 		top: 20px
 		left: 345px
@@ -301,8 +325,8 @@ a
 		&_pic
 			+s(w9)
 	&__2
-		top: 100px
-		left: 540px
+		top: 99px
+		left: 634px
 		&:before
 			content: ""
 			display: none
@@ -318,8 +342,8 @@ a
 		&_pic
 			+s(w1)
 	&__3
-		top: 367px
-		left: 291px
+		top: 366px
+		left: 474px
 		&:before
 			content: ""
 			display: none
@@ -334,26 +358,30 @@ a
 			left: -58px
 		&_pic
 			+s(w5)
+			z-index: 10
 	&__4
-		top: 594px
-		left: -260px
+		top: 615px
+		left: 43px
 		&:before
 			content: ""
 			display: none
 			position: absolute
-			top: -29px
+			top: -49px
 			left: -14px
 			z-index: 300
 			+s(bird_4)
 		&_num
 			position: absolute
-			top: -50px
+			top: -70px
 			left: 0px
 		&_pic
 			+s(w7)
+			z-index: 10
+		a:hover::after
+			left: 96%
 	&__5
-		top: 394px
-		left: 202px
+		top: 500px
+		left: -797px
 		&:before
 			content: ""
 			display: none
@@ -370,7 +398,9 @@ a
 			+s(w6)
 	&__6
 		top: 120px
-		left: -203px
+		left: 121px
+		a
+			padding-right: 70px
 		&:before
 			content: ""
 			display: none
@@ -387,7 +417,6 @@ a
 			left: 308px
 		&_pic
 			+s(w06)
-			right: -20px!important
 	.is_active
 		position: relative
 		&:before
@@ -395,10 +424,6 @@ a
 		img
 			opacity: 1
 			+tr(all 1s)
-			-webkit-animation: none
-			-moz-animation: none
-			-o-animation: none
-			animation: none
 
 
 .pentagon
@@ -435,50 +460,7 @@ a
 		+rotate(288)
 
 
-@keyframes spin
-	from
-		transform: rotate(0deg)
-	to
-		transform: rotate(360deg)
 
-
-
-
-
-
-
-
-
-
-
-
-// .process__6 a:after
-// 	display: block
-// 	position: absolute
-// 	top: 0px
-// 	left: 20px
-// 	z-index: 300
-// 	+s(bird)
-
-
-
-// .pentagon
-// 	position: relative
-// 	width: 54px
-// 	border-width: 50px 18px 0
-// 	border-style: solid
-// 	border-color: red transparent
-
-// .pentagon:before
-// 	content: ""
-// 	position: absolute
-// 	height: 0
-// 	width: 0
-// 	top: -85px
-// 	left: -18px
-// 	border-width: 0 45px 35px
-// 	border-style: solid
-// 	border-color: transparent transparent red
 
 
 
