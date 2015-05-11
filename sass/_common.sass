@@ -253,8 +253,6 @@ a
 		li
 			position: relative
 			display: inline-block
-			// width: 250px
-			// width: 320px
 			height: 105px
 			font-size: 15px
 			vertical-align: top
@@ -264,25 +262,30 @@ a
 			color: #565656
 			z-index: 5
 			+el
-			&:hover
-				&:after
-					+tr(.5s)
-					left: 93%
-					+scale(-1)
+			// &:hover
+			// 	&:after
+			// 		+tr(.8s)
+			// 		left: 93%
+			// 		+s(dart)
+			// 		+scale(-1)
+			// 	&:before
+			// 		width: 100%
+			// 		+tr(.8s)
 			&:after
 				content: ""
 				position: absolute
 				top: -5px
 				left: 0
-				+s(dart)
 				z-index: 4
+				+s(dart)
+				width: 0
 			&:before
 				content: ""
 				position: absolute
 				top: -5px
 				left: 0
 				right: 0
-				width: 100%
+				width: 0
 				bottom: -18px
 				background-color: #FDF6DF
 				z-index: -1
@@ -378,7 +381,7 @@ a
 			+s(w7)
 			z-index: 10
 		a:hover::after
-			left: 96%
+			left: 96%!important
 	&__5
 		top: 500px
 		left: -797px
@@ -398,7 +401,7 @@ a
 			+s(w6)
 	&__6
 		top: 120px
-		left: 121px
+		left: 122px
 		a
 			padding-right: 70px
 		&:before
@@ -424,6 +427,39 @@ a
 		img
 			opacity: 1
 			+tr(all 1s)
+		a
+			&:after
+				+tr(.8s)
+				left: 93%
+				+s(dart)
+				+scale(-1)
+			&:before
+				width: 100%
+				+tr(.8s)
+		.process__list_container
+			height: auto
+			border: 2px solid #F3BE1E
+
+
+
+
+
+.process__list_container
+	position: absolute
+	top: 80px
+	left: 0
+	right: 0
+	height: 0
+	border: none
+	z-index: 300
+	overflow: hidden
+	p
+		margin: 10px
+		font-size: 13px
+		line-height: 18px
+		color: #565656
+		+el
+
 
 
 .pentagon
