@@ -1,4 +1,5 @@
 head.ready(function() {
+    // письмо в конце страници
 
     $(".mapin__letter").hide();
   $(".js__write").on("click", function(){
@@ -8,11 +9,19 @@ head.ready(function() {
     $(this).parents().find('.mapin__letter_return').addClass('is_active');
 	});
 
+
+// Крутилка
+
+
+
     $(".proccess__click").on("click", function(){
       $(this).siblings().removeClass('is_active');
       $(this).addClass("is_active");
       return false;
     });
+
+
+
 
 
 // *********  Плавное перелистывание стр ****
@@ -1677,6 +1686,11 @@ function init () {
 
 
 
+
+
+
+
+
 // ***** слайдер проворачивающий экземпляры сайтов  ****
 
 
@@ -1732,7 +1746,16 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+
 //  FORM VALIDATION
+
+
+
+
+
 $(document).ready(function() {
     function validate() {
     $('.js-validate').each(function(){

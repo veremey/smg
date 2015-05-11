@@ -100,8 +100,8 @@ a
 	&__menu
 		font-size: 0
 		float: left
-		margin-top: 30px
-		margin-left: 100px
+		margin-top: 27px
+		margin-left: 105px
 		li
 			display: inline-block
 			&:hover
@@ -115,7 +115,7 @@ a
 			a
 				position: relative
 				display: block
-				padding: 0 10px
+				padding: 0 12px
 				line-height: 36px
 				font-size: 12px
 				font-family: Arial, sans-serif
@@ -140,7 +140,7 @@ a
 	&__contact
 		width: 175px
 		float: right
-		margin-top: 27px
+		margin-top: 21px
 		+clr
 		&_tel
 			float: right
@@ -180,7 +180,8 @@ a
 		z-index: 1
 	&__wrap
 		width: 700px
-		margin: 0  auto
+		margin: 0 auto
+		+clr
 	&__list
 		width: 260px
 		float: left
@@ -201,11 +202,12 @@ a
 	&__container
 		position: relative
 		z-index: 4
-		padding-top: 175px
+		padding-top: 225px
 .big__title
 	position: relative
 	text-align: center
 	font-size: 46px
+	line-height: 55px
 	color: #0e1314
 	margin: 50px 30px
 	text-transform: uppercase
@@ -220,7 +222,15 @@ a
 		background-color: #FFD739
 
 
-
+.port
+	position: absolute
+	background-image: url("../img/pol1.png")
+	width: 435px
+	height: 442px
+	top: 93px
+	left: 412px
+	z-index: 300
+	+rotate(-8)
 
 
 .process
@@ -304,7 +314,7 @@ a
 		&_num
 			position: absolute
 			top: 60px
-			left: -35px
+			left: -50px
 		&_pic
 			+s(w1)
 	&__3
@@ -320,8 +330,8 @@ a
 			+s(bird_3)
 		&_num
 			position: absolute
-			top: 25px
-			left: -50px
+			top: 20px
+			left: -58px
 		&_pic
 			+s(w5)
 	&__4
@@ -337,8 +347,8 @@ a
 			+s(bird_4)
 		&_num
 			position: absolute
-			top: -38px
-			left: 15px
+			top: -50px
+			left: 0px
 		&_pic
 			+s(w7)
 	&__5
@@ -384,7 +394,7 @@ a
 			display: block
 		img
 			opacity: 1
-			+tr(all .6s)
+			+tr(all 1s)
 			-webkit-animation: none
 			-moz-animation: none
 			-o-animation: none
@@ -393,46 +403,36 @@ a
 
 .pentagon
 	position: relative
-	width: 0px
-	height: 0px
+	width: 500px
+	height: 500px
 	img
 		position: absolute
+		+opacity(0)
+		// +tr(.5s)
 	.p1
-		left: 50%
-		margin-left: -244px
-		+tr(.5s)
-		opacity: 0
-		+rotate(0)
+		left: 71px
+		top: 22px
+		+rotate(-8)
 	.p2
-		left: -477px
-		top: -115px
-		+rotate(65)
-		+tr(.5s)
-		opacity: 0
+		left: -426px
+		top: -60px
+		+rotate(53)
 	.p3
-		left: -513px
-		top: -359px
-		+rotate(123)
-		+tr(.5s)
-		opacity: 0
+		left: -470px
+		top: -304px
+		+rotate(112)
 	.p4
-		left: -278px
-		top: -539px
-		+rotate(182)
-		+tr(.5s)
-		opacity: 0
+		left: -265px
+		top: -504px
+		+rotate(170)
 	.p5
-		left: -181px
-		top: -460px
-		+rotate(223)
-		+tr(.5s)
-		opacity: 0
+		left: 232px
+		top: -408px
+		+rotate(232)
 	.p6
-		left: 235px
-		top: -187px
-		+rotate(297)
-		+tr(.5s)
-		opacity: 0
+		left: 290px
+		top: -169px
+		+rotate(288)
 
 
 @keyframes spin
