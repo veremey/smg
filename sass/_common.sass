@@ -239,24 +239,24 @@ a
 	left: 344px
 	z-index: 300
 	+rotate(-8)
-
-
 .process
 	position: relative
-	height: 875px
+	height: 775px
+	margin-top: -50px
 	background-color: #FFF
+	padding-top: 100px
 	&__img
 		position: absolute
 		width: 650px
 		height: 610px
-		top: 30px
+		top: 130px
 		left: 50%
 		margin-left: -323px
 		text-align: center
 	&__list
 		position: relative
 		width: 1200px
-		height: 870px
+		height: 770px
 		margin: 0 auto
 		overflow: hidden
 		li
@@ -271,15 +271,58 @@ a
 			color: #565656
 			z-index: 5
 			+el
-			// &:hover
-			// 	&:after
-			// 		+tr(.8s)
-			// 		left: 93%
-			// 		+s(dart)
-			// 		+scale(-1)
-			// 	&:before
-			// 		width: 100%
-			// 		+tr(.8s)
+	&__1,
+	&__5,
+	&__6
+		a
+			padding: 5px 60px 0px 10px
+			text-align: right
+			&:after
+				content: ""
+				position: absolute
+				top: -5px
+				right: 0
+				z-index: 4
+				+s(dart)
+				+scale(0)
+				width: 0
+			&:before
+				content: ""
+				position: absolute
+				top: -5px
+				right: 0
+				width: 0
+				bottom: -15px
+				background-color: #FDF6DF
+				z-index: -1
+			i
+				position: absolute
+				top: 10px
+				right: 8px
+	&__1.is_active,
+	&__5.is_active,
+	&__6.is_active
+		position: relative
+		&:before
+			display: block
+		img
+			opacity: 1
+			+tr(all 1s)
+		a
+			&:after
+				+tr(.8s)
+				right: 93%
+				+scale(1)
+				+s(dart)
+			&:before
+				width: 100%
+				right: 0
+				+tr(.8s)
+	&__2,
+	&__3,
+	&__4
+		a
+			padding: 0 10px 0 60px
 			&:after
 				content: ""
 				position: absolute
@@ -296,30 +339,30 @@ a
 				bottom: -18px
 				background-color: #FDF6DF
 				z-index: -1
-	&__1,
-	&__5,
-	&__6
-		a
-			padding: 5px 60px 0px 10px
-			text-align: right
-			&:before
-				bottom: -15px
-				right: 0
-			i
-				position: absolute
-				top: 10px
-				right: 8px
-	&__2,
-	&__3,
-	&__4
-		a
-			padding: 0 10px 0 60px
-			&:before
-				left: 0
 		i
 			position: absolute
 			top: 5px
 			left: 10px
+	&__2.is_active,
+	&__3.is_active,
+	&__4.is_active
+		position: relative
+		&:before
+			display: block
+		img
+			opacity: 1
+			+tr(all 1s)
+		a
+			&:after
+				left: 93%
+				+s(dart)
+				+scale(-1)
+				+tr(.8s)
+			&:before
+				width: 100%
+				left: 0
+				right: 0
+				+tr(.8s)
 	&__1
 		top: 20px
 		left: 270px
@@ -432,32 +475,28 @@ a
 			+s(w06)
 	.is_active
 		position: relative
-		&:before
-			display: block
-		img
-			opacity: 1
-			+tr(all 1s)
-		a
-			&:after
-				+tr(.8s)
-				left: 93%
-				+s(dart)
-				+scale(-1)
-			&:before
-				width: 100%
-				left: 0
-				right: 0
-				+tr(.8s)
+		// &:before
+		// 	display: block
+		// img
+		// 	opacity: 1
+		// 	+tr(all 1s)
+		// a
+		// 	&:after
+		// 		+tr(.8s)
+		// 		left: 93%
+		// 		+s(dart)
+		// 		+scale(-1)
+		// 	&:before
+		// 		width: 100%
+		// 		left: 0
+		// 		right: 0
+		// 		+tr(.8s)
 		.process__list_container
 			height: auto
 			border: 2px solid #F3BE1E
 	&__4.is_active
 		a:after
 			left: 95%!important  //корректировка
-
-
-
-
 .process__list_container
 	position: absolute
 	top: 80px
@@ -473,9 +512,6 @@ a
 		line-height: 18px
 		color: #565656
 		+el
-
-
-
 .pentagon
 	position: relative
 	width: 0px
@@ -508,14 +544,6 @@ a
 		left: 290px
 		top: -169px
 		+rotate(288)
-
-
-
-
-
-
-
-
 
 
 
@@ -608,7 +636,7 @@ a
 		&_center
 			width: 300px
 			height: auto
-			text-align: left
+			text-align: center
 			+vcenter
 			h3
 				text-transform: uppercase
@@ -751,6 +779,7 @@ a
 		height: 160px
 		overflow: hidden
 		+gray
+		+clr
 		&:hover
 			+gray-zero
 		&_img
@@ -758,11 +787,13 @@ a
 			width: 200px
 			height: 160px
 			left: 50%
-			top: 50%
+			top: 25%
 			margin-top: -40px
 			line-height: 160px
 			margin-left: -100px
 			text-align: center
+			img
+				vertical-align: middle
 .cycle__prev
 	position: absolute
 	top: 62%
@@ -811,6 +842,7 @@ a
 		&:hover
 			border-bottom: 1px solid transparent
 	&__content
+		width: 860px
 		p
 			font-size: 13px
 			color: #363636

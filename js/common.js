@@ -17,14 +17,14 @@ head.ready(function() {
 
 
 
-    $(".proccess__click").hover(function(){
+    $(".proccess__click").on("click", (function(){
       $(this).siblings().removeClass('is_active');
       $(this).addClass("is_active");
       $(this).parents().find('.port').css({
         '-moz-transition' : 'all 1s',
         '-o-transition' : 'all 1s',
         '-webkit-transition' : 'all 1s;',
-        'transition' : 'all 1s',
+        'transition' : 'all 1s'
       });
       return false;
     });
@@ -32,7 +32,8 @@ head.ready(function() {
 
 
 
-    $(".process__1").hover(function(){
+
+    $(".process__1").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(-8deg)",
         "-webkit-transform" : "rotate(-8deg)",
@@ -45,7 +46,7 @@ head.ready(function() {
 
 
 
-    $(".process__2").hover(function(){
+    $(".process__2").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(55deg)",
         "-webkit-transform" : "rotate(55deg)",
@@ -59,7 +60,7 @@ head.ready(function() {
 
 
 
-    $(".process__3").hover(function(){
+    $(".process__3").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(110deg)",
         "-webkit-transform" : "rotate(110deg)",
@@ -71,7 +72,7 @@ head.ready(function() {
     });
 
 
-    $(".process__4").hover(function(){
+    $(".process__4").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(173deg)",
         "-webkit-transform" : "rotate(173deg)",
@@ -83,7 +84,7 @@ head.ready(function() {
     });
 
 
-    $(".process__5").hover(function(){
+    $(".process__5").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(231deg)",
         "-webkit-transform" : "rotate(231deg)",
@@ -96,7 +97,7 @@ head.ready(function() {
 
 
 
-    $(".process__6").hover(function(){
+    $(".process__6").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(289deg)",
         "-webkit-transform" : "rotate(289deg)",
