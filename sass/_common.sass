@@ -39,6 +39,7 @@ a
 	min-height: 100%
 	height: auto!important
 	height: 100%
+	margin: 0 auto
 	+clr
 .l_center
 	position: relative
@@ -95,8 +96,8 @@ a
 	z-index: 9999
 	height: 97px
 	+clr
-	+r(1140)
-		position: relative
+	// +r(1140)
+	// 	position: relative
 	&__menu
 		font-size: 0
 		float: left
@@ -232,7 +233,7 @@ a
 
 .port
 	position: absolute
-	background-image: url("../img/pol1.png")
+	background-image: url("../img/pol1_1.png")
 	width: 435px
 	height: 442px
 	top: 93px
@@ -476,22 +477,6 @@ a
 			+s(w06)
 	.is_active
 		position: relative
-		// &:before
-		// 	display: block
-		// img
-		// 	opacity: 1
-		// 	+tr(all 1s)
-		// a
-		// 	&:after
-		// 		+tr(.8s)
-		// 		left: 93%
-		// 		+s(dart)
-		// 		+scale(-1)
-		// 	&:before
-		// 		width: 100%
-		// 		left: 0
-		// 		right: 0
-		// 		+tr(.8s)
 		.process__list_container
 			height: auto
 			border: 2px solid #F3BE1E
@@ -564,7 +549,7 @@ a
 		&:hover
 			.portfolio__big_mask
 				opacity: 1
-				+tr(.3s)
+				+tr(.5s)
 				left: 0
 		&_wrap
 			position: absolute
@@ -628,7 +613,7 @@ a
 			.bg__gold,
 			.bg__aqua
 				opacity: 1
-				+tr(.3s)
+				+tr(.5s)
 				left: 0
 		&_mask
 			opacity: 0
@@ -679,7 +664,7 @@ a
 			.bg__gold,
 			.bg__aqua
 				opacity: 1
-				+tr(.3s)
+				+tr(.5s)
 				left: 0
 		&_wrap
 			position: absolute
@@ -712,7 +697,7 @@ a
 			.bg__gold,
 			.bg__aqua
 				opacity: 1
-				+tr(.3s)
+				+tr(.5s)
 				left: 0
 		&_wrap
 			position: absolute
