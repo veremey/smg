@@ -92,7 +92,7 @@ a { text-decoration: none; }
 .process { position: relative; height: 775px; margin-top: -50px; background-color: white; padding-top: 100px; }
 .process__img { position: absolute; width: 650px; height: 610px; top: 130px; left: 50%; margin-left: -323px; text-align: center; }
 .process__list { position: relative; width: 1200px; height: 770px; margin: 0 auto; overflow: hidden; }
-.process__list li { position: relative; display: inline-block; height: 105px; font-size: 15px; vertical-align: top; }
+.process__list li { position: relative; display: inline-block; height: 105px; font-size: 15px; vertical-align: top; z-index: 99; }
 .process__list a { display: inline-block; position: relative; color: #565656; z-index: 5; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
 .process__1 a, .process__5 a, .process__6 a { padding: 5px 60px 0px 10px; text-align: right; }
 .process__1 a:after, .process__5 a:after, .process__6 a:after { content: ""; position: absolute; top: -5px; right: 0; z-index: 4; background: url('../img/icons-sf28aa76353.png') 0 -393px no-repeat; width: 15px; height: 67px; -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); width: 0; }

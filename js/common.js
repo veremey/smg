@@ -27,7 +27,7 @@ head.ready(function() {
         'transition' : 'all 1s'
       });
       return false;
-    });
+    }));
 
 
 
@@ -42,7 +42,7 @@ head.ready(function() {
          'left' : '345px'
       });
       return false;
-    });
+    }));
 
 
 
@@ -55,7 +55,7 @@ head.ready(function() {
          'left' : '360px'
       });
       return false;
-    });
+    }));
 
 
 
@@ -69,7 +69,7 @@ head.ready(function() {
          'left' : '390px'
       });
       return false;
-    });
+    }));
 
 
     $(".process__4").on("click", (function(){
@@ -81,7 +81,7 @@ head.ready(function() {
          'left' : '375px'
       });
       return false;
-    });
+    }));
 
 
     $(".process__5").on("click", (function(){
@@ -93,7 +93,7 @@ head.ready(function() {
          'left' : '350px'
       });
       return false;
-    });
+    }));
 
 
 
@@ -106,7 +106,7 @@ head.ready(function() {
          'left' : '335px'
       });
       return false;
-    });
+    }));
 
 
 // Крутилка  END
