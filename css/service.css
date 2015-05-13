@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'gray'.
-        on line 25 of D:/__github/smg/sass/service.sass, in `gray'
-        from line 25 of D:/__github/smg/sass/service.sass
+        on line 25 of D:\__github\smg\sass\service.sass, in `gray'
+        from line 25 of D:\__github\smg\sass\service.sass
 
 Backtrace:
-D:/__github/smg/sass/service.sass:25:in `gray'
-D:/__github/smg/sass/service.sass:25
+D:\__github\smg\sass\service.sass:25:in `gray'
+D:\__github\smg\sass\service.sass:25
 c:/Program Files (x86)/Prepros/gems/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 c:/Program Files (x86)/Prepros/gems/gems/sass-3.3.8/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Program Files (x86)/Prepros/gems/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
@@ -100,4 +100,4 @@ c:/Program Files (x86)/Prepros/bin/gems.rb:17:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'gray'.\A         on line 25 of D:/__github/smg/sass/service.sass, in `gray'\A         from line 25 of D:/__github/smg/sass/service.sass"; }
+  content: "Syntax error: Undefined mixin 'gray'.\A         on line 25 of D:\__github\smg\sass\service.sass, in `gray'\A         from line 25 of D:\__github\smg\sass\service.sass"; }
