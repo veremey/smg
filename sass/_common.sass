@@ -26,6 +26,8 @@ body
 	font-size: 12px
 	line-height: 1.4
 	min-width: 1200px
+	width: 100%
+	background-color: #000
 
 
 .clear
@@ -37,9 +39,10 @@ a
 .out
 	position: relative
 	min-height: 100%
-	height: auto!important
 	height: 100%
+	height: auto!important
 	margin: 0 auto
+	background-color: #FFF
 	+clr
 .l_center
 	position: relative
@@ -155,6 +158,7 @@ a
 			font-size: 13px
 			+el
 	.l_center
+		position: relative
 		left: 50%
 		margin-left: -500px
 .logo
@@ -480,6 +484,8 @@ a
 		.process__list_container
 			height: auto
 			border: 2px solid #F3BE1E
+			+opacity(1)
+			+tr(opacity .8s) //Для работи нужна конкретно заданная высота
 	&__4.is_active
 		a:after
 			left: 95%!important  //корректировка
@@ -492,6 +498,7 @@ a
 	border: none
 	z-index: 300
 	overflow: hidden
+	+opacity(0)
 	p
 		margin: 10px
 		font-size: 13px
@@ -754,7 +761,12 @@ a
 
 .client
 	position: relative
+	height: 615px
+	padding-top: 1px
 	+clr
+	.big__title
+		margin-top: 80px
+		margin-bottom: 95px
 	&__slider
 		width: 1000px //940
 		+clr
@@ -799,10 +811,11 @@ a
 	+clr
 	.big__title
 		color: #FFF
+		margin: 85px 30px 90px
 	&__item
 		position: relative
 		background-color: #FFF
-		padding: 30px 70px 40px
+		padding: 25px 70px 40px
 		+clr
 	img
 		float: left
