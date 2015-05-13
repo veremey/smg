@@ -10,6 +10,13 @@ head.ready(function() {
 	});
 
 
+// чтобы меню при скроле вело себя как при position: relative
+
+$(document).scroll(function(){
+    var scr = 0 - $(this).scrollLeft();
+    $('.header').css("left", scr);
+  });
+
 
 
 

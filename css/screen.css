@@ -63,7 +63,7 @@ a { text-decoration: none; }
 .header__contact:after { content: " "; display: table; clear: both; }
 .header__contact_tel { float: right; color: white; text-transform: uppercase; font-size: 20px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
 .header__contact_mail { float: right; color: #ffd739; font-size: 13px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
-.header .l_center { position: relative; left: 50%; margin-left: -500px; }
+.header .l_center { position: relative; }
 
 .logo { float: left; margin: 20px 0; background: url('../img/icons-sf28aa76353.png') 0 -1247px no-repeat; width: 162px; height: 57px; }
 .logo h1 { font: 0/0 a; text-shadow: none; color: transparent; }
