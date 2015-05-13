@@ -802,6 +802,20 @@ a
 	top: 62%
 	right: -30px
 	+s(next)
+.setka__left,
+.setka__right
+	position: absolute
+	top: -30px
+	background-image: url("../img/setka.png")
+	width: 229px
+	height: 545px
+.setka__left
+	left: 0
+.setka__right
+	right: 0
+	background-image: url("../img/setka_r.png")
+	width: 329px
+	height: 610px
 
 
 .comment
@@ -891,10 +905,10 @@ a
 		background-color: #FFF
 		z-index: 4
 		.btn
-			width: 100%
+			width: 240px
 	&__item
 		position: relative
-		margin-bottom: 50px
+		margin-bottom: 40px
 		margin-left: 60px
 		.home
 			position: absolute
@@ -945,6 +959,7 @@ a
 			text-align: center
 			.btn
 				margin: 30px auto
+				width: 240px
 		&_return
 			display: none
 			background-color: #FFF
@@ -991,11 +1006,15 @@ a
 .letter__form_name,
 .letter__form_tel,
 .letter__form_text
+	position: relative
 	float: left
 	text-align: left
 	.has-error
 		border-color: #f3aaaa
 		+ label
+			position: absolute
+			bottom: -15px
+			left: 1px
 			font-size: 11px
 			color: #F3AAAA
 			text-align: left
