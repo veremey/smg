@@ -10,14 +10,6 @@ head.ready(function() {
 	});
 
 
-// чтобы меню при скроле вело себя как при position: relative
-
-$(document).scroll(function(){
-    var scr = 0 - $(this).scrollLeft();
-    $('.header').css("left", scr);
-  });
-
-
 
 
 // Крутилка
@@ -332,6 +324,13 @@ $(document).ready(function() {
 //  end FORM VALIDATION
 
 
-// waves
+
+
+// чтобы меню при скроле вело себя как при position: relative
+
+$(document).scroll(function(){
+    var scr = 0 - $(this).scrollLeft();
+    $('.header').css("left", scr);
+  });
 
 
