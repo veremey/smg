@@ -24,7 +24,7 @@ head.ready(function() {
         '-o-transition' : 'all 1s',
         '-webkit-transition' : 'all 1s;',
         'transition' : 'all 1s',
-        'background-image' : 'url(/img/pol1_1.png)'
+        'background-image' : 'url(../img/pol1_1.png)'
       });
       return false;
     }));
@@ -40,7 +40,7 @@ head.ready(function() {
          "transform" : "rotate(-8deg)",
          'top' : '85px',
          'left' : '345px',
-         'background-image' : 'url(/img/pol1_1.png)'
+         'background-image' : 'url(../img/pol1_1.png)'
       });
       return false;
     }));
@@ -54,7 +54,7 @@ head.ready(function() {
          "transform" : "rotate(55deg)",
          'top' : '81px',
          'left' : '360px',
-         'background-image' : 'url(/img/pol1_2.png)'
+         'background-image' : 'url(../img/pol1_2.png)'
       });
       return false;
     }));
@@ -69,7 +69,7 @@ head.ready(function() {
          "transform" : "rotate(110deg)",
          'top' : '111px',
          'left' : '390px',
-         'background-image' : 'url(/img/pol1_3.png)'
+         'background-image' : 'url(../img/pol1_3.png)'
       });
       return false;
     }));
@@ -82,7 +82,7 @@ head.ready(function() {
          "transform" : "rotate(173deg)",
          'top' : '131px',
          'left' : '375px',
-         'background-image' : 'url(/img/pol1_4.png)'
+         'background-image' : 'url(../img/pol1_4.png)'
       });
       return false;
     }));
@@ -95,7 +95,7 @@ head.ready(function() {
          "transform" : "rotate(231deg)",
          'top' : '135px',
          'left' : '350px',
-         'background-image' : 'url(/img/pol1_5.png)'
+         'background-image' : 'url(../img/pol1_5.png)'
       });
       return false;
     }));
@@ -109,7 +109,7 @@ head.ready(function() {
          "transform" : "rotate(289deg)",
          'top' : '111px',
          'left' : '335px',
-         'background-image' : 'url(/img/pol1_6.png)'
+         'background-image' : 'url(../img/pol1_6.png)'
       });
       return false;
     }));
