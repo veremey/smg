@@ -99,8 +99,6 @@ a
 	z-index: 9999
 	height: 97px
 	+clr
-	// +r(1140)
-	// 	position: relative
 	&__menu
 		font-size: 0
 		float: left
@@ -504,9 +502,13 @@ a
 		color: #565656
 		+el
 .pentagon
-	position: relative
-	width: 0px
-	height: 0px
+	position: absolute
+	top: 45%
+	left: 47%
+	width: 30px
+	height: 30px
+	background-color: yellow
+	z-index: 999
 	img
 		position: absolute
 		+opacity(0)

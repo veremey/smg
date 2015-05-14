@@ -115,6 +115,51 @@ head.ready(function() {
     }));
 
 
+//  AUTO KRUTILKA
+
+
+    $('.pentagon').on('click', function(){
+      $(this).css({'background-color' : '#fff'})
+        $(this).parent().animate(1000, function(){
+          $(this).find(".process__1").addClass('is_active')
+          .parents().find('.port').css({
+            "-ms-transform" : "rotate(-8deg)",
+            "-webkit-transform" : "rotate(-8deg)",
+             "transform" : "rotate(-8deg)",
+             'top' : '85px',
+             'left' : '345px',
+             'background-image' : 'url(img/pol1_1.png)'
+             });
+          });
+      $(this).animate(2000, function(){
+        $(this).parent().find(".process__2").parents()
+      .find('.port').css({
+        "-ms-transform" : "rotate(55deg)",
+        "-webkit-transform" : "rotate(55deg)",
+         "transform" : "rotate(55deg)",
+         'top' : '81px',
+         'left' : '360px',
+         'background-image' : 'url(img/pol1_2.png)'
+            });
+        });
+      $(this).animate(3000, function(){
+        $(this).parent().find(".process__3").parents()
+      .find('.port').css({
+        "-ms-transform" : "rotate(110deg)",
+        "-webkit-transform" : "rotate(110deg)",
+         "transform" : "rotate(110deg)",
+         'top' : '111px',
+         'left' : '390px',
+         'background-image' : 'url(img/pol1_3.png)'
+       });
+
+           });
+    });
+    // });
+
+
+
+
 // Крутилка  END
 
 

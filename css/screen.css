@@ -144,7 +144,7 @@ a { text-decoration: none; }
 .process__list_container { position: absolute; top: 80px; left: 0; right: 0; height: 0; border: none; z-index: 300; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .process__list_container p { margin: 10px; font-size: 13px; line-height: 18px; color: #565656; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
 
-.pentagon { position: relative; width: 0px; height: 0px; }
+.pentagon { position: absolute; top: 45%; left: 47%; width: 30px; height: 30px; background-color: yellow; z-index: 999; }
 .pentagon img { position: absolute; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .pentagon .p1 { left: 71px; top: 22px; -ms-transform: rotate(-8deg); -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
 .pentagon .p2 { left: -426px; top: -60px; -ms-transform: rotate(53deg); -webkit-transform: rotate(53deg); transform: rotate(53deg); }
