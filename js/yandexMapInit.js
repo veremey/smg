@@ -12,7 +12,7 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'img/location.png',
             // Размеры метки.
-            iconImageSize: [78, 43],
+            iconImageSize: [78, 63],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
 

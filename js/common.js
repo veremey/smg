@@ -182,6 +182,11 @@ $(document).ready(function() {
         return false;
     });
 
+   $(document).on('click', '#key__link', function () {
+        $('html, body').animate({ scrollTop: $('#mapin').offset().top }, 3000 );
+        return false;
+    });
+
 });
 
 //  *** конец скрипта "Плавное перелистывание
@@ -210,6 +215,8 @@ function init () {
     // };
 
   }
+
+  // смотри js/yandexMapInit.js
 
 
   //  #####  Карта AND ######

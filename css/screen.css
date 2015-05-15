@@ -61,8 +61,8 @@ a { text-decoration: none; }
 .header__menu li:first-child a::before { display: none; }
 .header__contact { width: 175px; float: right; margin-top: 21px; *zoom: 1; }
 .header__contact:after { content: " "; display: table; clear: both; }
-.header__contact_tel { float: right; color: white; text-transform: uppercase; font-size: 20px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
-.header__contact_mail { float: right; color: #ffd739; font-size: 13px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.header__contact_tel { float: right; color: white; text-transform: uppercase; font-size: 20px; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
+.header__contact_mail { float: right; color: #ffd739; font-size: 13px; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
 .header .l_center { position: relative; }
 
 .logo { float: left; margin: 20px 0; background: url('../img/icons-sf28aa76353.png') 0 -1247px no-repeat; width: 162px; height: 57px; }
@@ -74,13 +74,13 @@ a { text-decoration: none; }
 .key__wrap { width: 700px; margin: 0 auto; *zoom: 1; }
 .key__wrap:after { content: " "; display: table; clear: both; }
 .key__list { width: 260px; float: left; margin-right: 130px; *zoom: 1; }
-.key__list p { font-size: 20px; margin-left: 10px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.key__list p { font-size: 20px; margin-left: 10px; font-family: "Exo2", Arial, sans-serif; font-weight: 300; font-weight: 200; }
 .key__list:nth-child(2n) { margin-right: 0; }
 .key__list:after { content: " "; display: table; clear: both; }
 .key__list li { float: left; list-style-image: url("../img/list__img.png"); font-size: 20px; margin-bottom: 20px; color: #656565; }
 .key__container { position: relative; z-index: 4; padding-top: 225px; }
 
-.big__title { position: relative; text-align: center; font-size: 46px; line-height: 55px; color: #0e1314; margin: 50px 30px; text-transform: uppercase; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 700; }
+.big__title { position: relative; text-align: center; font-size: 46px; line-height: 55px; color: #0e1314; margin: 50px 30px; text-transform: uppercase; font-family: "Exo2", Arial, sans-serif; font-weight: 700; }
 .big__title i { position: absolute; bottom: -19px; left: 50%; width: 108px; height: 5px; margin-left: -54px; background-color: #ffd739; }
 
 .process__cyrcle { width: 1200px; margin: 0 auto; position: relative; *zoom: 1; }
@@ -92,7 +92,7 @@ a { text-decoration: none; }
 .process__img { position: absolute; width: 650px; height: 610px; top: 130px; left: 50%; margin-left: -323px; text-align: center; }
 .process__list { position: relative; width: 1200px; height: 770px; margin: 0 auto; overflow: hidden; }
 .process__list li { position: relative; display: inline-block; height: 105px; font-size: 15px; vertical-align: top; z-index: 99; }
-.process__list a { display: inline-block; position: relative; color: #565656; z-index: 5; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.process__list a { display: inline-block; position: relative; color: #565656; z-index: 5; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
 .process__1 a, .process__5 a, .process__6 a { padding: 5px 60px 0px 10px; text-align: right; }
 .process__1 a:after, .process__5 a:after, .process__6 a:after { content: ""; position: absolute; top: -5px; right: 0; z-index: 4; background: url('../img/icons-sf28aa76353.png') 0 -393px no-repeat; width: 15px; height: 67px; -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); width: 0; }
 .process__1 a:before, .process__5 a:before, .process__6 a:before { content: ""; position: absolute; top: -5px; right: 0; width: 0; bottom: -15px; background-color: #fdf6df; z-index: -1; }
@@ -142,7 +142,7 @@ a { text-decoration: none; }
 .process__4.is_active a:after { left: 95% !important; }
 
 .process__list_container { position: absolute; top: 80px; left: 0; right: 0; height: 0; border: none; z-index: 300; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
-.process__list_container p { margin: 10px; font-size: 13px; line-height: 18px; color: #565656; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.process__list_container p { margin: 10px; font-size: 13px; line-height: 18px; color: #565656; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
 
 .pentagon { position: absolute; top: 45%; left: 47%; width: 30px; height: 30px; background-color: yellow; z-index: 999; }
 .pentagon img { position: absolute; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
@@ -280,13 +280,13 @@ a { text-decoration: none; }
 .mapin__letter_return p { font-size: 22px; }
 .mapin__letter .is_active { display: block; }
 
-.letter__name, .letter__tel { height: 18px; width: 216px; border: 1px solid #efefef; padding: 10px; font-size: 11px; font-family: Arial, sans-serif; }
+.letter__name, .letter__tel { height: 18px; width: 216px; border: 1px solid #efefef; padding: 10px; font-size: 14px; font-family: Arial, sans-serif; }
 .letter__name:-moz-placeholder, .letter__name::-moz-placeholder, .letter__tel:-moz-placeholder, .letter__tel::-moz-placeholder { color: silver; opacity: 1; }
 .letter__name::-webkit-input-placeholder, .letter__tel::-webkit-input-placeholder { color: silver; }
 
 .letter__tel { margin-left: 20px; }
 
-.letter__text { height: 80px; width: 480px; margin-top: 25px; border: 1px solid #efefef; padding: 10px; font-size: 11px; font-family: Arial, sans-serif; resize: none; }
+.letter__text { height: 80px; width: 480px; margin-top: 25px; border: 1px solid #efefef; padding: 10px; font-size: 14px; font-family: Arial, sans-serif; resize: none; }
 .letter__text:-moz-placeholder, .letter__text::-moz-placeholder { color: silver; opacity: 1; }
 .letter__text::-webkit-input-placeholder { color: silver; }
 
@@ -417,8 +417,8 @@ a { text-decoration: none; }
 
 .bild { width: 380px; float: left; margin-top: 50px; }
 .bild li { padding-left: 10px; margin: 0 0 140px 25px; list-style-image: url("../img/list__img.png"); }
-.bild li h2 { font-size: 24px; line-height: 21px; color: #0e1314; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 700; }
-.bild li p { font-size: 14px; color: #5f5f5f; margin-top: 15px; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.bild li h2 { font-size: 24px; line-height: 21px; color: #0e1314; font-family: "Exo2", Arial, sans-serif; font-weight: 700; }
+.bild li p { font-size: 14px; color: #5f5f5f; margin-top: 15px; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
 
 .new_site { position: relative; margin: 0 auto; z-index: 10; *zoom: 1; }
 .new_site:after { content: " "; display: table; clear: both; }
@@ -477,7 +477,7 @@ a { text-decoration: none; }
 
 .cover__img { position: absolute; width: 2000px; left: 50%; margin-left: -1000px; z-index: 3; }
 
-.title__smile { font-size: 105px; color: white; text-transform: lowercase; text-align: center; margin: 200px 0 150px; font-family: "Raleway", Arial, sans-serif; font-style: normal; font-weight: 800; }
+.title__smile { font-size: 105px; color: white; text-transform: lowercase; text-align: center; margin: 200px 0 150px; font-family: "Raleway", Arial, sans-serif; font-weight: 800; }
 .title__smile i { display: inline-block; margin: 0 20px -10px 0; background: url('../img/icons-sf28aa76353.png') 0 -1848px no-repeat; width: 121px; height: 116px; }
 
 .s_container { text-align: left; padding-bottom: 150px; *zoom: 1; }
@@ -486,8 +486,8 @@ a { text-decoration: none; }
 
 .s_text { float: left; width: 440px; margin-bottom: 70px; *zoom: 1; }
 .s_text:after { content: " "; display: table; clear: both; }
-.s_text h2 { font-size: 40px; color: #f3be1e; text-transform: uppercase; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 700; }
-.s_text p { font-size: 18px; color: #8da1ba; font-family: "Exo2", Arial, sans-serif; font-style: normal; font-weight: 300; }
+.s_text h2 { font-size: 40px; color: #f3be1e; text-transform: uppercase; font-family: "Exo2", Arial, sans-serif; font-weight: 700; }
+.s_text p { font-size: 18px; color: #8da1ba; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
 
 .s_big_pic { width: 740px; float: right; margin-bottom: 60px; box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset; }
 
