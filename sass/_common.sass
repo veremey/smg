@@ -557,14 +557,17 @@ a
 				left: 0
 		&_wrap
 			position: absolute
-			width: 1000px
+			// width: 1000px
+			width: 960px
 			height: 600px
 			text-align: center
 			left: 50%
 			margin-left: -500px
 			img
-				height: 600px
-				width: auto
+				// height: 600px
+				// width: auto
+				width: 100%
+				height: auto
 		&_mask,
 		.bg__green,
 		.bg__pink,
@@ -651,8 +654,12 @@ a
 			left: 50%
 			margin-left: -250px
 			img
-				height: 300px
-				width: auto
+				// height: 300px
+				// width: auto
+				// height: auto
+				// width: 100%
+				// margin-top: -25px
+				+coverdiv
 	&__hight
 		position: relative
 		float: left
@@ -1047,3 +1054,9 @@ a
 	display: none !important
 
 
+.btn__close
+	position: absolute
+	top: 15px
+	right: 15px
+	z-index: 999
+	+s(close)
