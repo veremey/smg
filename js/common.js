@@ -167,6 +167,11 @@ head.ready(function() {
 
 $(document).ready(function() {
 
+   $(document).on('click', '#key__link', function () {
+        $('html, body').animate({ scrollTop: $('#key').offset().top }, 2000 );
+        return false;
+    });
+
    $(document).on('click', '#portf', function () {
         $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 2000 );
         return false;
@@ -182,10 +187,6 @@ $(document).ready(function() {
         return false;
     });
 
-   $(document).on('click', '#key__link', function () {
-        $('html, body').animate({ scrollTop: $('#mapin').offset().top }, 3000 );
-        return false;
-    });
 
 });
 

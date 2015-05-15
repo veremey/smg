@@ -160,14 +160,14 @@ a { text-decoration: none; }
 .portfolio__big_wrap img { height: 600px; width: auto; }
 .portfolio__big_mask, .portfolio__big .bg__green, .portfolio__big .bg__pink, .portfolio__big .bg__blue, .portfolio__big .bg__purple, .portfolio__big .bg__sun, .portfolio__big .bg__sea, .portfolio__big .bg__gold, .portfolio__big .bg__aqua { opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: 20%; }
 .portfolio__big_center { width: 450px; height: auto; text-align: center; -webkit-transition: opacity 2.5s ease; -moz-transition: opacity 2.5s ease; -ms-transition: opacity 2.5s ease; -o-transition: opacity 2.5s ease; transition: opacity 2.5s ease; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.portfolio__big_center h3 { text-transform: uppercase; color: white; font-size: 30px; line-height: 28px; font-family: Arial, sans-serif; }
+.portfolio__big_center h3 { text-transform: uppercase; color: white; font-size: 30px; line-height: 28px; font-weight: 400; font-family: Arial, sans-serif; }
 .portfolio__big_center p { width: 450px; color: white; font-size: 16px; margin-top: 15px; }
 .portfolio__big .btn { margin-top: 50px; }
 .portfolio__small { position: relative; float: left; height: 300px; width: 50%; overflow: hidden; }
 .portfolio__small:hover .portfolio__small_mask, .portfolio__small:hover .bg__green, .portfolio__small:hover .bg__pink, .portfolio__small:hover .bg__blue, .portfolio__small:hover .bg__purple, .portfolio__small:hover .bg__sun, .portfolio__small:hover .bg__sea, .portfolio__small:hover .bg__gold, .portfolio__small:hover .bg__aqua { opacity: 1; -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; left: 0; }
 .portfolio__small_mask { opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; left: 20%; }
 .portfolio__small_center { width: 300px; height: auto; text-align: center; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.portfolio__small_center h3 { text-transform: uppercase; color: white; font-size: 25px; line-height: 1.1; }
+.portfolio__small_center h3 { text-transform: uppercase; color: white; font-size: 25px; line-height: 1.1; font-weight: 400; }
 .portfolio__small_center p { width: 300px; color: white; font-size: 16px; margin-top: 10px; }
 .portfolio__small_center .btn { padding: 5px 15px; margin-top: 15px; }
 .portfolio__small_wrap { position: absolute; width: 500px; height: 300px; text-align: center; left: 50%; margin-left: -250px; }
@@ -176,7 +176,7 @@ a { text-decoration: none; }
 .portfolio__hight:hover .portfolio__small_mask, .portfolio__hight:hover .bg__green, .portfolio__hight:hover .bg__pink, .portfolio__hight:hover .bg__blue, .portfolio__hight:hover .bg__purple, .portfolio__hight:hover .bg__sun, .portfolio__hight:hover .bg__sea, .portfolio__hight:hover .bg__gold, .portfolio__hight:hover .bg__aqua { opacity: 1; -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; left: 0; }
 .portfolio__hight_wrap { position: absolute; width: 500px; height: 600px; text-align: center; left: 50%; margin-left: -250px; }
 .portfolio__hight_wrap img { height: 600px; width: auto; }
-.portfolio__hight h3 { margin-top: 30px; }
+.portfolio__hight h3 { margin-top: 30px; font-weight: 400; }
 .portfolio__hight .btn { margin-top: 30px; }
 .portfolio__long { position: relative; float: left; height: 300px; width: 100%; overflow: hidden; }
 .portfolio__long:hover .portfolio__small_mask, .portfolio__long:hover .bg__green, .portfolio__long:hover .bg__pink, .portfolio__long:hover .bg__blue, .portfolio__long:hover .bg__purple, .portfolio__long:hover .bg__sun, .portfolio__long:hover .bg__sea, .portfolio__long:hover .bg__gold, .portfolio__long:hover .bg__aqua { opacity: 1; -moz-transition: 0.5s; -o-transition: 0.5s; -webkit-transition: 0.5s; transition: 0.5s; left: 0; }
