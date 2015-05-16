@@ -237,6 +237,23 @@ a
 	left: 344px
 	z-index: 300
 	+rotate(-8)
+
+.process__list_container
+	position: absolute
+	// top: 80px
+	// left: 0
+	// right: 0
+	height: 0
+	border: none
+	z-index: 300
+	overflow: hidden
+	+opacity(0)
+	p
+		margin: 10px
+		font-size: 13px
+		line-height: 18px
+		color: #565656
+		+el
 .process
 	position: relative
 	height: 775px
@@ -379,6 +396,11 @@ a
 			left: 242px
 		&_pic
 			+s(w9)
+		.process__list_container
+			top: 80px
+			left: -215px
+			width: 340px
+			max-height: 90px
 	&__2
 		top: 99px
 		left: 560px
@@ -396,6 +418,11 @@ a
 			left: -50px
 		&_pic
 			+s(w1)
+		.process__list_container
+			top: 80px
+			left: 35px
+			width: 255px
+			max-height: 165px
 	&__3
 		top: 366px
 		left: 401px
@@ -416,6 +443,11 @@ a
 		&_pic
 			+s(w5)
 			z-index: 10
+		.process__list_container
+			top: 80px
+			left: 0
+			width: 255px
+			max-height: 150px
 	&__4
 		top: 615px
 		left: -33px
@@ -434,6 +466,11 @@ a
 		&_pic
 			+s(w7)
 			z-index: 10
+		.process__list_container
+			top: 25px
+			left: -380px
+			width: 355px
+			max-height: 115px
 	&__5
 		top: 500px
 		left: -872px
@@ -451,6 +488,11 @@ a
 			left: 300px
 		&_pic
 			+s(w6)
+		.process__list_container
+			top: 80px
+			left: 0px
+			width: 355px
+			max-height: 175px
 	&__6
 		top: 120px
 		left: 45px
@@ -472,6 +514,11 @@ a
 			left: 308px
 		&_pic
 			+s(w06)
+		.process__list_container
+			top: 80px
+			left: 0px
+			width: 250px
+			max-height: 180px
 	.is_active
 		position: relative
 		.process__list_container
@@ -482,22 +529,7 @@ a
 	&__4.is_active
 		a:after
 			left: 95%!important  //корректировка
-.process__list_container
-	position: absolute
-	top: 80px
-	left: 0
-	right: 0
-	height: 0
-	border: none
-	z-index: 300
-	overflow: hidden
-	+opacity(0)
-	p
-		margin: 10px
-		font-size: 13px
-		line-height: 18px
-		color: #565656
-		+el
+
 .pentagon
 	position: absolute
 	top: 45%
@@ -644,7 +676,7 @@ a
 				font-size: 16px
 				margin-top: 10px
 			.btn
-				padding: 5px 15px
+				padding: 7px 15px
 				margin-top: 15px
 		&_wrap
 			position: absolute
