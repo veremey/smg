@@ -36,17 +36,45 @@ head.ready(function() {
 
 
 
-    $(".process__1").on("click", (function(){
-      $(this).parents().find('.port').css({
+    // $(".process__1").on("click", (function(){
+    //   $(this).parents().find('.port').css({
+    //     "-ms-transform" : "rotate(-8deg)",
+    //     "-webkit-transform" : "rotate(-8deg)",
+    //      "transform" : "rotate(-8deg)",
+    //      'top' : '85px',
+    //      'left' : '345px',
+    //      'background-image' : 'url(img/pol1_1.png)'
+    //   });
+    //   return false;
+    // }));
+
+
+ // выборка
+
+    $(".process__1").click(function() {
+      $('.process__click').each(function() {
+        if($('.process__click').hasClass('.process__6')) {
+          $('this').parents().find('.port').css({
+          "-ms-transform" : "rotate(80deg)",
+          "-webkit-transform" : "rotate(80deg)",
+           "transform" : "rotate(80deg)",
+           'top' : '85px',
+           'left' : '345px',
+           'background-image' : 'url(img/pol1_2.png)'
+          });
+      } else {
+        $('.process__1').parents().find('.port').css({
         "-ms-transform" : "rotate(-8deg)",
         "-webkit-transform" : "rotate(-8deg)",
          "transform" : "rotate(-8deg)",
          'top' : '85px',
          'left' : '345px',
-         'background-image' : 'url(img/pol1_1.png)'
-      });
-      return false;
-    }));
+         'background-image' : 'url(img/pol1_3.png)'});
+      }
+    });
+    });
+
+
 
 
 
