@@ -35,6 +35,36 @@ head.ready(function() {
 
 
 
+ // выборка
+
+    $('.process__1').click(function() {
+      $('.process__click').each(function() {
+        if($(this).hasClass('process__6')) {
+          $(this).parents().find('.port').css({
+            '-ms-transform' : 'rotate(350deg)',
+            '-webkit-transform' : 'rotate(350deg)',
+             'transform' : 'rotate(350deg)',
+             'top' : '85px',
+             'left' : '345px',
+             'background-image' : 'url(img/pol1_2.png)'
+             //на малюнку написана 2
+            });
+          return false
+      } else {
+        $(this).parents().find('.port').css({
+          '-ms-transform' : 'rotate(-8deg)',
+          '-webkit-transform' : 'rotate(-8deg)',
+           'transform' : 'rotate(-8deg)',
+           'top' : '85px',
+           'left' : '345px',
+           'background-image' : 'url(img/pol1_3.png)'});
+          //на малюнку написана 3
+        return false
+      };
+    });
+    });
+
+
 
     // $(".process__1").on("click", (function(){
     //   $(this).parents().find('.port').css({
@@ -49,30 +79,6 @@ head.ready(function() {
     // }));
 
 
- // выборка
-
-    $(".process__1").click(function() {
-      $('.process__click').each(function() {
-        if($('.process__click').hasClass('.process__6')) {
-          $('this').parents().find('.port').css({
-          "-ms-transform" : "rotate(80deg)",
-          "-webkit-transform" : "rotate(80deg)",
-           "transform" : "rotate(80deg)",
-           'top' : '85px',
-           'left' : '345px',
-           'background-image' : 'url(img/pol1_2.png)'
-          });
-      } else {
-        $('.process__1').parents().find('.port').css({
-        "-ms-transform" : "rotate(-8deg)",
-        "-webkit-transform" : "rotate(-8deg)",
-         "transform" : "rotate(-8deg)",
-         'top' : '85px',
-         'left' : '345px',
-         'background-image' : 'url(img/pol1_3.png)'});
-      }
-    });
-    });
 
 
 
