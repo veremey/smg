@@ -10,10 +10,10 @@ head.ready(function() {
 	});
 
   $('.btn__close').on('click', function(){
-     $(".mapin__letter, js__send").hide()
+     $(".mapin__letter, js__send").hide(500)
   });
 
-
+$(document).ready(function() {
 
 // Крутилка
 
@@ -38,18 +38,17 @@ head.ready(function() {
  // выборка
 
     $('.process__1').click(function() {
-      $('.process__click').each(function() {
-        if($(this).hasClass('process__6')) {
+      // $('.process__click').each(function() {
+        if($(this).hasClass('rot')) {
           $(this).parents().find('.port').css({
             '-ms-transform' : 'rotate(350deg)',
             '-webkit-transform' : 'rotate(350deg)',
              'transform' : 'rotate(350deg)',
              'top' : '85px',
              'left' : '345px',
-             'background-image' : 'url(img/pol1_2.png)'
-             //на малюнку написана 2
+             'background-image' : 'url(img/pol1_1.png)'
             });
-          return false
+          $(this).next().addClass('rot');
       } else {
         $(this).parents().find('.port').css({
           '-ms-transform' : 'rotate(-8deg)',
@@ -57,12 +56,15 @@ head.ready(function() {
            'transform' : 'rotate(-8deg)',
            'top' : '85px',
            'left' : '345px',
-           'background-image' : 'url(img/pol1_3.png)'});
-          //на малюнку написана 3
-        return false
-      };
+           'background-image' : 'url(img/pol1_1.png)'});
+        }
+      return false;
+    // });
     });
-    });
+
+
+
+
 
 
 
@@ -80,26 +82,54 @@ head.ready(function() {
 
 
 
-
-
-
-
-    $(".process__2").on("click", (function(){
-      $(this).parents().find('.port').css({
-        "-ms-transform" : "rotate(55deg)",
-        "-webkit-transform" : "rotate(55deg)",
-         "transform" : "rotate(55deg)",
-         'top' : '81px',
-         'left' : '360px',
-         'background-image' : 'url(img/pol1_2.png)'
-      });
+    $('.process__2').click(function() {
+      // $('.process__click').each(function() {
+        if($(this).hasClass('rot')) {
+          $(this).parents().find('.port').css({
+            '-ms-transform' : 'rotate(408deg)',
+            '-webkit-transform' : 'rotate(408deg)',
+             'transform' : 'rotate(408deg)',
+             'top' : '85px',
+             'left' : '345px',
+             'background-image' : 'url(img/pol1_2.png)'
+            });
+          $(this).removeClass('rot');
+          // $(this).parents().find('.process__3').addClass('rot');
+      } else {
+        $(this).parents().find('.port').css({
+          '-ms-transform' : 'rotate(55deg)',
+          '-webkit-transform' : 'rotate(55deg)',
+           'transform' : 'rotate(55deg)',
+           'top' : '85px',
+           'left' : '345px',
+           'background-image' : 'url(img/pol1_1.png)'});
+        }
       return false;
-    }));
+    // });
+    });
+
+
+
+
+    // $(".process__2").on("click", (function(){
+    //   $(this).parents().find('.process__1').removeClass('rot');
+    //   $(this).parents().find('.port').css({
+    //     "-ms-transform" : "rotate(55deg)",
+    //     "-webkit-transform" : "rotate(55deg)",
+    //      "transform" : "rotate(55deg)",
+    //      'top' : '81px',
+    //      'left' : '360px',
+    //      'background-image' : 'url(img/pol1_2.png)'
+    //   });
+    //   return false;
+    // }));
 
 
 
 
     $(".process__3").on("click", (function(){
+      $(this).parents().find('.process__1').removeClass('rot');
+      $(this).parents().find('.process__6').removeClass('rot');
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(110deg)",
         "-webkit-transform" : "rotate(110deg)",
@@ -113,6 +143,8 @@ head.ready(function() {
 
 
     $(".process__4").on("click", (function(){
+      $(this).parents().find('.process__1').removeClass('rot');
+      $(this).parents().find('.process__2').removeClass('rot');
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(173deg)",
         "-webkit-transform" : "rotate(173deg)",
@@ -134,6 +166,7 @@ head.ready(function() {
          'left' : '350px',
          'background-image' : 'url(img/pol1_5.png)'
       });
+      $(this).parents().find('.process__1').addClass('rot');
       return false;
     }));
 
@@ -148,6 +181,8 @@ head.ready(function() {
          'left' : '335px',
          'background-image' : 'url(img/pol1_6.png)'
       });
+      $(this).parents().find('.process__1').addClass('rot');
+      $(this).parents().find('.process__2').addClass('rot');
       return false;
     }));
 
@@ -171,7 +206,7 @@ head.ready(function() {
     });
     // });
 
-
+});
 // Крутилка  END
 
 
