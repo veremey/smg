@@ -86,11 +86,11 @@ $(document).ready(function() {
       // $('.process__click').each(function() {
         if($(this).hasClass('rot')) {
           $(this).parents().find('.port').css({
-            '-ms-transform' : 'rotate(408deg)',
-            '-webkit-transform' : 'rotate(408deg)',
-             'transform' : 'rotate(408deg)',
-             'top' : '85px',
-             'left' : '345px',
+            '-ms-transform' : 'rotate(413deg)',
+            '-webkit-transform' : 'rotate(413deg)',
+             'transform' : 'rotate(413deg)',
+             'top' : '81px',
+             'left' : '360px',
              'background-image' : 'url(img/pol1_2.png)'
             });
           $(this).removeClass('rot');
@@ -100,9 +100,9 @@ $(document).ready(function() {
           '-ms-transform' : 'rotate(55deg)',
           '-webkit-transform' : 'rotate(55deg)',
            'transform' : 'rotate(55deg)',
-           'top' : '85px',
-           'left' : '345px',
-           'background-image' : 'url(img/pol1_1.png)'});
+           'top' : '81px',
+           'left' : '360px',
+           'background-image' : 'url(img/pol1_2.png)'});
         }
       return false;
     // });
