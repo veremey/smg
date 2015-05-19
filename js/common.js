@@ -41,22 +41,22 @@ $(document).ready(function() {
       // $('.process__click').each(function() {
         if($(this).hasClass('rot')) {
           $(this).parents().find('.port').css({
-            '-ms-transform' : 'rotate(350deg)',
-            '-webkit-transform' : 'rotate(350deg)',
-             'transform' : 'rotate(350deg)',
+            '-ms-transform' : 'rotate(355deg)',
+            '-webkit-transform' : 'rotate(355deg)',
+             'transform' : 'rotate(355deg)',
              'top' : '85px',
              'left' : '345px',
-             'background-image' : 'url(img/pol1_1.png)'
+             'background-image' : 'url(img/pol11.png)'
             });
           $(this).next().addClass('rot');
       } else {
         $(this).parents().find('.port').css({
-          '-ms-transform' : 'rotate(-8deg)',
-          '-webkit-transform' : 'rotate(-8deg)',
-           'transform' : 'rotate(-8deg)',
+          '-ms-transform' : 'rotate(-5deg)',
+          '-webkit-transform' : 'rotate(-5deg)',
+           'transform' : 'rotate(-5deg)',
            'top' : '85px',
            'left' : '345px',
-           'background-image' : 'url(img/pol1_1.png)'});
+           'background-image' : 'url(img/pol11.png)'});
         }
       return false;
     // });
@@ -91,18 +91,18 @@ $(document).ready(function() {
              'transform' : 'rotate(413deg)',
              'top' : '81px',
              'left' : '360px',
-             'background-image' : 'url(img/pol1_2.png)'
+             'background-image' : 'url(img/pol12.png)'
             });
           $(this).removeClass('rot');
           // $(this).parents().find('.process__3').addClass('rot');
       } else {
         $(this).parents().find('.port').css({
-          '-ms-transform' : 'rotate(55deg)',
-          '-webkit-transform' : 'rotate(55deg)',
-           'transform' : 'rotate(55deg)',
-           'top' : '81px',
+          '-ms-transform' : 'rotate(2deg)',
+          '-webkit-transform' : 'rotate(2deg)',
+           'transform' : 'rotate(2deg)',
+           'top' : '143px',
            'left' : '360px',
-           'background-image' : 'url(img/pol1_2.png)'});
+           'background-image' : 'url(img/pol12.png)'});
         }
       return false;
     // });
@@ -136,7 +136,7 @@ $(document).ready(function() {
          "transform" : "rotate(110deg)",
          'top' : '111px',
          'left' : '390px',
-         'background-image' : 'url(img/pol1_3.png)'
+         'background-image' : 'url(img/pol13.png)'
       });
       return false;
     }));
@@ -151,7 +151,7 @@ $(document).ready(function() {
          "transform" : "rotate(173deg)",
          'top' : '131px',
          'left' : '375px',
-         'background-image' : 'url(img/pol1_4.png)'
+         'background-image' : 'url(img/pol14.png)'
       });
       return false;
     }));
@@ -164,7 +164,7 @@ $(document).ready(function() {
          "transform" : "rotate(231deg)",
          'top' : '135px',
          'left' : '350px',
-         'background-image' : 'url(img/pol1_5.png)'
+         'background-image' : 'url(img/pol15.png)'
       });
       $(this).parents().find('.process__1').addClass('rot');
       return false;
@@ -179,7 +179,7 @@ $(document).ready(function() {
          "transform" : "rotate(289deg)",
          'top' : '111px',
          'left' : '335px',
-         'background-image' : 'url(img/pol1_6.png)'
+         'background-image' : 'url(img/pol16.png)'
       });
       $(this).parents().find('.process__1').addClass('rot');
       $(this).parents().find('.process__2').addClass('rot');

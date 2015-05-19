@@ -86,7 +86,7 @@ a { text-decoration: none; }
 .process__cyrcle { width: 1200px; margin: 0 auto; position: relative; *zoom: 1; }
 .process__cyrcle:after { content: " "; display: table; clear: both; }
 
-.port { position: absolute; background-image: url("../img/pol1_1.png"); width: 428px; height: 454px; top: 93px; left: 344px; z-index: 300; -ms-transform: rotate(-8deg); -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
+.port { position: absolute; background-image: url("../img/pol1_1.png"); width: 428px; height: 442px; top: 93px; left: 344px; z-index: 300; -ms-transform: rotate(-8deg); -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
 
 .process__list_container { position: absolute; height: 0; border: none; z-index: 300; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .process__list_container p { margin: 10px; font-size: 13px; line-height: 18px; color: #565656; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
