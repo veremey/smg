@@ -147,6 +147,7 @@ a { text-decoration: none; }
 .process__6_pic { background: url('../img/icons-s4b80c6aa14.png') 0 -1998px no-repeat; width: 54px; height: 29px; }
 .process__6 .process__list_container { top: 80px; left: 0px; width: 250px; max-height: 180px; }
 .process .is_active { position: relative; }
+.process .is_active b { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .process .is_active .process__list_container { height: auto; border: 2px solid #f3be1e; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transition: opacity 0.8s; -o-transition: opacity 0.8s; -webkit-transition: opacity 0.8s; transition: opacity 0.8s; }
 .process__4.is_active a:after { left: 95% !important; }
 
