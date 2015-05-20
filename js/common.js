@@ -17,8 +17,6 @@ $(document).ready(function() {
 
 // Крутилка
 
-
-
     $(".proccess__click").on("click", (function(){
       $(this).siblings().removeClass('is_active');
       $(this).addClass("is_active");
@@ -31,8 +29,6 @@ $(document).ready(function() {
       });
       return false;
     }));
-
-
 
 
  // выборка
@@ -68,7 +64,6 @@ $(document).ready(function() {
 
 
     $('.process__2').click(function() {
-      // $('.process__click').each(function() {
         if($(this).hasClass('rot')) {
           $(this).parents().find('.port').css({
             '-ms-transform' : 'rotate(413deg)',
