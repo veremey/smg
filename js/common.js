@@ -1,3 +1,4 @@
+
 head.ready(function() {
     // письмо в конце страници
 
@@ -33,25 +34,30 @@ $(document).ready(function() {
 
  // выборка
 
+
+
     var num = $('.process__click.is_active b').html();
-
-
-
-
+      //  нахожу число активного пункта
 
     $('.process__click').click(function() {
-        var numZ = $(this).parent().find('.process__click b').html();
-          var rew =  num1 - num;
-          alert(rew);
+        var numZ = $(this).find('b').html();
+        //нахожу число пункта, по которому совершен клик
+        var rew = numZ - num;
+          // alert(roter);
+            });
 
+    var degree = getDegreeElementById('port');
+    // alert(degree);
+    var roter = degree + 60
 
 
 
       $('.process__1').click(function() {
-        if(rew > 4) {
-          $(this).parent().find('.port').css({
-            '-ms-transform' : 'rotate((degree + 55)deg)',
-
+        var numZ = $(this).find('b').html();
+        var rew = (numZ) - (num);
+        if(rew > 3) {
+          $(this).parent.find('.port').css({
+             'transform' : 'rotate(roter deg)',
              'top' : '93px',
              'left' : '344px',
              'width' : '429px',
@@ -61,15 +67,13 @@ $(document).ready(function() {
           $(this).next().addClass('rot');
       } else {
         $(this).parents().find('.port').css({
-          '-ms-transform' : '(degree + 55)deg',
-          '-webkit-transform' : '(degree + 55)deg',
-           'transform' : '(degree + 55)deg',
+           'transform' : 'rotate(roter deg)',
            'top' : '93px',
            'left' : '344px',
            'width' : '429px',
            'height' : '460px',
            'background-image' : 'url(img/pol11.png)'});
-        }
+        };
       return false;
     });
 
@@ -97,7 +101,7 @@ $(document).ready(function() {
            'width' : '429px',
            'height' : '460px',
            'background-image' : 'url(img/pol12_55.png)'});
-        }
+        };
       return false;
     // });
     });
@@ -191,6 +195,12 @@ $(document).ready(function() {
 
 
 });
+
+
+
+
+
+
 // Крутилка  END
 
 // ####################################################

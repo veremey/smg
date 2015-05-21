@@ -26,10 +26,10 @@ function getDegreeElementById(port){
     if(cos<0){
         addDegree = 90 - Math.round(Math.asin(sin) * (180/Math.PI));
         degree = 90 + addDegree;
-    }
+    };
     if(degree < 0){
         degree = 360 + degree;
-    }
+    };
     return degree;
-}
+};
 
