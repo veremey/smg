@@ -52,30 +52,30 @@ $(document).ready(function() {
 
 
 
-      $('.process__1').click(function() {
-        var numZ = $(this).find('b').html();
-        var rew = (numZ) - (num);
-        if(rew > 3) {
-          $(this).parent.find('.port').css({
-             'transform' : 'rotate(roter deg)',
-             'top' : '93px',
-             'left' : '344px',
-             'width' : '429px',
-             'height' : '460px',
-             'background-image' : 'url(img/pol11.png)'
-            });
-          $(this).next().addClass('rot');
-      } else {
-        $(this).parents().find('.port').css({
-           'transform' : 'rotate(roter deg)',
-           'top' : '93px',
-           'left' : '344px',
-           'width' : '429px',
-           'height' : '460px',
-           'background-image' : 'url(img/pol11.png)'});
-        };
-      return false;
-    });
+    //   $('.process__1').click(function() {
+    //     var numZ = $(this).find('b').html();
+    //     var rew = (numZ) - (num);
+    //     if(rew > 3) {
+    //       $(this).parent.find('.port').css({
+    //          'transform' : 'rotate(roter deg)',
+    //          'top' : '93px',
+    //          'left' : '344px',
+    //          'width' : '429px',
+    //          'height' : '460px',
+    //          'background-image' : 'url(img/pol11.png)'
+    //         });
+    //       $(this).next().addClass('rot');
+    //   } else {
+    //     $(this).parents().find('.port').css({
+    //        'transform' : 'rotate(roter deg)',
+    //        'top' : '93px',
+    //        'left' : '344px',
+    //        'width' : '429px',
+    //        'height' : '460px',
+    //        'background-image' : 'url(img/pol11.png)'});
+    //     };
+    //   return false;
+    // });
 
 
     $('.process__2').click(function() {
@@ -212,32 +212,32 @@ $(document).ready(function() {
 // подстраховка
 
 
-// $('.process__1').click(function() {
-//     if($(this).hasClass('rot')) {
-//       $(this).parents().find('.port').css({
-//         '-ms-transform' : 'rotate(355deg)',
-//         '-webkit-transform' : 'rotate(355deg)',
-//          'transform' : 'rotate(355deg)',
-//          'top' : '93px',
-//          'left' : '344px',
-//          'width' : '429px',
-//          'height' : '460px',
-//          'background-image' : 'url(img/pol11.png)'
-//         });
-//       $(this).next().addClass('rot');
-//   } else {
-//     $(this).parents().find('.port').css({
-//       '-ms-transform' : 'rotate(-5deg)',
-//       '-webkit-transform' : 'rotate(-5deg)',
-//        'transform' : 'rotate(-5deg)',
-//        'top' : '93px',
-//        'left' : '344px',
-//        'width' : '429px',
-//        'height' : '460px',
-//        'background-image' : 'url(img/pol11.png)'});
-//     }
-//   return false;
-// });
+$('.process__1').click(function() {
+    if($(this).hasClass('rot')) {
+      $(this).parents().find('.port').css({
+        '-ms-transform' : 'rotate(355deg)',
+        '-webkit-transform' : 'rotate(355deg)',
+         'transform' : 'rotate(355deg)',
+         'top' : '93px',
+         'left' : '344px',
+         'width' : '429px',
+         'height' : '460px',
+         'background-image' : 'url(img/pol11.png)'
+        });
+      $(this).next().addClass('rot');
+  } else {
+    $(this).parents().find('.port').css({
+      '-ms-transform' : 'rotate(-5deg)',
+      '-webkit-transform' : 'rotate(-5deg)',
+       'transform' : 'rotate(-5deg)',
+       'top' : '93px',
+       'left' : '344px',
+       'width' : '429px',
+       'height' : '460px',
+       'background-image' : 'url(img/pol11.png)'});
+    }
+  return false;
+});
 
 
 // $('.process__2').click(function() {
