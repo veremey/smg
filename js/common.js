@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 // Крутилка
 
-    $(".proccess__click").on("click", (function(){
+    $(".process__click").on("click", (function(){
       $(this).siblings().removeClass('is_active');
       $(this).addClass("is_active");
       $(this).parents().find('.port').css({
@@ -33,13 +33,25 @@ $(document).ready(function() {
 
  // выборка
 
-    $('.process__1').click(function() {
-      // $('.process__click').each(function() {
-        if($(this).hasClass('rot')) {
-          $(this).parents().find('.port').css({
-            '-ms-transform' : 'rotate(355deg)',
-            '-webkit-transform' : 'rotate(355deg)',
-             'transform' : 'rotate(355deg)',
+    var num = $('.process__click.is_active b').html();
+
+
+
+
+
+    $('.process__click').click(function() {
+        var numZ = $(this).parent().find('.process__click b').html();
+          var rew =  num1 - num;
+          alert(rew);
+
+
+
+
+      $('.process__1').click(function() {
+        if(rew > 4) {
+          $(this).parent().find('.port').css({
+            '-ms-transform' : 'rotate((degree + 55)deg)',
+
              'top' : '93px',
              'left' : '344px',
              'width' : '429px',
@@ -49,9 +61,9 @@ $(document).ready(function() {
           $(this).next().addClass('rot');
       } else {
         $(this).parents().find('.port').css({
-          '-ms-transform' : 'rotate(-5deg)',
-          '-webkit-transform' : 'rotate(-5deg)',
-           'transform' : 'rotate(-5deg)',
+          '-ms-transform' : '(degree + 55)deg',
+          '-webkit-transform' : '(degree + 55)deg',
+           'transform' : '(degree + 55)deg',
            'top' : '93px',
            'left' : '344px',
            'width' : '429px',
@@ -59,7 +71,6 @@ $(document).ready(function() {
            'background-image' : 'url(img/pol11.png)'});
         }
       return false;
-    // });
     });
 
 
@@ -177,10 +188,156 @@ $(document).ready(function() {
              });
           });
     });
-    // });
+
 
 });
 // Крутилка  END
+
+// ####################################################
+// ####################################################
+// ####################################################
+
+
+
+// подстраховка
+
+
+// $('.process__1').click(function() {
+//     if($(this).hasClass('rot')) {
+//       $(this).parents().find('.port').css({
+//         '-ms-transform' : 'rotate(355deg)',
+//         '-webkit-transform' : 'rotate(355deg)',
+//          'transform' : 'rotate(355deg)',
+//          'top' : '93px',
+//          'left' : '344px',
+//          'width' : '429px',
+//          'height' : '460px',
+//          'background-image' : 'url(img/pol11.png)'
+//         });
+//       $(this).next().addClass('rot');
+//   } else {
+//     $(this).parents().find('.port').css({
+//       '-ms-transform' : 'rotate(-5deg)',
+//       '-webkit-transform' : 'rotate(-5deg)',
+//        'transform' : 'rotate(-5deg)',
+//        'top' : '93px',
+//        'left' : '344px',
+//        'width' : '429px',
+//        'height' : '460px',
+//        'background-image' : 'url(img/pol11.png)'});
+//     }
+//   return false;
+// });
+
+
+// $('.process__2').click(function() {
+//     if($(this).hasClass('rot')) {
+//       $(this).parents().find('.port').css({
+//         '-ms-transform' : 'rotate(413deg)',
+//         '-webkit-transform' : 'rotate(413deg)',
+//          'transform' : 'rotate(413deg)',
+//          'top' : '81px',
+//          'left' : '360px',
+//          'width' : '429px',
+//          'height' : '460px',
+//          'background-image' : 'url(img/pol12_55.png)'
+//         });
+//       $(this).removeClass('rot');
+//   } else {
+//     $(this).parents().find('.port').css({
+//       '-ms-transform' : 'rotate(55deg)',
+//       '-webkit-transform' : 'rotate(55deg)',
+//        'transform' : 'rotate(55deg)',
+//        'top' : '81px',
+//        'left' : '360px',
+//        'width' : '429px',
+//        'height' : '460px',
+//        'background-image' : 'url(img/pol12_55.png)'});
+//     }
+//   return false;
+// // });
+// });
+
+
+// $(".process__3").on("click", (function(){
+//   $(this).parents().find('.process__1').removeClass('rot');
+//   $(this).parents().find('.process__6').removeClass('rot');
+//   $(this).parents().find('.port').css({
+//     "-ms-transform" : "rotate(110deg)",
+//     "-webkit-transform" : "rotate(110deg)",
+//      "transform" : "rotate(110deg)",
+//      'top' : '100px',
+//      'left' : '390px',
+//      'width' : '447px',
+//      'height' : '460px',
+//      'background-image' : 'url(img/pol13_110.png)'
+//   });
+//   return false;
+// }));
+
+
+// $(".process__4").on("click", (function(){
+//   $(this).parents().find('.process__1').removeClass('rot');
+//   $(this).parents().find('.process__2').removeClass('rot');
+//   $(this).parents().find('.port').css({
+//     "-ms-transform" : "rotate(165deg)",
+//     "-webkit-transform" : "rotate(165deg)",
+//      "transform" : "rotate(165deg)",
+//      'top' : '120px',
+//      'left' : '375px',
+//      'width' : '447px',
+//      'height' : '460px',
+//      'background-image' : 'url(img/pol14_165.png)'
+//   });
+//   return false;
+// }));
+
+
+// $(".process__5").on("click", (function(){
+//   $(this).parents().find('.port').css({
+//     "-ms-transform" : "rotate(231deg)",
+//     "-webkit-transform" : "rotate(231deg)",
+//      "transform" : "rotate(231deg)",
+//      'top' : '135px',
+//      'left' : '350px',
+//      'width' : '447px',
+//      'height' : '460px',
+//      'background-image' : 'url(img/pol15_220.png)'
+//   });
+//   $(this).parents().find('.process__1').addClass('rot');
+//   return false;
+// }));
+
+
+
+// $(".process__6").on("click", (function(){
+//   $(this).parents().find('.port').css({
+//     "-ms-transform" : "rotate(289deg)",
+//     "-webkit-transform" : "rotate(289deg)",
+//      "transform" : "rotate(289deg)",
+//      'top' : '100px',
+//      'left' : '335px',
+//      'width' : '447px',
+//      'height' : '460px',
+//      'background-image' : 'url(img/pol16_285.png)'
+//   });
+//   $(this).parents().find('.process__1').addClass('rot');
+//   $(this).parents().find('.process__2').addClass('rot');
+//   return false;
+// }));
+
+
+
+
+
+// подстраховка
+
+
+// ####################################################
+// ####################################################
+// ####################################################
+
+
 
 
 // *********  Плавное перелистывание стр ****
