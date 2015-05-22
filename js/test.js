@@ -1,5 +1,5 @@
 
-
+//вычесляем на какой градус наклонена фигура
 
 
 function getDegreeElementById(port){
