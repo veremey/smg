@@ -86,7 +86,7 @@ a { text-decoration: none; }
 .process__cyrcle { width: 1200px; margin: 0 auto; position: relative; *zoom: 1; }
 .process__cyrcle:after { content: " "; display: table; clear: both; }
 
-.port { position: absolute; background-image: url("../img/pol11.png"); width: 429px; height: 460px; top: 93px; left: 344px; z-index: 30; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
+.port { position: absolute; background-image: url("../img/pol11.png"); width: 429px; height: 460px; top: 93px; left: 344px; z-index: 90; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
 
 .process__list_container { position: absolute; height: 0; border: none; z-index: 300; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .process__list_container p { margin: 10px; font-size: 13px; line-height: 18px; color: #565656; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
@@ -96,18 +96,18 @@ a { text-decoration: none; }
 .process__list { position: relative; width: 1200px; height: 770px; margin: 0 auto; overflow: hidden; }
 .process__list li { position: relative; display: inline-block; height: 105px; font-size: 15px; vertical-align: top; z-index: 99; }
 .process__list a { display: inline-block; position: relative; color: #565656; z-index: 5; font-family: "Exo2", Arial, sans-serif; font-weight: 300; }
-.process__1 a, .process__5 a, .process__6 a { padding: 5px 60px 0px 10px; text-align: right; }
+.process__1 a, .process__5 a, .process__6 a { padding: 5px 60px 10px 10px; text-align: right; }
 .process__1 a:after, .process__5 a:after, .process__6 a:after { content: ""; position: absolute; top: -5px; right: 0; z-index: 4; background: url('../img/icons-s4b80c6aa14.png') 0 -417px no-repeat; width: 15px; height: 67px; -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); width: 0; }
-.process__1 a:before, .process__5 a:before, .process__6 a:before { content: ""; position: absolute; top: -5px; right: 0; width: 0; bottom: -15px; background-color: #fdf6df; z-index: -1; }
+.process__1 a:before, .process__5 a:before, .process__6 a:before { content: ""; position: absolute; top: -5px; right: 0; width: 0; bottom: -5px; background-color: #fdf6df; z-index: -1; }
 .process__1 a i, .process__5 a i, .process__6 a i { position: absolute; top: 10px; right: 8px; }
 .process__1.is_active, .process__5.is_active, .process__6.is_active { position: relative; }
 .process__1.is_active:before, .process__5.is_active:before, .process__6.is_active:before { display: block; }
 .process__1.is_active img, .process__5.is_active img, .process__6.is_active img { opacity: 1; -moz-transition: all 1s; -o-transition: all 1s; -webkit-transition: all 1s; transition: all 1s; }
 .process__1.is_active a:after, .process__5.is_active a:after, .process__6.is_active a:after { -moz-transition: 0.8s; -o-transition: 0.8s; -webkit-transition: 0.8s; transition: 0.8s; right: 93%; -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); background: url('../img/icons-s4b80c6aa14.png') 0 -417px no-repeat; width: 15px; height: 67px; }
 .process__1.is_active a:before, .process__5.is_active a:before, .process__6.is_active a:before { width: 100%; right: 0; -moz-transition: 0.8s; -o-transition: 0.8s; -webkit-transition: 0.8s; transition: 0.8s; }
-.process__2 a, .process__3 a, .process__4 a { padding: 0 10px 0 60px; }
+.process__2 a, .process__3 a, .process__4 a { padding: 0 10px 10px 60px; }
 .process__2 a:after, .process__3 a:after, .process__4 a:after { content: ""; position: absolute; top: -5px; left: 0; z-index: 4; background: url('../img/icons-s4b80c6aa14.png') 0 -417px no-repeat; width: 15px; height: 67px; width: 0; }
-.process__2 a:before, .process__3 a:before, .process__4 a:before { content: ""; position: absolute; top: -5px; width: 0; bottom: -18px; background-color: #fdf6df; z-index: -1; }
+.process__2 a:before, .process__3 a:before, .process__4 a:before { content: ""; position: absolute; top: -5px; width: 0; bottom: -8px; background-color: #fdf6df; z-index: -1; }
 .process__2 i, .process__3 i, .process__4 i { position: absolute; top: 5px; left: 10px; }
 .process__2.is_active, .process__3.is_active, .process__4.is_active { position: relative; }
 .process__2.is_active:before, .process__3.is_active:before, .process__4.is_active:before { display: block; }

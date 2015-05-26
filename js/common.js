@@ -1,4 +1,3 @@
-
 head.ready(function() {
     // письмо в конце страници
 
@@ -16,6 +15,7 @@ head.ready(function() {
 
 $(document).ready(function() {
 
+// Крутилка
 
     $(".proccess__click").on("click", (function(){
       $(this).siblings().removeClass('is_active');
@@ -217,31 +217,31 @@ $(document).ready(function() {
 
 
 
-var myMap;
+// var myMap;
 
-// Дождёмся загрузки API и готовности DOM.
-ymaps.ready(init);
-function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
-    myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.746993, 37.608284], // Москва
-        zoom: 17
-    });
+// // Дождёмся загрузки API и готовности DOM.
+// ymaps.ready(init);
+// function init () {
+//     // Создание экземпляра карты и его привязка к контейнеру с
+//     // заданным id ("map").
+//     myMap = new ymaps.Map('map', {
+//         // При инициализации карты обязательно нужно указать
+//         // её центр и коэффициент масштабирования.
+//         center: [55.746993, 37.608284], // Москва
+//         zoom: 17
+//     });
 
-    // document.getElementById('destroyButton').onclick = function () {
-    //     // Для уничтожения используется метод destroy.
-    //     myMap.destroy();
-    // };
+//     // document.getElementById('destroyButton').onclick = function () {
+//     //     // Для уничтожения используется метод destroy.
+//     //     myMap.destroy();
+//     // };
 
-  }
+//   };
 
-  // смотри js/yandexMapInit.js
+//   // смотри js/yandexMapInit.js
 
 
-  //  #####  Карта AND ######
+//   //  #####  Карта AND ######
 
 
 

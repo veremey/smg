@@ -63,14 +63,14 @@
 
 	<div class="process">
 		<div class="process__cyrcle">
-			<div class="port" id="port"></div>
+			<div class="port"></div>
 		</div>
 		<div class="process__img ">
 			<img src="img/pentagon.png" alt="">
 		</div>
 		<button class="pentagon"></button>
 		<ul class="process__list">
-			<li class="process__click process__1 is_active">
+			<li class="proccess__click process__1 is_active">
 				<a href="#">Встреча и знакомство <br> с клиентом
 					<i class="process__1_pic"></i>
 				</a>
@@ -81,7 +81,7 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi similique aut, explicabo nostrum corrupti, iusto soluta officiis reiciendis rerum quas, neque. Repudiandae officia omnis accusantium dicta eos deleniti rem doloribus consequuntur saepe, quos atque, voluptatem, cupiditate! Provident sapiente ex, quasi enim incidunt rerum odit nisi, maiores expedita nulla dicta.</p>
 				</div>
 			</li>
-			<li class="process__click process__2 ">
+			<li class="proccess__click process__2 ">
 
 				<a href="#">
 					<i class="process__2_pic"></i>
@@ -93,7 +93,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi similique veritatis error mollitia est tenetur non numquam quas pariatur impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum corrupti laboriosam ex accusamus quae similique ipsum? Est odit, nesciunt id quos ut ipsa dolore at perferendis quo ullam accusamus consectetur aperiam quis consequatur, maxime, nam doloremque, rem quasi eum? Numquam vitae vero officia dignissimos commodi adipisci culpa, mollitia ad doloribus. </p>
 				</div>
 			</li>
-			<li class="process__click process__3 ">
+			<li class="proccess__click process__3 ">
 				<i class="process__3_pic"></i>
 				<a href="#"> Создание макетов <br> дизайна
 				</a>
@@ -103,7 +103,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi similique veritatis error mollitia est tenetur non numquam quas pariatur impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, laborum fugit labore earum quo officiis enim eaque neque soluta iusto a obcaecati modi pariatur temporibus! Delectus enim tempora quisquam modi aperiam, amet veritatis quam asperiores aliquid voluptas, quo libero iusto? </p>
 				</div>
 			</li>
-			<li class="process__click process__4 ">
+			<li class="proccess__click process__4 ">
 				<i class="process__4_pic"></i>
 				<a href="#"> Программирование функциональных <br> модулей системы
 				</a>
@@ -113,7 +113,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi similique veritatis error mollitia est tenetur non numquam quas pariatur impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ea eligendi ducimus enim. Maxime quisquam et quod. Est, sint quas repudiandae quam. Saepe enim atque, eveniet officiis excepturi voluptates ducimus voluptatem, nam itaque? Quo illo saepe repellat libero, modi, rem? </p>
 				</div>
 			</li>
-			<li class="process__click process__5 ">
+			<li class="proccess__click process__5 ">
 				<a href="#">Тестирование <br> и отладка сайта
 					<i class="process__5_pic"></i>
 				</a>
@@ -123,7 +123,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi similique veritatis error mollitia est tenetur non numquam quas pariatur impedit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique id unde iusto, recusandae aperiam quisquam quam ipsum consequuntur quibusdam dolor maiores, beatae quo temporibus, maxime odit officiis! Animi alias reiciendis maxime dignissimos, pariatur cumque veritatis excepturi laborum dolorem quam eius? .</p>
 				</div>
 			</li>
-			<li class="process__click process__6 ">
+			<li class="proccess__click process__6 ">
 				<a href="#">Обучение клиента<br>по сайту
 					<i class="process__6_pic"></i>
 				</a>
@@ -258,6 +258,7 @@
 				data-cycle-fx="scrollHorz"
 				data-cycle-swipe="true"
 				data-cycle-timeout=0
+				data-cycle-swipe="true"
 				data-cycle-speed="800"
 				data-cycle-slides=".client__slider"
 				data-cycle-pager-template="<button></button>"
@@ -478,42 +479,6 @@
 <!-- END out-->
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
-
-<script>
-
-
-function getDegreeElementById(port){
-    var element = document.getElementById('port');
-    var style = window.getComputedStyle(element, null);
-    // получаем значение стилей
-    var valueStyle = style.getPropertyValue("-webkit-transform") ||
-        style.getPropertyValue("-moz-transform") ||
-        style.getPropertyValue("-ms-transform") ||
-        style.getPropertyValue("-o-transform") ||
-        style.getPropertyValue("transform");
-    // если стилей нет, то угол 0 градусов
-    if(valueStyle == 'none') return 0;
-    // разбираем полученное значение
-    console.log(valueStyle);
-    var values = valueStyle.split('(')[1];
-    values = values.split(')')[0];
-    values = values.split(',');
-    // получаем синус и косинус
-    var cos = values[0];
-    var sin = values[1];
-    // вычисляем угол
-    var degree = Math.round(Math.asin(sin) * (180/Math.PI));
-    if(cos<0){
-        addDegree = 90 - Math.round(Math.asin(sin) * (180/Math.PI));
-        degree = 90 + addDegree;
-    };
-    if(degree < 0){
-        degree = 360 + degree;
-    };
-    return degree;
-};
-
-</script>
 
 </body>
 </html>

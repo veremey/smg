@@ -3,5 +3,4 @@ head.load("js/lib/jquery.js",
 					"js/lib/cycle.js",
 					"js/yandexMapInit.js",
 					"js/lib/jquery.validate.js",
-					"js/test.js",
 					"js/common.js");
