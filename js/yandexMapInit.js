@@ -1,4 +1,4 @@
-ymaps.ready(function () {
+ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
             center: [55.74730, 37.6105],
             zoom: 17
