@@ -27,7 +27,12 @@ body
 	min-width: 1180px
 	width: 100%
 	background-color: #000
-
+	+r(480)
+		min-width: 480px
+		width: 480px
+.hide480
+	+r(480)
+		display: none
 
 .clear
 	clear: both
@@ -46,6 +51,8 @@ a
 	width: 1000px
 	margin: 0 auto
 	+clr
+	+r(480)
+		width: 460px
 .b_center
 	position: relative
 	min-width: 1234px
@@ -108,16 +115,32 @@ a
 	position: fixed
 	top: 0
 	background-color: rgba(0, 0, 0, .9)
-	z-index: 9999
+	z-index: 99999
 	height: 97px
 	+clr
+	+r(480)
+		min-width: 480px
+		width: 480px!important
+		height: 135px
 	&__menu
 		font-size: 0
 		float: left
 		margin-top: 27px
 		margin-left: 105px
+		+r(480)
+			margin-left: 0
+			margin-top: 10px
+		.is-active //delete me &&
+			> a
+				border-color: $yellow
+				+tr(.6s)
+				&:before
+					display: none
+			+ li a:before
+				display: none
 		li
 			display: inline-block
+			.is-active
 			&:hover
 				> a
 					border-color: $yellow
@@ -156,6 +179,12 @@ a
 		float: right
 		margin-top: 21px
 		+clr
+		+r(480)
+			position: absolute
+			width: 307px
+			top: 10px
+			right: 10px
+			margin-top: 0
 		&_tel
 			float: right
 			color: #FFF
@@ -167,12 +196,19 @@ a
 			color: $yellow
 			font-size: 13px
 			+el
+			+r(480)
+				margin-top: 15px
+				float: none
+				line-height: 28px
 	.l_center
 		position: relative
 .logo
 	float: left
 	margin: 20px 0
 	+s(logo)
+	+r(480)
+		margin: 10px 0
+		+s(m_logo)
 	h1
 		+hide-text
 
@@ -183,6 +219,8 @@ a
 	height: 811px
 	min-width: 100%
 	+clr
+	+r(480)
+		height: 455px
 	&__img
 		position: absolute
 		text-align: center
@@ -195,15 +233,25 @@ a
 		width: 700px
 		margin: 0 auto
 		+clr
+		+r(480)
+			width: 460px
 	&__list
 		width: 260px
 		float: left
 		margin-right: 130px
+		+r(480)
+			margin-left: 15px
+			width: 195px
+			margin-right: 15px
 		p
 			font-size: 20px
 			margin-left: 10px
 			+el
 			font-weight: 200
+			+r(480)
+				font-size: 15px
+				font-weight: 400
+				margin-left: 5px
 		&:nth-child(2n)
 			margin-right: 0
 		+clr
@@ -213,10 +261,15 @@ a
 			font-size: 20px
 			margin-bottom: 20px
 			color: #656565
+			+r(480)
+				margin-bottom: 5px
+				list-style-image: url("../img/list__img_m.png")
 	&__container
 		position: relative
 		z-index: 4
 		padding-top: 225px
+		+r(480)
+			padding-top: 170px
 .big__title
 	position: relative
 	text-align: center
@@ -226,6 +279,10 @@ a
 	margin: 50px 30px
 	text-transform: uppercase
 	+eb
+	+r(480)
+		font-size: 26px
+		line-height: 26px
+		margin: 20px 30px
 	i
 		position: absolute
 		bottom: -19px
@@ -594,6 +651,8 @@ a
 .portfolio
 	height: 1200px
 	vertical-align: top
+	+r(480)
+		height: auto
 	// img
 	// 	display: inline-block
 	&__big
@@ -602,6 +661,8 @@ a
 		height: 600px
 		width: 50%
 		overflow: hidden
+		+r(480)
+			width: 100%
 		&:hover
 			.portfolio__big_mask
 				opacity: 1
@@ -662,6 +723,8 @@ a
 		height: 300px
 		width: 50%
 		overflow: hidden
+		+r(480)
+			width: 100%
 		&:hover
 			.portfolio__small_mask,
 			.bg__green,
@@ -718,6 +781,8 @@ a
 		height: 600px
 		width: 50%
 		overflow: hidden
+		+r(480)
+			width: 100%
 		&:hover
 			.portfolio__small_mask,
 			.bg__green,
@@ -783,9 +848,13 @@ a
 	width: 50%
 	float: left
 	+clr
+	+r(480)
+		width: 100%
 .small__vertical
 	width: 50%
 	float: left
+	+r(480)
+		width: 100%
 	.portfolio__small
 		width: 100%
 	+clr
@@ -823,12 +892,16 @@ a
 	height: 615px
 	padding-top: 1px
 	+clr
+	+r(480)
+		height: auto
 	.big__title
 		margin-top: 80px
 		margin-bottom: 95px
 	&__slider
 		width: 1000px //940
 		+clr
+		+r(480)
+			width: 460px
 	&__wrap
 		float: left
 		position: relative
@@ -837,6 +910,8 @@ a
 		overflow: hidden
 		+gray
 		+clr
+		+r(480)
+			width: 50%
 		&:hover
 			+gray-zero
 		&_img
@@ -882,6 +957,8 @@ a
 	padding: 1px
 	background-image: url("../img/comment__bg.png")
 	+clr
+	+r(480)
+		height: auto
 	.big__title
 		color: #FFF
 		margin: 85px 30px 90px
@@ -890,6 +967,8 @@ a
 		background-color: #FFF
 		padding: 25px 70px 40px
 		+clr
+		+r(480)
+			padding: 25px 0 40px // !!!!!!!!!!!!!!!!!
 	img
 		float: left
 		height: 100%
@@ -915,6 +994,8 @@ a
 			border-bottom: 1px solid transparent
 	&__content
 		width: 860px
+		+r(480)
+			width: 460px //!!!!!!!!!!!!!!!!!
 		p
 			font-size: 13px
 			color: #363636

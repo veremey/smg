@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Main</title>
-	<meta name="viewport" content="width=1200, initial-scale=0.1">
+	<meta name="viewport" content="width=device-wigth, initial-scale=1">
 	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
@@ -23,7 +23,7 @@
 			</a>
 			<ul class="header__menu">
 				<li><a id="key__link" href="#key" >О нас</a></li>
-				<li><a id="" href="#">Услуги</a></li>
+				<li class="is-active"><a id=""  href="#">Услуги</a></li>
 				<li><a id="portf" href="#portfolio">работы</a></li>
 				<li><a id="cont" href="#mapin">контакты</a></li>
 				<li><a id="write" href="#mapin__contakt">Написать нам</a></li>
@@ -36,7 +36,13 @@
 	</div>
 	<div class="key" id="key">
 		<div class="key__img">
-			<img src="img/sl1.png" alt="">
+		<picture>
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="img/sl1.png" media="(min-width: 481px)">
+			<source srcset="img/sl1_m.png" media="(min-width: 100px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="img/sl1.png" alt="img">
+		</picture>
 		</div>
 		<div class="l_center">
 			<div class="key__container">
@@ -61,7 +67,7 @@
 <!-- ############################################################### -->
 
 
-	<div class="process">
+	<div class="process hide480">
 		<div class="process__cyrcle">
 			<div class="port" id="port"></div>
 		</div>
@@ -248,6 +254,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
 	<div class="client">
 		<i class="setka__left"></i>
@@ -367,9 +374,11 @@
 					</a>
 				</div>
 			</div>
+			<div class="clear"></div>
 			<button class="cycle__prev js-slider-prev"></button>
 			<button class="cycle__next js-slider-next"></button>
 		</div>
+		<div class="clear"></div>
 	</div>
 	<div class="comment">
 		<h2 class="big__title">Отзывы о нас <i></i></h2>
