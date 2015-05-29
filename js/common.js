@@ -377,6 +377,7 @@ $(document).ready(function() {
             },
             username: {
               required: '* Введите Ваше имя',
+              minlength: 'Минимум 2 символa'
             },
             message: {
               required: 'Заполните поле',

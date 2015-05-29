@@ -23,7 +23,7 @@
 			</a>
 			<ul class="header__menu">
 				<li><a id="key__link" href="#key" >О нас</a></li>
-				<li class="is-active"><a id=""  href="#">Услуги</a></li>
+				<li><a id=""  href="#">Услуги</a></li>
 				<li><a id="portf" href="#portfolio">работы</a></li>
 				<li><a id="cont" href="#mapin">контакты</a></li>
 				<li><a id="write" href="#mapin__contakt">Написать нам</a></li>
@@ -149,7 +149,13 @@
 		<div class="row">
 			<div class="portfolio__big">
 				<div class="portfolio__big_wrap">
-					<img src="img/p1.png" alt="">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="img/p1.png" media="(min-width: 481px)">
+						<source srcset="img/p1.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="img/p1.png" alt="img">
+					</picture>
 				</div>
 				<div class="portfolio__big_mask bg__green">
 					<div class="portfolio__big_center">
@@ -163,7 +169,13 @@
 				<div class="small__vertical">
 					<div class="portfolio__small ">
 						<div class="portfolio__small_wrap">
-							<img src="img/p2.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/p2.png" media="(min-width: 481px)">
+								<source srcset="img/p2.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/p2.png" alt="img">
+							</picture>
 						</div>
 						<div class="portfolio__small_mask bg__pink">
 							<div class="portfolio__small_center">
@@ -175,7 +187,13 @@
 					</div>
 					<div class="portfolio__small">
 						<div class="portfolio__small_wrap">
-							<img src="img/p3.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/p3.png" media="(min-width: 481px)">
+								<source srcset="img/p3.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/p3.png" alt="img">
+							</picture>
 						</div>
 						<div class="portfolio__small_mask bg__blue">
 							<div class="portfolio__small_center">
@@ -188,7 +206,13 @@
 				</div>
 				<div class="portfolio__hight">
 					<div class="portfolio__hight_wrap">
-						<img src="img/p4.png" alt="">
+						<picture>
+							<!--[if IE 9]><video style="display: none;"><![endif]-->
+							<source srcset="img/p4.png" media="(min-width: 481px)">
+							<source srcset="img/p4_m.png" media="(min-width: 100px)">
+							<!--[if IE 9]></video><![endif]-->
+							<img srcset="img/p4.png" alt="img">
+						</picture>
 					</div>
 					<div class="portfolio__small_mask bg__purple">
 							<div class="portfolio__small_center">
@@ -204,7 +228,13 @@
 			<div class="portfolio__col">
 				<div class="portfolio__long">
 					<div class="portfolio__long_wrap">
-						<img src="img/p5.png" alt="">
+						<picture>
+							<!--[if IE 9]><video style="display: none;"><![endif]-->
+							<source srcset="img/p5.png" media="(min-width: 481px)">
+							<source srcset="img/p5.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+							<!--[if IE 9]></video><![endif]-->
+							<img srcset="img/p5.png" alt="img">
+						</picture>
 					</div>
 					<div class="portfolio__small_mask bg__sun">
 						<div class="portfolio__small_center">
@@ -217,7 +247,13 @@
 				<div class="small__horizontal">
 					<div class="portfolio__small ">
 						<div class="portfolio__small_wrap">
-							<img src="img/p6.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/p6.png" media="(min-width: 481px)">
+								<source srcset="img/p6.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/p6.png" alt="img">
+							</picture>
 						</div>
 						<div class="portfolio__small_mask bg__sea">
 							<div class="portfolio__small_center">
@@ -394,7 +430,13 @@
 					data-cycle-next=".js-slid_next">
 					<div class="comment__item">
 						<div class="comment__wrap">
-							<img src="img/pq1.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/pq1.png" media="(min-width: 481px)">
+								<source srcset="img/pq1_m.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/pq1.png" alt="img">
+							</picture>
 							<div class="comment__name">Иванов Игорь Владимировичь</div>
 							<div class="comment__who">Генеральный директор</div>
 							<a href="#" class="comment__site">find-a-builder.com</a>
@@ -432,7 +474,7 @@
 		</div>
 	</div><!--   END COMMENT -->
 	<div class="mapin" id="mapin">
-		<div id="map"  style="width: 100%; height: 545px">
+		<div id="map"  style="width: 100%; height: 100%">
 		</div>
 		<div class="l_center">
 			<div class="mapin__contakt" id="mapin__contakt">
