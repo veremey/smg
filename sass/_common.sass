@@ -33,7 +33,10 @@ body
 .hide480
 	+r(480)
 		display: none
-
+.show480
+	display: none
+	+r(480)
+		display: block
 .clear
 	clear: both
 	height: 0
@@ -1247,6 +1250,13 @@ a
 		+r(480)
 			top: 255px
 
+.write__scroll
+	// position: relative
+	display: block
+	height: 50px
+	margin-top: -50px
+	background-color: #F45
+	// z-index: 9
 .footer
 	background-color: #000
 	text-align: center

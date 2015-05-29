@@ -187,23 +187,28 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-   $(document).on('click', '#key__link', function () {
+   $(document).on('click', '#key__link', function() {
         $('html, body').animate({ scrollTop: $('#key').offset().top }, 2000 );
         return false;
     });
 
-   $(document).on('click', '#portf', function () {
+   $(document).on('click', '#portf', function() {
         $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 2000 );
         return false;
     });
 
-   $(document).on('click', '#cont', function () {
+   $(document).on('click', '#cont', function() {
         $('html, body').animate({ scrollTop: $('#mapin').offset().top }, 3000 );
         return false;
     });
 
-   $(document).on('click', '#write', function () {
+   $(document).on('click', '#write', function() {
         $('html, body').animate({ scrollTop: $('#mapin__contakt').offset().top }, 3000 );
+        return false;
+    });
+
+   $(document).on('click', '#write__scroll', function() {
+        $('html, body').animate({ scrollTop: $('#letter').offset().top }, 1000 );
         return false;
     });
 
