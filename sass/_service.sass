@@ -1,6 +1,8 @@
 .service
 	margin-top: 98px
 	overflow: hidden
+	+r(480)
+		margin-top: 136px
 .sidebar
 	position: relative
 	width: 25%
@@ -9,6 +11,8 @@
 	font-size: 0
 	background-color: #FFF
 	z-index: 5
+	+r(480)
+		width: 100%
 	li
 		position: relative
 		height: 125px
@@ -78,17 +82,24 @@
 	width: 75%
 	min-height: 1008px
 	+clr
+	+r(480)
+		width: 100%
+		min-height: 100%
 	&_wrap
 		position: relative
-		width: 76%
+		width: 95%
 		margin: 180px auto 190px
 		z-index: 2
 		+clr
+		+r(480)
+			margin: 40px auto 40px
 		img
 			float: left
 			width: 26%
 			height: auto
 			margin: 0 30px 25px 0
+			+r(480)
+				margin-bottom: 20px
 	&_contant
 		h2
 			font-size: 42px
@@ -98,6 +109,9 @@
 			text-transform: uppercase
 			+r(1200)
 				font-size: 36px
+			+r(480)
+				line-height: 40px
+				margin-bottom: 10px
 		p
 			font-size: 15px
 			color: #5F5F5F
