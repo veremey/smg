@@ -67,14 +67,15 @@
 <!-- ############################################################### -->
 
 
-	<div class="process hide480">
-		<div class="process__cyrcle">
+	<div class="process ">
+		<div class="process__cyrcle hide480">
 			<div class="port" id="port"></div>
 		</div>
 		<div class="process__img ">
-			<img src="img/pentagon.png" alt="">
+			<img class="hide480" src="img/pentagon.png" alt="">
+			<img class="show480 process__img_center" src="img/way.png" alt="">
 		</div>
-		<button class="pentagon"></button>
+		<button class="pentagon hide480	"></button>
 		<ul class="process__list">
 			<li class="proccess__click process__1 is_active">
 				<a href="#">Встреча и знакомство <br> с клиентом
@@ -111,7 +112,7 @@
 			</li>
 			<li class="proccess__click process__4 ">
 				<i class="process__4_pic"></i>
-				<a href="#"> Программирование функциональных <br> модулей системы
+				<a href="#"> Программирование <wbr> функциональных <br> модулей системы
 				</a>
 				<b class="process__4_num">4</b>
 				<span class="process__4_bird"></span>
@@ -447,7 +448,13 @@
 					</div> <!-- comment__item -->
 					<div class="comment__item">
 						<div class="comment__wrap">
-							<img src="img/pq1.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/pq1.png" media="(min-width: 481px)">
+								<source srcset="img/pq1_m.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/pq1.png" alt="img">
+							</picture>
 							<div class="comment__name">Иванов Игорь Владимировичь</div>
 							<div class="comment__who">Генеральный директор</div>
 							<a href="#" class="comment__site">find-a-builder.com</a>
@@ -458,7 +465,13 @@
 					</div> <!-- comment__item -->
 					<div class="comment__item">
 						<div class="comment__wrap">
-							<img src="img/pq1.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/pq1.png" media="(min-width: 481px)">
+								<source srcset="img/pq1_m.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/pq1.png" alt="img">
+							</picture>
 							<div class="comment__name">Иванов Игорь Владимировичь</div>
 							<div class="comment__who">Генеральный директор</div>
 							<a href="#" class="comment__site">find-a-builder.com</a>

@@ -49,6 +49,8 @@ a
 	margin: 0 auto
 	background-color: #FFF
 	+clr
+	+r(480)
+		overflow: hidden
 .l_center
 	position: relative
 	width: 1000px
@@ -329,12 +331,17 @@ a
 		line-height: 18px
 		color: #565656
 		+el
+		+r(480)
+			font-size: 16px
+			line-height: 18px
 .process
 	position: relative
 	height: 775px
 	margin-top: -50px
 	background-color: #FFF
 	padding-top: 100px
+	+r(480)
+		height: 590px
 	&__img
 		position: absolute
 		width: 650px
@@ -343,25 +350,34 @@ a
 		left: 50%
 		margin-left: -323px
 		text-align: center
+		&_center
+			margin: 0 auto
 	&__list
 		position: relative
 		width: 1200px
 		height: 770px
-		margin: 0 auto
+		margin: 0px auto 0
 		overflow: hidden
+		+r(480)
+			width: 480px
+			height: 590px
+			margin-top: -50px
 		li
 			position: relative
 			display: inline-block
 			height: 105px
 			font-size: 15px
 			vertical-align: top
-			z-index: 99
+			// z-index: 99
+			+r(480)
+				height: 60px
 		a
 			display: inline-block
 			position: relative
 			color: #565656
 			z-index: 5
 			+el
+			+tr(0)
 	&__1,
 	&__5,
 	&__6
@@ -396,6 +412,8 @@ a
 		position: relative
 		&:before
 			display: block
+			+r(480)
+				display: none
 		img
 			opacity: 1
 			+tr(all 1s)
@@ -440,6 +458,8 @@ a
 		position: relative
 		&:before
 			display: block
+			+r(480)
+				display: none
 		img
 			opacity: 1
 			+tr(all 1s)
@@ -454,9 +474,20 @@ a
 				left: 0
 				right: 0
 				+tr(.8s)
+	&__3.is_active
+		+r(480)
+			a
+				&:after
+					right: 93%
+				&:before
+					right: 0
 	&__1
 		top: 20px
 		left: 270px
+		+r(480)
+			top: 0
+			left: 40px
+			margin-top: 25px
 		&:before
 			content: ""
 			display: none
@@ -469,6 +500,9 @@ a
 			position: absolute
 			top: 75px
 			left: 242px
+			+r(480)
+				top: 28px
+				left: 250px
 		&_pic
 			+s(w9)
 		.process__list_container
@@ -476,9 +510,17 @@ a
 			left: -215px
 			width: 340px
 			max-height: 90px
+			+r(480)
+				left: -23px
+				width: 300px
+				background-color: #FFF
+				max-height: 105px
 	&__2
 		top: 99px
 		left: 560px
+		+r(480)
+			top: 125px
+			left: -20px
 		&:before
 			content: ""
 			display: none
@@ -491,6 +533,9 @@ a
 			position: absolute
 			top: 60px
 			left: -50px
+			+r(480)
+				top: 15px
+				left: -22px
 		&_pic
 			+s(w1)
 		.process__list_container
@@ -498,11 +543,20 @@ a
 			left: 35px
 			width: 255px
 			max-height: 165px
+			+r(480)
+				left: -130px
+				width: 350px
+				max-height: 120px
 	&__3
 		top: 366px
 		left: 401px
+		+r(480)
+			top: 135px
+			left: 68px
 		a
 			padding-right: 9px
+			+r(480)
+				padding: 0 60px 10px 10px
 		&:before
 			content: ""
 			display: none
@@ -515,17 +569,28 @@ a
 			position: absolute
 			top: 20px
 			left: -58px
+			+r(480)
+				top: 13px
+				left: 225px
 		&_pic
 			+s(w5)
 			z-index: 10
+			+r(480)
+				left: 158px!important
 		.process__list_container
 			top: 80px
 			left: 0
 			width: 255px
 			max-height: 150px
+			+r(480)
+				width: 357px
+				max-height: 104px
 	&__4
 		top: 615px
 		left: -33px
+		+r(480)
+			top: 168px
+			left: 208px
 		&:before
 			content: ""
 			display: none
@@ -538,6 +603,9 @@ a
 			position: absolute
 			top: -70px
 			left: 0px
+			+r(480)
+				top: 8px
+				left: -22px
 		&_pic
 			+s(w7)
 			z-index: 10
@@ -546,9 +614,15 @@ a
 			left: -380px
 			width: 355px
 			max-height: 115px
+			+r(480)
+				top: 75px
+				left: -121px
 	&__5
 		top: 500px
 		left: -872px
+		+r(480)
+			top: 193px
+			left: 91px
 		&:before
 			content: ""
 			display: none
@@ -561,6 +635,9 @@ a
 			position: absolute
 			top: -8px
 			left: 300px
+			+r(480)
+				top: 16px
+				left: 200px
 		&_pic
 			+s(w6)
 		.process__list_container
@@ -568,11 +645,22 @@ a
 			left: 0px
 			width: 355px
 			max-height: 175px
+			+r(480)
+				left: -52px
+				width: 360px
+				max-height: 103px
 	&__6
 		top: 120px
 		left: 45px
+		+r(480)
+			top: 290px
+			left: 50px
 		a
 			padding-right: 70px
+			+r(480)
+				padding: 5px 10px 10px 70px
+				i
+					right: 150px
 		&:before
 			content: ""
 			display: none
@@ -587,6 +675,9 @@ a
 			position: absolute
 			top: 35px
 			left: 308px
+			+r(480)
+				top: 15px
+				left: -50px
 		&_pic
 			+s(w06)
 		.process__list_container
@@ -594,10 +685,17 @@ a
 			left: 0px
 			width: 250px
 			max-height: 180px
+			+r(480)
+				top: -160px
+				left: -130px
+				width: 325px
+				max-height: 138px
 	.is_active
 		position: relative
 		b
 			+opacity(0)
+			+r(480)
+				+opacity(1)
 		.process__list_container
 			height: auto
 			border: 2px solid #F3BE1E
@@ -607,6 +705,8 @@ a
 			-webkit-transition: opacity .4s .6s
 			-ms-transition: opacity .4s .6s
 			transition: opacity .4s .6s
+			background-color: #FFF
+			z-index: 9999
 	&__4.is_active
 		a:after
 			left: 95%!important  //корректировка
@@ -658,6 +758,8 @@ a
 	vertical-align: top
 	+r(480)
 		height: auto
+		width: 480px
+		overflow: hidden
 	// img
 	// 	display: inline-block
 	&__big
