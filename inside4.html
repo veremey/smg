@@ -3,8 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>inside4</title>
-	<meta name="viewport" content="initial-scale=0.1">
-	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-wigth, initial-scale=1">
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,300,400&subset=cyrillic' rel='stylesheet' type='text/css'>
@@ -41,7 +40,13 @@
 	</div>
 	<div class="cover__bg ">
 		<div class="cover__img">
-			<img src="img/cover__img.png" alt="">
+			<picture>
+				<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset="img/cover__img.png" media="(min-width: 481px)">
+				<source srcset="img/cover__img_m.png" media="(min-width: 100px)">
+				<!--[if IE 9]></video><![endif]-->
+				<img srcset="img/cover__img.png" alt="img">
+			</picture>
 		</div>
 		<div class="x_center">
 			<h2 class="title__smile"><i></i><em>sMile</em></h2>

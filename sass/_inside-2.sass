@@ -2,16 +2,23 @@
 .bg__in2
 	background-color: #a095c7
 	height: 645px
+	+r(480)
+		height: 480px
 
 #main
 	position: relative
 	margin-top: -150px
 	+clr
+	+r(480)
+		margin-top: -100px
 .carousel
 	position: relative
 	margin: 0 auto
 	z-index: 2
 	width: 943px
+	+r(480)
+		width: 460px
+		margin-bottom: -50px
 	&__main
 		margin-bottom: 20px
 		z-index: 2
@@ -21,6 +28,10 @@
 		height: 750px
 		background-color: #FCCC50
 		text-align: center
+		+r(480)
+			height: auto
+			padding-bottom: 140px
+			padding-top: 50px
 		.slick-slide
 			cursor: pointer
 			margin: 0 30px
@@ -29,6 +40,8 @@
 				margin: 0 20px
 			+r(1300)
 				width: 246px!important
+				+r(480)
+					width: 460px!important
 			&:hover
 				img
 					+opacity(1)

@@ -69,6 +69,9 @@ a
 		min-width: 1180px
 		width: 1180px
 		padding: 0 10px
+		+r(480)
+			width: 460px
+			min-width: 460px
 .x_center
 	position: relative
 	width: 1294px
@@ -77,6 +80,8 @@ a
 	+clr
 	+r(1300)
 		width: 1200px
+	+r(480)
+		width: 460px
 
 .min1200
 	min-width: 1180px
@@ -84,19 +89,25 @@ a
 	+r(1300)
 		width: 1200px
 		margin: 0 auto
-
+	+r(480)
+		min-width: 480px
+		width: 480px
+		overflow: hidden
 .min1200_a
 	min-width: 1180px
 	width: 100%
 	+r(1300)
 		margin: 0 auto
+	+r(480)
+		min-width: 480px
+		overflow: hidden
 
 
 
 .main
 	&__prev
 		position: absolute
-		top: 360px
+		top: 185px
 		left: 0
 		margin-top: -23px
 		z-index: 5
@@ -105,7 +116,7 @@ a
 			opacity: .8
 	&__next
 		position: absolute
-		top: 360px
+		top: 185px
 		right: 0
 		margin-top: -23px
 		z-index: 5
@@ -289,7 +300,7 @@ a
 	+r(480)
 		font-size: 26px
 		line-height: 26px
-		margin: 20px 30px
+		margin: 30px
 	i
 		position: absolute
 		bottom: -19px
@@ -298,6 +309,8 @@ a
 		height: 5px
 		margin-left: -54px
 		background-color: #FFD739
+		+r(480)
+			height: 2px
 
 
 

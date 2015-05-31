@@ -3,18 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Inside1</title>
-	<meta name="viewport" content="initial-scale=0.1">
-	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-wigth, initial-scale=1">
+	<!-- <meta name="format-detection" content="telephone=no"> -->
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,300,400&subset=cyrillic' rel='stylesheet' type='text/css'>
-	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="stylesheet" media="all" href="css/screen.css" >
 
-	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=1062"/>
+	<!-- <meta name="viewport" content="width=1062"/> -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Find a Builder offers professional plumbers, builders, electricians, carpenters and every other type of building specialist to the home improver and small developer." />
 	<meta name="language" content="en" />
@@ -58,6 +56,12 @@
 	<script type="text/javascript" src="js/custom-form-elements.js"></script>
 	<script type="text/javascript" src="js/jquery.selectBox.min.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+	<!--  -->
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:700,300,400&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -84,12 +88,18 @@
 	</div>
 	<div class="spin">
 		<div class="key__img">
-			<img src="img/ins1.png" alt="">
+			<picture>
+				<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source srcset="img/ins1.png" media="(min-width: 481px)">
+				<source srcset="img/ins1_m.png" media="(min-width: 100px)">
+				<!--[if IE 9]></video><![endif]-->
+				<img src="img/ins1.png" alt="">
+			</picture>
 		</div>
 		<div class="l_center">
 			<div class="spin__container">
 				<h2 class="big__title">find-a-builder.com <i></i></h2>
-				<p>Find a Builder offers every type of building specialist - from architect to zinc roofer - so our clients <br>can find exactly the expertise they want</p>
+				<p>Find a Builder offers every type of building specialist - from architect to zinc roofer - so our clients can find exactly the expertise they want</p>
 			</div>
 		</div>
 	</div>
@@ -102,7 +112,7 @@
 			<ul class="bild">
 				<li>
 					<h2>Индивидуальный подход</h2>
-					<p>Мы прислушиваемся ко всем пожеланиям наших <br> клиентов и для каждого нового проекта <br> разрабатываем свой индивидуальный дизайн сайт</p>
+					<p>Мы прислушиваемся ко всем пожеланиям наших  клиентов и для каждого нового проекта  разрабатываем свой индивидуальный дизайн сайт</p>
 				</li>
 				<li>
 					<h2>Концепция и исполнение <br> дизайна - от заказчика</h2>
@@ -123,7 +133,7 @@
 			</ul>
 			<img class="big__img" src="img/st1.png" alt="">
 			<div class="clear"></div>
-			<div class="new_site">
+			<div class="new_site hide480">
 			<div class="him box">
 				<div class="wheader"></div>
 				<div id="wrapper">

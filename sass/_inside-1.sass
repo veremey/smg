@@ -7,6 +7,8 @@
 	height: 940px
 	overflow: hidden
 	+clr
+	+r(480)
+		height: 640px
 	.big__title
 		color: #FFF
 	&__container
@@ -19,6 +21,8 @@
 			margin: 0 auto
 			font-size: 22px
 			font-family: Arial, sans-serif
+			+r(480)
+				margin-top: 45px
 	.comment__prev,
 	.comment__next
 		z-index: 10
@@ -34,14 +38,22 @@
 	&__img
 		float: right
 		margin: 50px 0 35px
+		+r(480)
+			width: 460px
+			margin: 0 auto 30px
 .bild
 	width: 380px
 	float: left
 	margin-top: 50px
+	+r(480)
+		width: 405px
+		margin: 35px 0 0 25px
 	li
 		padding-left: 10px
 		margin: 0 0 140px 25px
 		list-style-image: url("../img/list__img.png")
+		+r(480)
+			margin-bottom: 35px
 		h2
 			font-size: 24px
 			line-height: 21px
@@ -52,6 +64,8 @@
 			color: #5F5F5F
 			margin-top: 15px
 			+el
+			+r(480)
+				font-size: 16px
 .new_site
 	position: relative
 	margin: 0 auto
