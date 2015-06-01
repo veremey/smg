@@ -1,6 +1,6 @@
 ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
-            center: [55.74730, 37.6105],
+            center: [55.74630, 37.6105],
             zoom: 17
         }),
         myPlacemark = new ymaps.Placemark([55.747171, 37.60944], {
@@ -21,7 +21,7 @@ ymaps.ready(function() {
     });
     myMap.geoObjects.add(myPlacemark);
     myMap.behaviors
-        .disable(['rightMouseButtonMagnifier','scrollZoom'])
+        .disable(['rightMouseButtonMagnifier','scrollZoom', 'drag'])
 });
 
 
