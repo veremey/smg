@@ -263,8 +263,8 @@ $(document).ready(function() {
 $(document).ready(function(){
 
  $('.js-carousel').slick({
-    slidesToShow: 1, //1
-    slidesToScroll: 1, //1
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
     fade: true,
     asNavFor: '.js-carousel-preview',
@@ -282,7 +282,7 @@ $(document).ready(function(){
   });
   $('.js-carousel-preview').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     asNavFor: '.js-carousel',
     dots: false,
     arrows: true,
@@ -291,10 +291,10 @@ $(document).ready(function(){
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 980,
+        breakpoint: 480,
         settings: {
-        slidesToShow: 6,
-        slidesToScroll: 6
+        slidesToShow: 2,
+        slidesToScroll: 2
         }
       }
     ]
