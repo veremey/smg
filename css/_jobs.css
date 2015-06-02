@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'clr'.
-        on line 8 of D:/__github/smg/sass/_jobs.sass, in `clr'
-        from line 8 of D:/__github/smg/sass/_jobs.sass
+        on line 9 of D:/__github/smg/sass/_jobs.sass, in `clr'
+        from line 9 of D:/__github/smg/sass/_jobs.sass
 
-3: 	position: relative
 4: 	min-width: 1200px// ??
 5: 	max-width: 2000px // ??
 6: 	width: 100% //??
 7: 	padding-top: 1px
-8: 	+clr
-9: 	+r(480)
-10: 		min-width: 480px
-11: 		width: 480px
-12: 	.big__title
-13: 		margin: 150px auto 70px
+8: 	overflow: hidden
+9: 	+clr
+10: 	+r(480)
+11: 		min-width: 480px
+12: 		width: 480px
+13: 	.big__title
+14: 		margin: 150px auto 70px
 
 Backtrace:
-D:/__github/smg/sass/_jobs.sass:8:in `clr'
-D:/__github/smg/sass/_jobs.sass:8
+D:/__github/smg/sass/_jobs.sass:9:in `clr'
+D:/__github/smg/sass/_jobs.sass:9
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'clr'.\A         on line 8 of D:/__github/smg/sass/_jobs.sass, in `clr'\A         from line 8 of D:/__github/smg/sass/_jobs.sass\A \A 3: 	position: relative\A 4: 	min-width: 1200px// ??\A 5: 	max-width: 2000px // ??\A 6: 	width: 100% //??\A 7: 	padding-top: 1px\A 8: 	+clr\A 9: 	+r(480)\A 10: 		min-width: 480px\A 11: 		width: 480px\A 12: 	.big__title\A 13: 		margin: 150px auto 70px"; }
+  content: "Error: Undefined mixin 'clr'.\A         on line 9 of D:/__github/smg/sass/_jobs.sass, in `clr'\A         from line 9 of D:/__github/smg/sass/_jobs.sass\A \A 4: 	min-width: 1200px// ??\A 5: 	max-width: 2000px // ??\A 6: 	width: 100% //??\A 7: 	padding-top: 1px\A 8: 	overflow: hidden\A 9: 	+clr\A 10: 	+r(480)\A 11: 		min-width: 480px\A 12: 		width: 480px\A 13: 	.big__title\A 14: 		margin: 150px auto 70px"; }
