@@ -1017,11 +1017,37 @@ a
 .bg__aqua
 	background-color: rgba(30, 166, 155, .75)
 
+.slick-slideshow
+	height: 400px
+	// .slick-track
+	// 	height: 400px
+// 	.slick-prev
+// 		width: 400px
+// 		left: -30px
+// 	.slick-next
+// 		height: 400px
+// 		right: -30px
+// .js-slick_next
+// 	width: 50px
+// 	height: 50px
+// 	float: right
+// 	background-color: #537
+
+.slick__slide_item
+	width: 235px
+	float: left
+	+r(480)
+		width: 210px
+		margin-left: 12px
+
+
+
 
 .client
 	position: relative
 	height: 615px
 	padding-top: 1px
+	background-color: #bc3 // del  me
 	+clr
 	+r(480)
 		height: auto
@@ -1036,13 +1062,14 @@ a
 	&__wrap
 		float: left
 		position: relative
-		width: 25%
+		// width: 25%
+		width: 100%
 		height: 160px
 		overflow: hidden
 		+gray
 		+clr
 		+r(480)
-			width: 50%
+			width: 80%
 		&:hover
 			+gray-zero
 		&_img

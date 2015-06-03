@@ -282,7 +282,7 @@ $(document).ready(function(){
   });
   $('.js-carousel-preview').slick({
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     asNavFor: '.js-carousel',
     dots: false,
     arrows: true,
@@ -305,6 +305,21 @@ $(document).ready(function(){
     $(this).addClass("is-active")
     return false;
   });
+
+  $('.slick-slideshow').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+       }
+    }]
+  });
+
+
 });
 
 
