@@ -333,8 +333,9 @@ a { text-decoration: none; }
 
 .comment { height: 610px; padding: 1px; background-image: url("../img/comment__bg.png"); *zoom: 1; }
 .comment:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 480px) { .comment { height: auto; background-image: url("../img/comment__bg_m.png"); } }
+@media only screen and (max-width: 480px) { .comment { min-height: 650px; background-image: url("../img/comment__bg_m.png"); } }
 .comment .big__title { color: #FFF; margin: 85px 30px 90px; }
+@media only screen and (max-width: 480px) { .comment .big__title { margin: 50px 30px; } }
 .comment__item { position: relative; background-color: #FFF; padding: 25px 70px 40px; *zoom: 1; }
 .comment__item:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 480px) { .comment__item { padding: 25px 0 40px; } }
