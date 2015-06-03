@@ -270,7 +270,7 @@ $(document).ready(function(){
     asNavFor: '.js-carousel-preview',
     responsive: [
       {
-        breakpoint: 758,
+        breakpoint: 480,
         settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -317,6 +317,11 @@ $(document).ready(function(){
         slidesToScroll: 2,
        }
     }]
+  });
+
+  $('.slick-cycle').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
   });
 
 

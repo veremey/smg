@@ -64,9 +64,6 @@
 	</div>
 	<div class="clear"></div>
 
-<!-- ############################################################### -->
-
-
 	<div class="process ">
 		<div class="process__cyrcle hide480">
 			<div class="port" id="port"></div>
@@ -142,9 +139,6 @@
 			</li>
 		</ul>
 	</div>
-
-<!-- #################################################################################### -->
-
 
 	<div class="portfolio" id="portfolio">
 		<div class="row">
@@ -266,7 +260,13 @@
 					</div>
 					<div class="portfolio__small">
 						<div class="portfolio__small_wrap">
-							<img src="img/p7.png" alt="">
+							<picture>
+								<!--[if IE 9]><video style="display: none;"><![endif]-->
+								<source srcset="img/p7.png" media="(min-width: 481px)">
+								<source srcset="img/p7.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+								<!--[if IE 9]></video><![endif]-->
+								<img srcset="img/p7.png" alt="img">
+							</picture7>
 						</div>
 						<div class="portfolio__small_mask bg__gold">
 							<div class="portfolio__small_center">
@@ -280,7 +280,13 @@
 			</div>
 			<div class="portfolio__big">
 				<div class="portfolio__big_wrap">
-					<img src="img/p8.png" alt="">
+					<picture>
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="img/p8.png" media="(min-width: 481px)">
+						<source srcset="img/p8.png" media="(min-width: 100px)"> <!-- картинка для моб. версии -->
+						<!--[if IE 9]></video><![endif]-->
+						<img srcset="img/p8.png" alt="img">
+					</picture>
 				</div>
 				<div class="portfolio__big_mask bg__aqua">
 					<div class="portfolio__big_center">
@@ -371,15 +377,7 @@
 		<h2 class="big__title">Отзывы о нас <i></i></h2>
 		<div class="l_center">
 			<div class="slider">
-				<div class="cycle-slideshow"
-					data-cycle-fx="scrollHorz"
-					data-cycle-swipe="true"
-					data-cycle-swipe-fx="scrollHorz"
-					data-cycle-timeout="0"
-					data-cycle-speed="800"
-					data-cycle-slides=".comment__item"
-					data-cycle-prev=".js-slid_prev"
-					data-cycle-next=".js-slid_next">
+				<div class="slick-cycle">
 					<div class="comment__item">
 						<div class="comment__wrap">
 							<picture>

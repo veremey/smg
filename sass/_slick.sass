@@ -107,6 +107,22 @@
 		display: inline-block
 		vertical-align: middle
 		+s(next)
+.slick-cycle
+	.slick-prev
+		left: 0
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			+s(com_prev)
+	.slick-next
+		right: 0
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			+s(com_next)
+
 .slick-dots
 	text-align: center
 	position: absolute

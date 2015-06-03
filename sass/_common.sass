@@ -1019,6 +1019,8 @@ a
 
 .slick-slideshow
 	height: 400px
+	+r(480)
+		height: 360px
 	// .slick-track
 	// 	height: 400px
 // 	.slick-prev
@@ -1047,13 +1049,15 @@ a
 	position: relative
 	height: 615px
 	padding-top: 1px
-	background-color: #bc3 // del  me
 	+clr
 	+r(480)
 		height: auto
 	.big__title
 		margin-top: 80px
 		margin-bottom: 95px
+		+r(480)
+			margin-top: 40px
+			margin-bottom: 30px
 	&__slider
 		width: 1000px //940
 		+clr
@@ -1158,6 +1162,10 @@ a
 		font-family: Arial, sans-serif
 		+r(480)
 			margin-top: 5px
+	&__wrap
+		+r(480)
+			width: 400px
+			margin: 0 auto
 	&__site
 		display: inline-block
 		font-size: 13px
@@ -1180,24 +1188,24 @@ a
 			margin-top: 15px
 			+r(480)
 				font-size: 16px
-	&__prev
-		position: absolute
-		top: 50%
-		left: 0
-		margin-top: -23px
-		+s(com_prev)
-		z-index: 100
-		&:hover
-			opacity: .8
-	&__next
-		position: absolute
-		top: 50%
-		right: 0
-		margin-top: -23px
-		+s(com_next)
-		z-index: 100
-		&:hover
-			opacity: .8
+	// &__prev
+	// 	position: absolute
+	// 	top: 50%
+	// 	left: 0
+	// 	margin-top: -23px
+	// 	+s(com_prev)
+	// 	z-index: 100
+	// 	&:hover
+	// 		opacity: .8
+	// &__next
+	// 	position: absolute
+	// 	top: 50%
+	// 	right: 0
+	// 	margin-top: -23px
+	// 	+s(com_next)
+	// 	z-index: 100
+	// 	&:hover
+	// 		opacity: .8
 
 .slider
 	position: relative
