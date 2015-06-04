@@ -619,7 +619,7 @@ a { text-decoration: none; }
 .s_container { text-align: left; padding-bottom: 150px; min-width: 1180px; width: 100%; *zoom: 1; }
 .s_container:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1300px) { .s_container { width: 1180px; margin: 0 auto; padding: 0 10px 150px; } }
-@media only screen and (max-width: 480px) { .s_container { min-width: 460px; width: 460px; } }
+@media only screen and (max-width: 480px) { .s_container { min-width: 460px; width: 460px; padding-bottom: 75px; } }
 .s_container img { display: inline-block; }
 
 .s_text { float: left; width: 440px; margin-bottom: 70px; *zoom: 1; }
@@ -646,9 +646,9 @@ a { text-decoration: none; }
 @media only screen and (max-width: 480px) { .inside__img img { width: 560px; } }
 
 .bad { -webkit-transform: translate(0, -106px); -moz-transform: translate(0, -106px); -ms-transform: translate(0, -106px); -o-transform: translate(0, -106px); transform: translate(0, -106px); }
-@media only screen and (max-width: 480px) { .bad { display: inline-block; height: 50px; background-color: #1c1c1c; -webkit-transform: translate(150px, -75px); -moz-transform: translate(150px, -75px); -ms-transform: translate(150px, -75px); -o-transform: translate(150px, -75px); transform: translate(150px, -75px); } }
+@media only screen and (max-width: 480px) { .bad { display: inline-block; height: 50px; background-color: #1c1c1c; -webkit-transform: translate(150px, -66px); -moz-transform: translate(150px, -66px); -ms-transform: translate(150px, -66px); -o-transform: translate(150px, -66px); transform: translate(150px, -66px); } }
 .bad a { font-family: "Bad Script", Arial, sans-serif; font-weight: 400; background-color: #1c1c1c; z-index: 300; font-size: 36px; padding: 10px 20px; }
-@media only screen and (max-width: 480px) { .bad a { font-size: 30px; border-bottom: 2px solid #fff; } }
+@media only screen and (max-width: 480px) { .bad a { font-size: 30px; border-bottom: 2px solid #fff; padding: 0 20px; } }
 
 .job { position: relative; min-width: 1200px; max-width: 2000px; width: 100%; padding-top: 1px; overflow: hidden; *zoom: 1; }
 .job:after { content: " "; display: table; clear: both; }
