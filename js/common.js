@@ -14,6 +14,11 @@ head.ready(function() {
   });
 
 $(document).ready(function() {
+// header menu 320
+
+$('.header button').on('click', function(){
+  $('.header__menu').toggleClass('show320')
+});
 
 // Крутилка
 

@@ -24,12 +24,15 @@ body
 	font-family: Arial, sans-serif
 	font-size: 12px
 	line-height: 1.4
-	min-width: 1180px
+	// min-width: 1180px
 	width: 100%
 	background-color: #000
 	+r(480)
-		min-width: 480px
+		// min-width: 480px
 		width: 480px
+	+r(320)
+		min-width: 320px
+		width: 320px
 .hide480
 	+r(480)
 		display: none
@@ -58,6 +61,8 @@ a
 	+clr
 	+r(480)
 		width: 460px
+	+r(320)
+		width: 300px
 .b_center
 	position: relative
 	min-width: 1234px
@@ -102,8 +107,6 @@ a
 		min-width: 480px
 		overflow: hidden
 
-
-
 .main
 	&__prev
 		position: fixed
@@ -136,8 +139,11 @@ a
 	+clr
 	+r(480)
 		min-width: 480px
-		width: 480px!important
+		width: 100%!important
 		height: 135px
+	+r(320)
+		min-width: 320px
+		height: auto
 	&__menu
 		font-size: 0
 		float: left
@@ -146,6 +152,9 @@ a
 		+r(480)
 			margin-left: 0
 			margin-top: 10px
+		+r(320)
+			display: none
+			margin-top: 60px
 		.is-active //delete me &&
 			> a
 				border-color: $yellow
@@ -156,6 +165,8 @@ a
 				display: none
 		li
 			display: inline-block
+			+r(320)
+				display: block
 			.is-active
 			&:hover
 				> a
@@ -178,6 +189,10 @@ a
 				-webkit-border-radius: 21px
 				border-radius: 21px
 				text-decoration: none
+				+r(320)
+					text-align: center
+					&:before
+						display: none
 				&:hover
 					text-decoration: none
 				&:before
@@ -201,12 +216,18 @@ a
 			top: 10px
 			right: 10px
 			margin-top: 0
+		+r(320)
+			top: 7px
+			width: 148px
+			right: 60px
 		&_tel
 			float: right
 			color: #FFF
 			text-transform: uppercase
 			font-size: 20px
 			+el
+			+r(320)
+				font-size: 16px
 		&_mail
 			float: right
 			color: $yellow
@@ -216,8 +237,19 @@ a
 				margin-top: 15px
 				float: none
 				line-height: 28px
+			+r(480)
+				line-height: 23px
+				margin-left: 20px
 	.l_center
 		position: relative
+	button
+		display: none
+		+s(m320)
+		+r(320)
+			display: block
+			position: absolute
+			top: 15px
+			right: 10px
 .logo
 	float: left
 	margin: 20px 0
@@ -225,6 +257,8 @@ a
 	+r(480)
 		margin: 10px 0
 		+s(m_logo)
+	+r(320)
+		+s(m_logo-320)
 	h1
 		+hide-text
 

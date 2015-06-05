@@ -1,8 +1,12 @@
 .service
-	margin-top: 98px
+	// max-width: 1920px
+	// width: 100%
+	margin: 98px auto 0
 	overflow: hidden
 	+r(480)
 		margin-top: 136px
+	+r(320)
+		margin-top: 53px
 .sidebar
 	position: relative
 	width: 25%
@@ -11,23 +15,30 @@
 	font-size: 0
 	background-color: #FFF
 	z-index: 5
+	min-width: 270px
+	margin-right: 20px
 	+r(480)
+		min-width: 100%
 		width: 100%
 	li
 		position: relative
+		display: block
 		height: 125px
 		border: 1px solid #EFEFEF
 		border-left: 0px
 		border-top: 0px
 		overflow: hidden
+		+vertical
+		+r(320)
+			height: 80px
 		&:hover
-			&:before
+			&:after
 				left: 0
 				transition: left .2s
 				// +tr(left 2s)
 			i
 				+gray
-		&:before
+		&:after
 			content: ""
 			background-color: #ffd739
 			position: absolute
@@ -37,20 +48,25 @@
 			width: 100%
 	a
 		position: relative
-		display: block
+		display: inline-block
+		vertical-align: middle
+		line-height: 1
 		// width: 330px
 		width: 68.75%
 		font-size: 16px
 		font-weight: bold
 		color: #474747
-		padding: 45px 55px 30px 90px
+		padding-left: 80px
 		text-transform: uppercase
+		text-align: left
 		z-index: 4
 		+r(1200)
 			font-size: 14px
+		+r(320)
+			padding-top: 0px
 		i
 			position: absolute
-			top: 60px
+			top: 15px
 			left: 50px
 			-webkit-transform: translate(-50%, -50%)
 			-moz-transform: translate(-50%, -50%)
@@ -58,6 +74,8 @@
 			-o-transform: translate(-50%, -50%)
 			transform: translate(-50%, -50%)
 			display: inline-block
+			+r(320)
+				top: 10px
 	.is-active
 		background-color: #ffd739
 .w1
@@ -78,26 +96,37 @@
 	+s(w8)
 .service__item
 	position: relative
-	float: left
-	width: 75%
-	min-height: 1008px
+	// float: left
+	// width: 75%
+	// min-height: 1008px
+	// padding: 180px 0 190px
+	padding: 180px 0 0px
+	margin-left: 20px
+	margin-bottom: 20px
+	background: url("../img/dsgn__bg.png")
 	+clr
+	+r(950)
+		padding-top: 80px
 	+r(480)
 		width: 100%
 		min-height: 100%
 	&_wrap
 		position: relative
-		width: 95%
-		margin: 180px auto 190px
+		// width: 95%
+		// padding: 180px auto 190px
 		z-index: 2
 		+clr
 		+r(480)
-			margin: 40px auto 40px
+			// padding: 40px auto 40px
 		img
 			float: left
 			width: 26%
 			height: auto
-			margin: 0 30px 25px 0
+			margin: 0 30px 25px 0px
+			+r(775)
+				float: none
+				display: block
+				margin: 30px auto
 			+r(480)
 				margin-bottom: 20px
 	&_contant
@@ -117,9 +146,8 @@
 			color: #5F5F5F
 
 .dsgn
-	position: relative
+	// position: relative
 	width: 100%
-	height: 100%
 	z-index: 1
 	&__img
 		position: absolute
