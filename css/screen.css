@@ -298,8 +298,8 @@ a { text-decoration: none; }
 
 .bg__aqua { background-color: rgba(30, 166, 155, 0.75); }
 
-.slick-slideshow { height: 400px; }
-@media only screen and (max-width: 480px) { .slick-slideshow { height: 360px; } }
+.slick-slideshow { height: 320px; }
+@media only screen and (max-width: 480px) { .slick-slideshow { height: 300px; } }
 
 .slick__slide_item { width: 235px; float: left; }
 @media only screen and (max-width: 480px) { .slick__slide_item { width: 210px; margin-left: 12px; } }
@@ -483,7 +483,7 @@ a { text-decoration: none; }
 .sidebar li { position: relative; height: 125px; border: 1px solid #EFEFEF; border-left: 0px; border-top: 0px; overflow: hidden; }
 .sidebar li:hover:before { left: 0; transition: left 0.2s; }
 .sidebar li:hover i { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); -o-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
-.sidebar li:before { content: ""; background-color: #ffd739; position: absolute; top: 0; left: -500px; height: 100%; width: 100%; }
+.sidebar li:before { content: ""; background-color: #ffd739; position: absolute; top: 0; left: -700px; height: 100%; width: 100%; }
 .sidebar a { position: relative; display: block; width: 68.75%; font-size: 16px; font-weight: bold; color: #474747; padding: 45px 55px 30px 90px; text-transform: uppercase; z-index: 4; }
 @media only screen and (max-width: 1200px) { .sidebar a { font-size: 14px; } }
 .sidebar a i { position: absolute; top: 60px; left: 50px; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: inline-block; }
