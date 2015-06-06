@@ -16,7 +16,9 @@
 	background-color: #FFF
 	z-index: 5
 	min-width: 270px
-	margin-right: 20px
+	margin-right: 100px
+	+r(950)
+		margin-right: 50px
 	+r(480)
 		min-width: 100%
 		width: 100%
@@ -96,13 +98,8 @@
 	+s(w8)
 .service__item
 	position: relative
-	// float: left
-	// width: 75%
-	// min-height: 1008px
-	// padding: 180px 0 190px
 	padding: 180px 0 0px
 	margin-left: 20px
-	margin-bottom: 20px
 	background: url("../img/dsgn__bg.png")
 	+clr
 	+r(950)
@@ -112,8 +109,6 @@
 		min-height: 100%
 	&_wrap
 		position: relative
-		// width: 95%
-		// padding: 180px auto 190px
 		z-index: 2
 		+clr
 		+r(480)
@@ -123,13 +118,16 @@
 			width: 26%
 			height: auto
 			margin: 0 30px 25px 0px
-			+r(775)
+			+r(830)
 				float: none
 				display: block
 				margin: 30px auto
 			+r(480)
 				margin-bottom: 20px
 	&_contant
+		margin-right: 100px
+		+r(1400)
+			margin-right: 50px
 		h2
 			font-size: 42px
 			color: #0E1314

@@ -56,7 +56,7 @@ a
 		overflow: hidden
 .l_center
 	position: relative
-	width: 1000px
+	width: 980px
 	margin: 0 auto
 	+clr
 	+r(480)
@@ -129,7 +129,7 @@ a
 
 
 .header
-	min-width: 1200px
+	// min-width: 1200px
 	width: 100%!important
 	position: fixed
 	top: 0
@@ -137,6 +137,11 @@ a
 	z-index: 99999
 	height: 97px
 	+clr
+	+r(835)
+		min-width: 480px
+		width: 100%!important
+	+r(815)
+		height: 135px
 	+r(480)
 		min-width: 480px
 		width: 100%!important
@@ -147,14 +152,30 @@ a
 	&__menu
 		font-size: 0
 		float: left
-		margin-top: 27px
-		margin-left: 105px
+		// margin-top: 27px
+		// margin-left: 105px
+		+vcenter
+		+r(915)
+			left: 45%
+			+translate(-42%, -50%)
+		+r(835)
+			// top: 76%
+			left: 24%
+			+translate(-2%, -50%)
+		+r(815)
+			top: 76%
+		+r(630)
+			left: 12%
+		+r(530)
+			left: 2%
 		+r(480)
 			margin-left: 0
-			margin-top: 10px
 		+r(320)
 			display: none
+			position: relative
 			margin-top: 60px
+			padding-bottom: 10px
+			+translate(-2%, 0%)
 		.is-active //delete me &&
 			> a
 				border-color: $yellow
@@ -234,12 +255,10 @@ a
 			font-size: 13px
 			+el
 			+r(480)
-				margin-top: 15px
-				float: none
-				line-height: 28px
-			+r(480)
-				line-height: 23px
-				margin-left: 20px
+				line-height: 30px
+				margin-left: 180px
+			+r(320)
+				margin-bottom: 5px
 	.l_center
 		position: relative
 	button
@@ -258,6 +277,7 @@ a
 		margin: 10px 0
 		+s(m_logo)
 	+r(320)
+		margin: 15px 0
 		+s(m_logo-320)
 	h1
 		+hide-text

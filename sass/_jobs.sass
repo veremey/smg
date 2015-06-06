@@ -11,22 +11,19 @@
 
 .job
 	position: relative
-	min-width: 1200px// ??
-	max-width: 2000px // ??
 	width: 100% //??
 	padding-top: 1px
 	overflow: hidden
 	+clr
-	+r(480)
-		min-width: 480px
-		width: 480px
 	.big__title
 		margin: 150px auto 70px
 	&__item
 		position: relative
 		float: left
 		width: 25%
-		+r(480)
+		+r(1185)
+			width: 50%
+		+r(680)
 			width: 100%
 		&:hover
 			.job__mask
@@ -45,24 +42,6 @@
 			left: 0
 			width: 100%
 			height: 100%
-			// width: 100%
-			// height: 480px
-			// +r(1800)
-			// 	height: 450px
-			// +r(1700)
-			// 	height: 425px
-			// +r(1600)
-			// 	height: 400px
-			// 	// width: 400px
-			// +r(1400)
-			// 	height: 345px
-			// +r(1300)
-			// 	height: 325px
-			// +r(1200)
-			// 	height: 300px
-			// +r(480)
-			// 	width: 480px
-			// 	height: 480px
 	&__mask,
 	.bg__green,
 	.bg__pink,
@@ -85,11 +64,34 @@
 			+r(1600)
 				margin-top: 600px
 			+r(1400)
-				margin-top: 35px
-			+r(1200)
-				margin: 30px auto 10px
-			+r(480)
-				margin-top: 110px
+				margin-top: 30px
+			+r(1215)
+				margin: 20px auto 10px
+			+r(1185)
+				font-size: 28px
+				margin: 120px auto 35px
+			+r(1100)
+				font-size: 25px
+			+r(1000)
+				font-size: 20px
+			+r(885)
+				margin-top: 70px
+			+r(800)
+				margin: 50px auto 20px
+			+r(700)
+				margin: 30px auto 20px
+			+r(680)
+				margin: 150px auto 35px
+				font-size: 25px
+				line-height: 36px
+			+r(530)
+				margin: 80px auto 35px
+				font-size: 25px
+				line-height: 36px
+			+r(320)
+				margin: 30px auto 15px
+				font-size: 20px
+				line-height: 20px
 		p
 			display: block
 			width: 80%
@@ -97,12 +99,25 @@
 			text-align: center
 			font-size: 14px
 			color: #fff
-			+r(480)
+			+r(1185)
+				font-size: 20px
+			+r(1000)
 				font-size: 16px
-				line-height: 20px
+			+r(680)
+				font-style: 20px
+			+r(320)
+				font-style: 16px
 		.btn
 			display: block
 			margin: 20px auto 0
-			+r(480)
+			+r(1185)
 				margin-top: 50px
+			+r(1100)
+				margin-top: 35px
+			+r(800)
+				margin-top: 20px
+			+r(680)
+				margin-top: 50px
+			+r(320)
+				margin-top: 20px
 
