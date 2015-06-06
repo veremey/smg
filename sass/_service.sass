@@ -1,16 +1,15 @@
 .service
-	// max-width: 1920px
-	// width: 100%
 	margin: 98px auto 0
 	overflow: hidden
+	+r(830)
+		margin-top: 133px
 	+r(480)
-		margin-top: 136px
+		margin-top: 70px
 	+r(320)
-		margin-top: 53px
+		margin-top: 65px
 .sidebar
 	position: relative
 	width: 25%
-	// min-width: 480px
 	float: left
 	font-size: 0
 	background-color: #FFF
@@ -19,7 +18,9 @@
 	margin-right: 100px
 	+r(950)
 		margin-right: 50px
-	+r(480)
+	+r(840)
+		margin-right: 25px
+	+r(600)
 		min-width: 100%
 		width: 100%
 	li
@@ -37,7 +38,6 @@
 			&:after
 				left: 0
 				transition: left .2s
-				// +tr(left 2s)
 			i
 				+gray
 		&:after
@@ -53,12 +53,11 @@
 		display: inline-block
 		vertical-align: middle
 		line-height: 1
-		// width: 330px
 		width: 68.75%
 		font-size: 16px
 		font-weight: bold
 		color: #474747
-		padding-left: 80px
+		padding-left: 70px
 		text-transform: uppercase
 		text-align: left
 		z-index: 4
@@ -69,7 +68,7 @@
 		i
 			position: absolute
 			top: 15px
-			left: 50px
+			left: 35px
 			-webkit-transform: translate(-50%, -50%)
 			-moz-transform: translate(-50%, -50%)
 			-ms-transform: translate(-50%, -50%)
@@ -102,32 +101,34 @@
 	margin-left: 20px
 	background: url("../img/dsgn__bg.png")
 	+clr
-	+r(950)
-		padding-top: 80px
-	+r(480)
+	+r(1000)
+		padding-top: 90px
+	+r(730)
+		padding-top: 50px
+	+r(600)
 		width: 100%
 		min-height: 100%
 	&_wrap
 		position: relative
 		z-index: 2
 		+clr
-		+r(480)
-			// padding: 40px auto 40px
 		img
 			float: left
-			width: 26%
 			height: auto
 			margin: 0 30px 25px 0px
-			+r(830)
-				float: none
-				display: block
-				margin: 30px auto
-			+r(480)
-				margin-bottom: 20px
+			+r(1000)
+				width: 200px
+			+r(840)
+				width: 140px
+				margin: 10px 10px 10px 0
+			+r(735)
+				display: none
 	&_contant
 		margin-right: 100px
 		+r(1400)
 			margin-right: 50px
+		+r(865)
+			margin-right: 25px
 		h2
 			font-size: 42px
 			color: #0E1314

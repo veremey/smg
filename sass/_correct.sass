@@ -1,0 +1,87 @@
+.hide600
+	+r(600)
+		display: none
+.hide480
+	+r(480)
+		display: none
+.show480
+	display: none
+	+r(480)
+		display: block
+
+.show320
+	display: none
+	+r(320)
+		display: block
+
+.hide320
+	display: none
+	+r(320)
+		display: none
+
+.clear
+	clear: both
+	height: 0
+a
+	text-decoration: none
+// common blocks
+.out
+	position: relative
+	height: auto!important
+	margin: 0 auto
+	background-color: #FFF
+	+clr
+	+r(480)
+		overflow: hidden
+.l_center
+	position: relative
+	width: 980px
+	margin: 0 auto
+	+clr
+	+r(480)
+		width: 460px
+	+r(320)
+		width: 300px
+.b_center
+	position: relative
+	min-width: 1234px
+	width: 1234px
+	margin: 0 auto
+	z-index: 3
+	+clr
+	+r(1300)
+		min-width: 1180px
+		width: 1180px
+		padding: 0 10px
+		+r(480)
+			width: 460px
+			min-width: 460px
+.x_center
+	position: relative
+	width: 1294px
+	margin: 0 auto
+	z-index: 3
+	+clr
+	+r(1300)
+		width: 1200px
+	+r(480)
+		width: 460px
+
+.min1200
+	min-width: 1180px
+	width: 100%
+	+r(1300)
+		width: 1200px
+		margin: 0 auto
+	+r(480)
+		min-width: 480px
+		width: 480px
+		overflow: hidden
+.min1200_a
+	min-width: 1180px
+	width: 100%
+	+r(1300)
+		margin: 0 auto
+	+r(480)
+		min-width: 480px
+		overflow: hidden

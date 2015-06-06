@@ -1,14 +1,4 @@
 
-.show320
-	display: none
-	+r(320)
-		display: block
-
-.hide320
-	display: none
-	+r(320)
-		display: none
-
 .job
 	position: relative
 	width: 100% //??
@@ -17,6 +7,8 @@
 	+clr
 	.big__title
 		margin: 150px auto 70px
+		+r(480)
+			margin: 90px auto 50px
 	&__item
 		position: relative
 		float: left

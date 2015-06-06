@@ -1,23 +1,19 @@
 /*
-Error: Undefined mixin 'clr'.
-        on line 7 of D:/__github/smg/sass/_jobs.sass, in `clr'
-        from line 7 of D:/__github/smg/sass/_jobs.sass
+Error: Undefined mixin 'r'.
+        on line 2 of D:/__github/smg/sass/_correct.sass, in `r'
+        from line 2 of D:/__github/smg/sass/_correct.sass
 
-2: .job
-3: 	position: relative
-4: 	width: 100% //??
-5: 	padding-top: 1px
-6: 	overflow: hidden
-7: 	+clr
-8: 	.big__title
-9: 		margin: 150px auto 70px
-10: 		+r(480)
-11: 			margin: 90px auto 50px
-12: 	&__item
+1: .hide600
+2: 	+r(600)
+3: 		display: none
+4: .hide480
+5: 	+r(480)
+6: 		display: none
+7: .show480
 
 Backtrace:
-D:/__github/smg/sass/_jobs.sass:7:in `clr'
-D:/__github/smg/sass/_jobs.sass:7
+D:/__github/smg/sass/_correct.sass:2:in `r'
+D:/__github/smg/sass/_correct.sass:2
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +69,4 @@ c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'clr'.\A         on line 7 of D:/__github/smg/sass/_jobs.sass, in `clr'\A         from line 7 of D:/__github/smg/sass/_jobs.sass\A \A 2: .job\A 3: 	position: relative\A 4: 	width: 100% //??\A 5: 	padding-top: 1px\A 6: 	overflow: hidden\A 7: 	+clr\A 8: 	.big__title\A 9: 		margin: 150px auto 70px\A 10: 		+r(480)\A 11: 			margin: 90px auto 50px\A 12: 	&__item"; }
+  content: "Error: Undefined mixin 'r'.\A         on line 2 of D:/__github/smg/sass/_correct.sass, in `r'\A         from line 2 of D:/__github/smg/sass/_correct.sass\A \A 1: .hide600\A 2: 	+r(600)\A 3: 		display: none\A 4: .hide480\A 5: 	+r(480)\A 6: 		display: none\A 7: .show480"; }

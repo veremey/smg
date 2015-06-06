@@ -14,10 +14,10 @@ head.ready(function() {
   });
 
 $(document).ready(function() {
-// header menu 320
+// header menu 480
 
 $('.header button').on('click', function(){
-  $('.header__menu').toggleClass('show320')
+  $('.header__menu').toggleClass('show480')
 });
 
 // Крутилка
