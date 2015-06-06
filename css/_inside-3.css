@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'r'.
-        on line 28 of D:/__github/smg/sass/_inside-3.sass, in `r'
-        from line 28 of D:/__github/smg/sass/_inside-3.sass
+        on line 16 of D:/__github/smg/sass/_inside-3.sass, in `r'
+        from line 16 of D:/__github/smg/sass/_inside-3.sass
 
-23: 
-24: 	// background: -ms-linear-gradient(-10, rgba(193,17,20,1) 0%, rgba(193,17,20,1) 7%, rgba(28,28,28,1) 7%, rgba(28,28,28,1) 19%, rgba(240,119,33,1) 19%, rgba(240,119,33,1) 40%, rgba(28,28,28,1) 40%, rgba(28,28,28,1) 47%, rgba(84,42,44,1) 47%, rgba(84,42,44,1) 60%, rgba(28,28,28,1) 60%, rgba(28,28,28,1) 70%, rgba(193,17,20,1) 70%, rgba(193,17,20,1) 85%, rgba(28,28,28,1) 85%, rgba(28,28,28,1) 100%, rgba(240,119,33,1) 100% )
-25: 
-26: 	// background: linear-gradient(170deg, rgba(193,17,20,1) 0%, rgba(193,17,20,1) 7%, rgba(28,28,28,1) 7%, rgba(28,28,28,1) 19%, rgba(240,119,33,1) 19%, rgba(240,119,33,1) 40%, rgba(28,28,28,1) 40%, rgba(28,28,28,1) 47%, rgba(84,42,44,1) 47%, rgba(84,42,44,1) 60%, rgba(28,28,28,1) 60%, rgba(28,28,28,1) 70%, rgba(193,17,20,1) 70%, rgba(193,17,20,1) 85%, rgba(28,28,28,1) 85%, rgba(28,28,28,1) 100%, rgba(240,119,33,1) 100%)
-27: 	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c11114', endColorstr='#1c1c1c', GradientType=1 )
-28: 	+r(480)
-29: 		width: 480px
-30: 		min-width: 480px
-31: 		height: 3445px
-32: 	&_wrap
-33: 		position: absolute
+11: 	background-color: #1c1c1c
+12: 	background-image: url("../img/bg_ins3.png")
+13: 	-webkit-background-size: contain
+14: 	-o-background-size: contain
+15: 	background-size: contain
+16: 	+r(1400)
+17: 		background-image: url("../img/bg_ins3_1400.png")
+18: 	+r(830)
+19: 		background-image: url("../img/bg_ins3_m.png")
+20: 	+r(480)
+21: 		width: 480px
 
 Backtrace:
-D:/__github/smg/sass/_inside-3.sass:28:in `r'
-D:/__github/smg/sass/_inside-3.sass:28
+D:/__github/smg/sass/_inside-3.sass:16:in `r'
+D:/__github/smg/sass/_inside-3.sass:16
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 28 of D:/__github/smg/sass/_inside-3.sass, in `r'\A         from line 28 of D:/__github/smg/sass/_inside-3.sass\A \A 23: \A 24: 	// background: -ms-linear-gradient(-10, rgba(193,17,20,1) 0%, rgba(193,17,20,1) 7%, rgba(28,28,28,1) 7%, rgba(28,28,28,1) 19%, rgba(240,119,33,1) 19%, rgba(240,119,33,1) 40%, rgba(28,28,28,1) 40%, rgba(28,28,28,1) 47%, rgba(84,42,44,1) 47%, rgba(84,42,44,1) 60%, rgba(28,28,28,1) 60%, rgba(28,28,28,1) 70%, rgba(193,17,20,1) 70%, rgba(193,17,20,1) 85%, rgba(28,28,28,1) 85%, rgba(28,28,28,1) 100%, rgba(240,119,33,1) 100% )\A 25: \A 26: 	// background: linear-gradient(170deg, rgba(193,17,20,1) 0%, rgba(193,17,20,1) 7%, rgba(28,28,28,1) 7%, rgba(28,28,28,1) 19%, rgba(240,119,33,1) 19%, rgba(240,119,33,1) 40%, rgba(28,28,28,1) 40%, rgba(28,28,28,1) 47%, rgba(84,42,44,1) 47%, rgba(84,42,44,1) 60%, rgba(28,28,28,1) 60%, rgba(28,28,28,1) 70%, rgba(193,17,20,1) 70%, rgba(193,17,20,1) 85%, rgba(28,28,28,1) 85%, rgba(28,28,28,1) 100%, rgba(240,119,33,1) 100%)\A 27: 	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c11114', endColorstr='#1c1c1c', GradientType=1 )\A 28: 	+r(480)\A 29: 		width: 480px\A 30: 		min-width: 480px\A 31: 		height: 3445px\A 32: 	&_wrap\A 33: 		position: absolute"; }
+  content: "Error: Undefined mixin 'r'.\A         on line 16 of D:/__github/smg/sass/_inside-3.sass, in `r'\A         from line 16 of D:/__github/smg/sass/_inside-3.sass\A \A 11: 	background-color: #1c1c1c\A 12: 	background-image: url(\"../img/bg_ins3.png\")\A 13: 	-webkit-background-size: contain\A 14: 	-o-background-size: contain\A 15: 	background-size: contain\A 16: 	+r(1400)\A 17: 		background-image: url(\"../img/bg_ins3_1400.png\")\A 18: 	+r(830)\A 19: 		background-image: url(\"../img/bg_ins3_m.png\")\A 20: 	+r(480)\A 21: 		width: 480px"; }
