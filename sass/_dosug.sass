@@ -9,18 +9,16 @@
 	height: 5990px
 	overflow: hidden
 	background-color: #1c1c1c
-	background-image: url("../img/bg_ins3.png")
-	-webkit-background-size: contain
-	-o-background-size: contain
-	background-size: contain
-	+r(1400)
-		background-image: url("../img/bg_ins3_1400.png")
+	+r(1200)
+		height: 4702px
 	+r(830)
-		background-image: url("../img/bg_ins3_m.png")
+		height: 3475px
+	+r(600)
+		height: 2875px
 	+r(480)
 		width: 480px
 		min-width: 480px
-		// height: 3445px
+		height: 3437px
 	&_wrap
 		position: absolute
 		width: 2000px
@@ -30,6 +28,12 @@
 	img
 		// width: 1200px
 		margin: -16px auto 0
+		+r(1200)
+			width: 1500px
+		+r(830)
+			width: 1100px
+		+r(600)
+			width: 900px
 		+r(480)
 			width: 560px
 
@@ -41,7 +45,7 @@
 	transform: translate(0, -106px)
 	+r(480)
 		display: inline-block
-		height: 50px
+		height: 0
 		background-color: #1c1c1c
 		-webkit-transform: translate(150px, -66px)
 		-moz-transform: translate(150px, -66px)
