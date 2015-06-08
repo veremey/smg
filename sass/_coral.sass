@@ -3,12 +3,16 @@
 	// background-color: #a095c7
 	height: 645px
 	background: #a095c7 url("../img/bg_in2.png") repeat
+	+r(830)
+		height: 565px
 	+r(480)
 		height: 480px
 
 #main
 	position: relative
 	margin-top: -150px
+	width: 100%
+	overflow: hidden
 	+clr
 	+r(480)
 		margin-top: -100px
@@ -25,11 +29,36 @@
 		margin: 0 auto
 		// margin-bottom: 20px
 		z-index: 2
+		&_img
+			+r(800)
+				width: 800px
 		img
 			width: 943px
+			+r(950)
+				width: 90%
+				margin-left: 40px
+			+r(900)
+				margin-left: 0px
+			+r(800)
+				width: 800px
+				margin-left: -30px
+			+r(700)
+				width: 700px
+				margin-left: -30px
+			+r(600)
+				width: 550px
+				margin-left: 15px
+			+r(550)
+				margin-left: 0px
+			+r(500)
+				margin-left: -30px
 			+r(480)
-				width: 440px
+				width: 480px
 				margin: 0 auto
+				margin-left: -30px
+			+r(320)
+				width: 380px
+				margin-left: -5px
 	&__preview
 		height: 750px
 		// padding-top: 50px
@@ -39,10 +68,14 @@
 			height: auto
 			padding-bottom: 140px
 			padding-top: 50px
-			img
+		img
+			+r(480)
 				width: 440px
 				height: auto
 				margin: 0 auto
+			+r(320)
+				width: 380px
+				margin-left: -30px
 		.slick-slide
 			cursor: pointer
 			margin: 0 30px
@@ -50,7 +83,7 @@
 			+r(1400)
 				margin: 0 20px
 			+r(1300)
-				width: 246px!important
+				width: 276px!important
 			+r(480)
 				width: 460px!important
 			&:hover
@@ -86,10 +119,8 @@
 			height: 55% // ??
 			width: 95%
 			margin: -50px auto 0
-			//max-width: 1680px  // ??
-			// +r(1400)
-			// 	max-width: 1265px
-			// 	margin: -50px auto 0
+			+r(965)
+				height: 50%
 		.slick-prev
 			left: 0px
 			top: 0

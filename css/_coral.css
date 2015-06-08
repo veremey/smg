@@ -8,12 +8,12 @@ Error: Undefined mixin 'r'.
 3: 	// background-color: #a095c7
 4: 	height: 645px
 5: 	background: #a095c7 url("../img/bg_in2.png") repeat
-6: 	+r(480)
-7: 		height: 480px
-8: 
-9: #main
-10: 	position: relative
-11: 	margin-top: -150px
+6: 	+r(830)
+7: 		height: 565px
+8: 	+r(480)
+9: 		height: 480px
+10: 
+11: #main
 
 Backtrace:
 D:/__github/smg/sass/_coral.sass:6:in `r'
@@ -73,4 +73,4 @@ c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 6 of D:/__github/smg/sass/_coral.sass, in `r'\A         from line 6 of D:/__github/smg/sass/_coral.sass\A \A 1: \A 2: .bg__in2\A 3: 	// background-color: #a095c7\A 4: 	height: 645px\A 5: 	background: #a095c7 url(\"../img/bg_in2.png\") repeat\A 6: 	+r(480)\A 7: 		height: 480px\A 8: \A 9: #main\A 10: 	position: relative\A 11: 	margin-top: -150px"; }
+  content: "Error: Undefined mixin 'r'.\A         on line 6 of D:/__github/smg/sass/_coral.sass, in `r'\A         from line 6 of D:/__github/smg/sass/_coral.sass\A \A 1: \A 2: .bg__in2\A 3: 	// background-color: #a095c7\A 4: 	height: 645px\A 5: 	background: #a095c7 url(\"../img/bg_in2.png\") repeat\A 6: 	+r(830)\A 7: 		height: 565px\A 8: 	+r(480)\A 9: 		height: 480px\A 10: \A 11: #main"; }
