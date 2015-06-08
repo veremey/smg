@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'r'.
-        on line 12 of D:/__github/smg/sass/_dosug.sass, in `r'
-        from line 12 of D:/__github/smg/sass/_dosug.sass
+Error: Undefined mixin 'clr'.
+        on line 7 of D:/__github/smg/sass/_bilder.sass, in `clr'
+        from line 7 of D:/__github/smg/sass/_bilder.sass
 
-7: 	margin: 0 auto
-8: 	width: 100%
-9: 	height: 5945px
-10: 	overflow: hidden
-11: 	background-color: #1c1c1c
-12: 	+r(1200)
-13: 		height: 4655px
-14: 	+r(830)
-15: 		height: 3435px
-16: 	+r(600)
-17: 		height: 2820px
+2: 	position: relative
+3: 	top: 0
+4: 	padding: 1px
+5: 	height: 940px
+6: 	overflow: hidden
+7: 	+clr
+8: 	+r(480)
+9: 		height: 640px
+10: 	.l_center
+11: 		position: relative
+12: 		+r(1050)
 
 Backtrace:
-D:/__github/smg/sass/_dosug.sass:12:in `r'
-D:/__github/smg/sass/_dosug.sass:12
+D:/__github/smg/sass/_bilder.sass:7:in `clr'
+D:/__github/smg/sass/_bilder.sass:7
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 c:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -73,4 +73,4 @@ c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 12 of D:/__github/smg/sass/_dosug.sass, in `r'\A         from line 12 of D:/__github/smg/sass/_dosug.sass\A \A 7: 	margin: 0 auto\A 8: 	width: 100%\A 9: 	height: 5945px\A 10: 	overflow: hidden\A 11: 	background-color: #1c1c1c\A 12: 	+r(1200)\A 13: 		height: 4655px\A 14: 	+r(830)\A 15: 		height: 3435px\A 16: 	+r(600)\A 17: 		height: 2820px"; }
+  content: "Error: Undefined mixin 'clr'.\A         on line 7 of D:/__github/smg/sass/_bilder.sass, in `clr'\A         from line 7 of D:/__github/smg/sass/_bilder.sass\A \A 2: 	position: relative\A 3: 	top: 0\A 4: 	padding: 1px\A 5: 	height: 940px\A 6: 	overflow: hidden\A 7: 	+clr\A 8: 	+r(480)\A 9: 		height: 640px\A 10: 	.l_center\A 11: 		position: relative\A 12: 		+r(1050)"; }

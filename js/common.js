@@ -439,3 +439,7 @@ $(document).scroll(function(){
   });
 
 
+//  bilder.html запрет работаты для ссылок Регистрации и Входа
+  $('#menu a').click(function(){
+    return false;
+  });

@@ -6,19 +6,21 @@
 	position: relative
 	margin: 0 auto
 	width: 100%
-	height: 5990px
+	height: 5945px
 	overflow: hidden
 	background-color: #1c1c1c
 	+r(1200)
-		height: 4702px
+		height: 4655px
 	+r(830)
-		height: 3475px
+		height: 3435px
 	+r(600)
-		height: 2875px
+		height: 2820px
 	+r(480)
 		width: 480px
-		min-width: 480px
 		height: 3437px
+	+r(320)
+		width: 320px
+		height: 2110px
 	&_wrap
 		position: absolute
 		width: 2000px
@@ -36,6 +38,8 @@
 			width: 900px
 		+r(480)
 			width: 560px
+		+r(320)
+			width: 340px
 
 .bad
 	-webkit-transform: translate(0, -106px)
@@ -43,6 +47,12 @@
 	-ms-transform: translate(0, -106px)
 	-o-transform: translate(0, -106px)
 	transform: translate(0, -106px)
+	+r(830)
+	-webkit-transform: translate(0, -60px)
+	-moz-transform: translate(0, -60px)
+	-ms-transform: translate(0, -60px)
+	-o-transform: translate(0, -60px)
+	transform: translate(0, -60px)
 	+r(480)
 		display: inline-block
 		height: 0
@@ -52,13 +62,27 @@
 		-ms-transform: translate(150px, -66px)
 		-o-transform: translate(150px, -66px)
 		transform: translate(150px, -66px)
+		+r(320)
+			-webkit-transform: translate(60px, -66px)
+			-moz-transform: translate(60px, -66px)
+			-ms-transform: translate(60px, -66px)
+			-o-transform: translate(60px, -66px)
+			transform: translate(60px, -66px)
 	a
 		+bad
 		background-color: #1c1c1c
 		z-index: 300
 		font-size: 36px
-		padding: 10px 20px
+		padding: 10px 20px 0
+		border-bottom: none
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			border-bottom: none
+		+r(830)
+			font-size: 30px
 		+r(480)
 			font-size: 30px
-			border-bottom: 2px solid #fff
+			// border-bottom: 2px solid #fff
 			padding: 0 20px
+
