@@ -584,7 +584,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 
 .carousel { position: relative; margin: 0 auto; z-index: 2; }
 @media only screen and (max-width: 480px) { .carousel { margin-bottom: -50px; } }
-.carousel__main { z-index: 2; }
+.carousel__main { width: 945px; margin: 0 auto; z-index: 2; }
 .carousel__main img { width: 943px; }
 @media only screen and (max-width: 480px) { .carousel__main img { width: 440px; margin: 0 auto; } }
 .carousel__preview { height: 750px; background-color: #FCCC50; text-align: center; }
