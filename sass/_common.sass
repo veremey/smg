@@ -1153,12 +1153,13 @@ body
 
 
 .comment
-	height: 610px
 	padding: 1px
 	background-image: url("../img/comment__bg.png")
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
 	+clr
 	+r(480)
-		min-height: 650px
 		background-image: url("../img/comment__bg_m.png")
 	.big__title
 		color: #FFF
@@ -1170,6 +1171,9 @@ body
 		background-color: #FFF
 		padding: 25px 70px 40px
 		+clr
+		+r(830)
+			padding: 25px 60px 40px
+			width: 360px
 		+r(480)
 			padding: 25px 0 40px // !!!!!!!!!!!!!!!!!
 	img
@@ -1210,6 +1214,8 @@ body
 			border-bottom: 1px solid transparent
 	&__content
 		width: 860px//09.06
+		+r(830)
+			width: 365px
 		+r(480)
 			width: 390px
 			margin-top: 30px
@@ -1225,7 +1231,7 @@ body
 .slider
 	position: relative
 	background-color: #FFF
-	margin-top: 60px
+	margin: 60px auto
 	+r(480)
 		width: 480px
 		margin-left: -10px
