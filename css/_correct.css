@@ -3,13 +3,13 @@ Error: Undefined mixin 'r'.
         on line 2 of D:/__github/smg/sass/_correct.sass, in `r'
         from line 2 of D:/__github/smg/sass/_correct.sass
 
-1: .hide600
-2: 	+r(600)
+1: .hide1220
+2: 	+r(1220)
 3: 		display: none
-4: .hide480
-5: 	+r(480)
-6: 		display: none
-7: .show480
+4: .show1220
+5: 	display: none
+6: 	+r(1220)
+7: 		display: block
 
 Backtrace:
 D:/__github/smg/sass/_correct.sass:2:in `r'
@@ -69,4 +69,4 @@ c:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'r'.\A         on line 2 of D:/__github/smg/sass/_correct.sass, in `r'\A         from line 2 of D:/__github/smg/sass/_correct.sass\A \A 1: .hide600\A 2: 	+r(600)\A 3: 		display: none\A 4: .hide480\A 5: 	+r(480)\A 6: 		display: none\A 7: .show480"; }
+  content: "Error: Undefined mixin 'r'.\A         on line 2 of D:/__github/smg/sass/_correct.sass, in `r'\A         from line 2 of D:/__github/smg/sass/_correct.sass\A \A 1: .hide1220\A 2: 	+r(1220)\A 3: 		display: none\A 4: .show1220\A 5: 	display: none\A 6: 	+r(1220)\A 7: 		display: block"; }

@@ -330,7 +330,7 @@ $(document).ready(function(){
     slidesToScroll: 4,
     responsive: [
       {
-      breakpoint: 480,
+      breakpoint: 830,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
