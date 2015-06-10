@@ -801,12 +801,14 @@ body
 
 
 .portfolio
-	height: 1200px
+	// height: 1200px //10.06
 	vertical-align: top
 	+r(480)
 		height: auto
 		width: 480px
 		overflow: hidden
+	+r(320)
+		width: 320px
 	// img
 	// 	display: inline-block
 	&__big
@@ -815,7 +817,9 @@ body
 		height: 600px
 		width: 50%
 		overflow: hidden
-		+r(480)
+		+r(1150)
+			width: 100%
+		+r(630)
 			width: 100%
 			height: 300px
 		&:hover
@@ -831,15 +835,19 @@ body
 			text-align: center
 			left: 50%
 			margin-left: -500px
-			+r(480)
+			+r(1150)
+				position: static
+				margin-left: 0
+				width: 100%
+			+r(630)
 				height: 300px
 				top: 50%
 				margin-top: -250px
 			img
-				// height: 600px
+				height: 600px
 				// width: auto
 				width: 100%
-				height: auto
+				// height: auto
 		&_mask,
 		.bg__green,
 		.bg__pink,
@@ -862,6 +870,8 @@ body
 			-o-transition: opacity 2.5s ease
 			transition:  opacity 2.5s ease
 			+vcenter
+			+r(320)
+				width: 300px
 			h3
 				text-transform: uppercase
 				color: #FFF
@@ -874,15 +884,19 @@ body
 				color: #FFF
 				font-size: 16px
 				margin-top: 15px
+				+r(320)
+					width: 300px
 		.btn
 			margin-top: 50px
+			+r(320)
+				margin-top: 20px
 	&__small
 		position: relative
 		float: left
 		height: 300px
 		width: 50%
 		overflow: hidden
-		+r(480)
+		+r(630)
 			width: 100%
 		&:hover
 			.portfolio__small_mask,
@@ -906,8 +920,10 @@ body
 			height: auto
 			text-align: center
 			+vcenter
-			+r(480)
+			+r(630)
 				width: 350px
+			+r(320)
+				width: 300px
 			h3
 				text-transform: uppercase
 				color: #FFF
@@ -920,7 +936,6 @@ body
 				font-size: 16px
 				margin-top: 10px
 			.btn
-				padding: 7px 15px
 				margin-top: 15px
 		&_wrap
 			position: absolute
@@ -929,6 +944,10 @@ body
 			text-align: center
 			left: 50%
 			margin-left: -250px
+			+r(1150)
+				position: static
+				width: 100%
+				// margin-left: -281px
 			img
 				// height: 300px
 				// width: auto
@@ -942,7 +961,7 @@ body
 		height: 600px
 		width: 50%
 		overflow: hidden
-		+r(480)
+		+r(630)
 			width: 100%
 			height: 300px
 		&:hover
@@ -965,13 +984,20 @@ body
 			text-align: center
 			left: 50%
 			margin-left: -250px
-			+r(480)
+			+r(1150)
+				width: 100%
+				margin-left: -282px
+			+r(630)
 				height: 300px
+				position: static
+				margin-left: 0
+				left: 0
 			img
 				height: 600px
 				width: auto
-				+r(480)
+				+r(630)
 					height: 300px
+					width: 100%
 		h3
 			margin-top: 30px
 			font-weight: 400
@@ -1014,12 +1040,12 @@ body
 	width: 50%
 	float: left
 	+clr
-	+r(480)
+	+r(1200)
 		width: 100%
 .small__vertical
 	width: 50%
 	float: left
-	+r(480)
+	+r(630)
 		width: 100%
 	.portfolio__small
 		width: 100%
@@ -1151,6 +1177,30 @@ body
 	width: 329px
 	height: 610px
 
+	.slider
+		position: relative
+		background-color: #FFF
+		margin: 60px auto
+		+r(480)
+			width: 480px
+			margin-left: -10px
+		+r(320)
+			width: 320px
+		.cycle-slideshow
+			+r(480)
+				width: 390px
+				margin: 0 auto
+			+r(320)
+				width: 300px
+		.slick-list
+			+r(1050)
+				width: 800px
+			+r(830)
+				width: 480px
+			+r(480)
+				width: 460px
+			+r(320)
+				width: 300px
 
 .comment
 	padding: 1px
@@ -1164,6 +1214,8 @@ body
 	.big__title
 		color: #FFF
 		margin: 85px 30px 90px
+		+r(830)
+			margin: 35px 30px 45px
 		+r(480)
 			margin: 50px 30px
 	&__item
@@ -1176,6 +1228,9 @@ body
 			width: 360px
 		+r(480)
 			padding: 25px 0 40px // !!!!!!!!!!!!!!!!!
+		+r(320)
+			width: 250px
+			padding: 15px 5px 15px
 	img
 		float: left
 		height: 100%
@@ -1186,6 +1241,9 @@ body
 			height: 119px
 			width: 119px
 			margin-right: 20px
+		+r(320)
+			margin: 0 0 0 50px
+			float: none
 	&__name
 		font-size: 18px
 		color: #363636
@@ -1193,6 +1251,8 @@ body
 		+r(480)
 			font-size: 20px
 			font-weight: bold
+		+r(320)
+			float: left
 	&__who
 		font-size: 13px
 		color: #8F8F8F
@@ -1203,6 +1263,8 @@ body
 		+r(480)
 			width: 400px
 			margin: 0 auto
+		+r(320)
+			width: 250px
 	&__site
 		display: inline-block
 		font-size: 13px
@@ -1210,6 +1272,8 @@ body
 		font-family: Arial, sans-serif
 		margin-top: 10px
 		border-bottom: 1px solid #f3be1e
+		+r(320)
+			float: left
 		&:hover
 			border-bottom: 1px solid transparent
 	&__content
@@ -1219,6 +1283,8 @@ body
 		+r(480)
 			width: 390px
 			margin-top: 30px
+		+r(320)
+			width: 250px
 		p
 			font-size: 13px
 			color: #363636
@@ -1227,27 +1293,10 @@ body
 			margin-top: 15px
 			+r(480)
 				font-size: 16px
+			+r(320)
+				float: left
 
-.slider
-	position: relative
-	background-color: #FFF
-	margin: 60px auto
-	+r(480)
-		width: 480px
-		margin-left: -10px
-	.cycle-slideshow
-		+r(480)
-			width: 390px
-			margin: 0 auto
-	.slick-list
-		+r(1050)
-			width: 800px
-		+r(830)
-			width: 480px
-		+r(480)
-			width: 460px
-		+r(320)
-			width: 300px
+
 .mapin
 	position: relative
 	height: 545px

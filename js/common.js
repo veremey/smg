@@ -338,6 +338,7 @@ $(document).ready(function(){
     }]
   });
 
+
   $('.slick-cycle').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
