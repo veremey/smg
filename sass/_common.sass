@@ -1032,6 +1032,8 @@ body
 			img
 				height: auto
 				width: 100%
+				+r(320)
+					height: 100%
 	+clr
 .row
 	height: 600px
@@ -1177,19 +1179,20 @@ body
 	width: 329px
 	height: 610px
 
-	.slider
-		position: relative
-		background-color: #FFF
-		margin: 60px auto
+.slider
+	position: relative
+	background-color: #FFF
+	margin: 60px auto
+	+r(480)
+		width: 480px
+		margin-left: -10px
+	+r(320)
+		width: 320px
+		padding-bottom: 20px
+	.cycle-slideshow
 		+r(480)
-			width: 480px
-			margin-left: -10px
-		+r(320)
-			width: 320px
-		.cycle-slideshow
-			+r(480)
-				width: 390px
-				margin: 0 auto
+			width: 390px
+			margin: 0 auto
 			+r(320)
 				width: 300px
 		.slick-list
@@ -1284,7 +1287,7 @@ body
 			width: 390px
 			margin-top: 30px
 		+r(320)
-			width: 250px
+			width: 235px
 		p
 			font-size: 13px
 			color: #363636
@@ -1324,11 +1327,18 @@ body
 			width: 295px
 			margin-top: 490px
 			margin-right: 45px
+		+r(320)
+			width: 260px
+			margin-right: 5px
+			padding: 45px 20px 30px 10px
 		.btn
 			width: 240px
 			+r(480)
 				width: 280px
 				font-size: 20px
+			+r(320)
+				width: 250px
+				margin-left: 10px
 	&__item
 		position: relative
 		margin-bottom: 40px
@@ -1382,6 +1392,8 @@ body
 			float: none
 			margin-top: 30px
 			background-image: url("../img/bdr_m.png")
+		+r(320)
+			width: 300px
 		&_contant
 			display: none
 			margin: 45px 35px
@@ -1395,6 +1407,8 @@ body
 					left: 35px
 					width: 390px
 					font-size: 20px
+				+r(320)
+					width: 220px
 		&_return
 			display: none
 			background-color: #FFF
@@ -1429,6 +1443,8 @@ body
 	+r(480)
 		position: absolute
 		width: 370px
+	+r(320)
+		width: 200px
 .letter__name
 	+r(480)
 		top: 50px
@@ -1451,6 +1467,8 @@ body
 		position: absolute
 		top: 125px
 		width: 370px
+	+r(320)
+		width: 200px
 .letter__form_name,
 .letter__form_tel,
 .letter__form_text
