@@ -217,7 +217,7 @@ $(document).ready(function() {
         return false;
     });
 
-   $(document).on('click', '#red .carousel__preview_img', function() {
+   $(document).on('click', '#red.carousel__preview_img', function() {
         $('html, body').animate({ scrollTop: $('#carousel__main').offset().top }, 500 );
         return false;
     });
