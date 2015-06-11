@@ -333,7 +333,14 @@ $(document).ready(function(){
       breakpoint: 830,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 2
+        }
+       },
+      {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
        }
     }]
   });
