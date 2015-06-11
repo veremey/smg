@@ -217,14 +217,13 @@ $(document).ready(function() {
         return false;
     });
 
-   $(document).on('click', '#red.carousel__preview_img', function() {
-        $('html, body').animate({ scrollTop: $('#carousel__main').offset().top }, 500 );
-        return false;
-    });
-
-
   });
 
+
+  $('.carousel__preview_img').click(function() {
+    $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
+        return false;
+  });
 
   //  *** конец скрипта "Плавное перелистывание"
 
