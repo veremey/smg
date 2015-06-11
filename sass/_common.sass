@@ -280,6 +280,8 @@ body
 			+r(570)
 				margin-bottom: 5px
 				list-style-image: url("../img/list__img_m.png")
+			+r(320)
+				margin-bottom: 0
 	&__container
 		position: relative
 		z-index: 4
@@ -301,6 +303,11 @@ body
 				margin-top: 5px
 				font-size: 26px
 				line-height: 26px
+			+r(320)
+				margin-top: 75px
+				font-size: 20px
+				line-height: 22px
+				margin-bottom: 5px
 .big__title
 	position: relative
 	text-align: center
@@ -757,6 +764,8 @@ body
 			transition: opacity .4s .6s
 			background-color: #FFF
 			z-index: 399
+			+r(320)
+				display: none
 	&__4.is_active
 		a:after
 			left: 95%!important  //корректировка
@@ -1092,7 +1101,8 @@ body
 		+r(480)
 			width: 460px
 		+r(320)
-			width: 300px
+			width: 210px
+			margin-left: 45px
 
 .slick__slide_item
 	width: 235px

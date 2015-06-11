@@ -218,7 +218,7 @@ $(document).ready(function() {
     });
 
    $(document).on('click', '#carousel__preview_img', function() {
-        $('html, body').animate({ scrollTop: $('#carousel__main_img').offset().top }, 500 );
+        $('html, body').animate({ scrollTop: $('#carousel__main').offset().top }, 500 );
         return false;
     });
 
@@ -282,6 +282,7 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
+        swipe: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
@@ -337,7 +338,7 @@ $(document).ready(function(){
         }
        },
       {
-      breakpoint: 320,
+      breakpoint: 321,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
