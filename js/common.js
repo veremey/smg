@@ -1,5 +1,5 @@
 head.ready(function() {
-    // письмо в конце страници
+    // письмо в конце страницы
 
     $(".mapin__letter").hide();
   $(".js__write").on("click", function(){
@@ -39,7 +39,6 @@ $('.header button').on('click', function(){
  // выборка
 
     $('.process__1').click(function() {
-      // $('.process__click').each(function() {
         if($(this).hasClass('rot')) {
           $(this).parents().find('.port').css({
             '-ms-transform' : 'rotate(355deg)',
@@ -64,7 +63,6 @@ $('.header button').on('click', function(){
            'background-image' : 'url(img/pol11.png)'});
         }
       return false;
-    // });
     });
 
 
@@ -93,7 +91,6 @@ $('.header button').on('click', function(){
            'background-image' : 'url(img/pol12_55.png)'});
         }
       return false;
-    // });
     });
 
 
@@ -225,8 +222,6 @@ $(document).ready(function() {
         return false;
   });
 
-  //  *** конец скрипта "Плавное перелистывание"
-
 
 
 // ***** слайдер проворачивающий экземпляры сайтов  ****
@@ -234,8 +229,6 @@ $(document).ready(function() {
 
 	console.log($('body').html());
 });
-
-
 
 $(document).ready(function(){
 
@@ -324,12 +317,7 @@ $(document).ready(function(){
 
 
 
-
-
 //  FORM VALIDATION
-
-
-
 
 
 $(document).ready(function() {
@@ -416,9 +404,6 @@ $(document).ready(function() {
   validate();
 
 });
-//  end FORM VALIDATION
-
-
 
 
 // чтобы меню при скроле вело себя как при position: relative
@@ -430,6 +415,7 @@ $(document).scroll(function(){
 
 
 //  bilder.html запрет работаты для ссылок Регистрации и Входа
+
   $('#menu a').click(function(){
     return false;
   });
