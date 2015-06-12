@@ -227,38 +227,6 @@ $(document).ready(function() {
 
   //  *** конец скрипта "Плавное перелистывание"
 
-  //  #####  Карта start ######
-
-
-
-// var myMap;
-
-// // Дождёмся загрузки API и готовности DOM.
-// ymaps.ready(init);
-// function init () {
-//     // Создание экземпляра карты и его привязка к контейнеру с
-//     // заданным id ("map").
-//     myMap = new ymaps.Map('map', {
-//         // При инициализации карты обязательно нужно указать
-//         // её центр и коэффициент масштабирования.
-//         center: [55.746993, 37.608284], // Москва
-//         zoom: 17
-//     });
-
-//     // document.getElementById('destroyButton').onclick = function () {
-//     //     // Для уничтожения используется метод destroy.
-//     //     myMap.destroy();
-//     // };
-
-//   };
-
-//   // смотри js/yandexMapInit.js
-
-
-//   //  #####  Карта AND ######
-
-
-
 
 
 // ***** слайдер проворачивающий экземпляры сайтов  ****
@@ -465,3 +433,10 @@ $(document).scroll(function(){
   $('#menu a').click(function(){
     return false;
   });
+
+
+//servise.html
+
+$('.sidebar button').click(function(){
+  $(this).parent('.sidebar').toggleClass('expand')
+});
