@@ -24,11 +24,9 @@ body
 	font-family: Arial, sans-serif
 	font-size: 12px
 	line-height: 1.4
-	// min-width: 1180px
 	width: 100%
 	background-color: #000
 	+r(480)
-		// min-width: 480px
 		width: 480px
 	+r(320)
 		min-width: 320px
@@ -55,12 +53,11 @@ body
 			opacity: .8
 
 .header
-	// min-width: 1200px
 	width: 100%!important
 	position: fixed
 	top: 0
 	background-color: rgba(0, 0, 0, .9)
-	z-index: 999// !undex.html
+	z-index: 999
 	height: 97px
 	+clr
 	+r(830)
@@ -86,7 +83,7 @@ body
 			margin-top: 60px
 			padding-bottom: 10px
 			+translate(-2%, 0%)
-		.is-active //delete me &&
+		.is-active
 			> a
 				border-color: $yellow
 				+tr(.6s)
@@ -220,7 +217,6 @@ body
 		left: 50%
 		margin-left: -1500px
 		background-color: #FFF
-		// z-index: 1 //08.06
 		img
 			+r(650)
 				width: 1500px
@@ -405,7 +401,6 @@ body
 			height: 105px
 			font-size: 15px
 			vertical-align: top
-			// z-index: 99
 			+r(1220)
 				height: 60px
 		a
@@ -768,7 +763,7 @@ body
 				display: none
 	&__4.is_active
 		a:after
-			left: 95%!important  //корректировка
+			left: 95%!important
 
 .pentagon
 	position: absolute
@@ -782,7 +777,6 @@ body
 	img
 		position: absolute
 		+opacity(0)
-		// +tr(.5s)
 	.p1
 		left: 71px
 		top: 22px
@@ -818,8 +812,6 @@ body
 		overflow: hidden
 	+r(320)
 		width: 320px
-	// img
-	// 	display: inline-block
 	&__big
 		position: relative
 		float: left
@@ -854,9 +846,7 @@ body
 				margin-top: -250px
 			img
 				height: 600px
-				// width: auto
 				width: 100%
-				// height: auto
 		&_mask,
 		.bg__green,
 		.bg__pink,
@@ -940,7 +930,6 @@ body
 				line-height: 1.1
 				font-weight: 400
 			p
-				// width: 300px  // 29.05
 				color: #FFF
 				font-size: 16px
 				margin-top: 10px
@@ -956,13 +945,7 @@ body
 			+r(1150)
 				position: static
 				width: 100%
-				// margin-left: -281px
 			img
-				// height: 300px
-				// width: auto
-				// height: auto
-				// width: 100%
-				// margin-top: -25px
 				+coverdiv
 	&__hight
 		position: relative
