@@ -95,7 +95,6 @@ body
 			display: inline-block
 			+r(480)
 				display: block
-			.is-active
 			&:hover
 				> a
 					border-color: $yellow
@@ -1324,6 +1323,8 @@ body
 		height: 360px
 		background-color: #FFF
 		z-index: 4
+		+r(830)
+			margin-right: -75px
 		+r(480)
 			width: 295px
 			margin-top: 490px
@@ -1387,9 +1388,20 @@ body
 		z-index: 5
 		background-color: #FFF
 		background-image: url("../img/bdr.png")
+		+r(1050)
+			width: 300px
+			height: 390px
+			float: left
+			margin-top: 85px
+			background-image: url("../img/bdr_m_320.png")
+		+r(830)
+			margin-right: -75px
+			left: -100px
+			margin-top: 90px
 		+r(480)
 			width: 460px
 			height: 390px
+			left: 0
 			float: none
 			margin-top: 30px
 			background-image: url("../img/bdr_m.png")
@@ -1403,6 +1415,8 @@ body
 			.btn
 				margin: 30px auto
 				width: 240px
+				+r(1050)
+					width: 220px
 				+r(480)
 					position: absolute
 					top: 280px
@@ -1442,16 +1456,23 @@ body
 	font-size: 14px
 	font-family: Arial, sans-serif
 	+placeholder-color(#c0c0c0)
+	+r(1050)
+		width: 200px
 	+r(480)
 		position: absolute
 		width: 370px
 	+r(320)
 		width: 200px
 .letter__name
+	+r(1050)
+		top: 50px
 	+r(480)
 		top: 50px
 .letter__tel
 	margin-left: 20px
+	+r(1050)
+		top: 100px
+		margin-left: 0
 	+r(480)
 		top: 100px
 		margin-left: 0
@@ -1465,6 +1486,9 @@ body
 	font-family: Arial, sans-serif
 	+placeholder-color(#c0c0c0)
 	resize: none
+	+r(1050)
+		width: 200px
+		margin-top: 40px
 	+r(480)
 		position: absolute
 		top: 125px
@@ -1477,13 +1501,14 @@ body
 	position: relative
 	float: left
 	text-align: left
+	+r(1050)
+		float: none
 	+r(480)
 		float: none
 	.has-error
 		border-color: #f3aaaa
 		+ label
 			position: absolute
-			bottom: -15px
 			left: 1px
 			font-size: 11px
 			color: #F3AAAA
@@ -1492,17 +1517,30 @@ body
 .letter__form_name
 	width: 240px
 	label
-		+r(480)
-			top: 95px
+		position: absolute
+		bottom: -15px
+	+r(1050)
+		top: 0px
+	+r(480)
+		top: 95px
 .letter__form_tel
 	width: 260px
+	+r(1050)
+		top: 20px
 	label
 		margin-left: 20px
+		bottom: -15px
+		+r(1050)
+			top: 42px
+			margin-left: 0
 		+r(480)
 			top: 145px
 			margin-left: 0
 .letter__form_text
 	label
+		bottom: -15px
+		+r(1050)
+			top: 145px
 		+r(480)
 			top: 255px
 
