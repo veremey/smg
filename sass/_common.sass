@@ -196,7 +196,7 @@ body
 		+s(m_logo)
 	+r(320)
 		margin: 15px 0 15px 10px
-		+s(m_logo-320)
+		+s(logo_small)
 	h1
 		+hide-text
 
@@ -207,6 +207,8 @@ body
 	height: 811px
 	min-width: 100%
 	+clr
+	+r(650)
+		height: 635px
 	+r(570)
 		top: 0
 		height: 455px
@@ -299,6 +301,7 @@ body
 				margin-top: 5px
 				font-size: 26px
 				line-height: 26px
+				margin-bottom: 10px
 			+r(320)
 				margin-top: 75px
 				font-size: 20px
@@ -1111,14 +1114,12 @@ body
 			margin-top: 40px
 			margin-bottom: 30px
 	&__slider
-		//width: 1000px //09.06
 		+clr
 		+r(480)
 			width: 460px
 	&__wrap
 		float: left
 		position: relative
-		// width: 25%
 		width: 100%
 		height: 160px
 		overflow: hidden
@@ -1244,10 +1245,13 @@ body
 		font-size: 18px
 		color: #363636
 		font-family: Arial, sans-serif
+		+r(910)
+			width: 390px
 		+r(480)
 			font-size: 20px
 			font-weight: bold
 		+r(320)
+			width: 300px
 			float: left
 	&__who
 		font-size: 13px
@@ -1273,7 +1277,9 @@ body
 		&:hover
 			border-bottom: 1px solid transparent
 	&__content
-		width: 860px//09.06
+		width: 100%//09.06
+		+r(1050)
+			width: 690px
 		+r(830)
 			width: 365px
 		+r(480)
@@ -1291,6 +1297,8 @@ body
 				font-size: 16px
 			+r(320)
 				float: left
+	.slick-slider
+		overflow: hidden
 
 
 .mapin
@@ -1529,7 +1537,13 @@ body
 
 .btn__close
 	position: absolute
-	top: 15px
-	right: 15px
+	top: 20px
+	right: 20px
 	z-index: 999
-	+s(close)
+	width: 25px
+	height: 25px
+	background-color: $n
+	i
+		display: block
+		+s(close)
+		margin-left: 5px

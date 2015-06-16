@@ -227,7 +227,6 @@ $(document).ready(function() {
 // ***** слайдер проворачивающий экземпляры сайтов  ****
 
 
-	console.log($('body').html());
 });
 
 $(document).ready(function(){
