@@ -403,15 +403,15 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 
 .mapin { position: relative; height: 545px; overflow: hidden; padding: 1px; *zoom: 1; }
 .mapin:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 480px) { .mapin { height: 995px; } }
+@media only screen and (max-width: 650px) { .mapin { height: 995px; } }
 .mapin #map { position: absolute; z-index: 1; filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); -o-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
-@media only screen and (max-width: 480px) { .mapin #map { height: 995px; } }
+@media only screen and (max-width: 650px) { .mapin #map { height: 995px; } }
 .mapin__contakt { position: relative; float: right; margin-top: 90px; padding: 45px 30px 55px 45px; width: 255px; height: 360px; background-color: #FFF; z-index: 4; }
 @media only screen and (max-width: 830px) { .mapin__contakt { margin-right: -75px; } }
-@media only screen and (max-width: 480px) { .mapin__contakt { width: 295px; margin-top: 490px; margin-right: 45px; } }
+@media only screen and (max-width: 650px) { .mapin__contakt { width: 295px; margin-top: 490px; margin-right: 45px; } }
 @media only screen and (max-width: 320px) { .mapin__contakt { width: 260px; margin-right: 5px; padding: 45px 20px 30px 10px; } }
 .mapin__contakt .btn { width: 240px; }
-@media only screen and (max-width: 480px) { .mapin__contakt .btn { width: 280px; font-size: 20px; } }
+@media only screen and (max-width: 650px) { .mapin__contakt .btn { width: 280px; font-size: 20px; } }
 @media only screen and (max-width: 320px) { .mapin__contakt .btn { width: 250px; margin-left: 10px; } }
 .mapin__item { position: relative; margin-bottom: 40px; margin-left: 60px; }
 .mapin__item .home { position: absolute; top: 2px; left: -60px; background: url('../img/icons-s1c846887f2.png') 0 -512px no-repeat; width: 41px; height: 41px; }
@@ -425,12 +425,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .mapin__letter { position: relative; width: 570px; height: 328px; margin-top: 90px; float: left; z-index: 5; background-color: #FFF; background-image: url("../img/bdr.png"); }
 @media only screen and (max-width: 1050px) { .mapin__letter { width: 300px; height: 390px; float: left; margin-top: 85px; background-image: url("../img/bdr_m_320.png"); } }
 @media only screen and (max-width: 830px) { .mapin__letter { margin-right: -75px; left: -100px; margin-top: 90px; } }
-@media only screen and (max-width: 480px) { .mapin__letter { width: 460px; height: 390px; left: 0; float: none; margin-top: 30px; background-image: url("../img/bdr_m.png"); } }
+@media only screen and (max-width: 650px) { .mapin__letter { width: 460px; height: 390px; left: 0; float: none; margin-top: 30px; background-image: url("../img/bdr_m.png"); } }
 @media only screen and (max-width: 320px) { .mapin__letter { width: 300px; background-image: url("../img/bdr_m_320.png"); } }
 .mapin__letter_contant { display: none; margin: 45px 35px; text-align: center; }
 .mapin__letter_contant .btn { margin: 30px auto; width: 240px; }
 @media only screen and (max-width: 1050px) { .mapin__letter_contant .btn { width: 220px; } }
-@media only screen and (max-width: 480px) { .mapin__letter_contant .btn { position: absolute; top: 280px; left: 35px; width: 390px; font-size: 20px; } }
+@media only screen and (max-width: 650px) { .mapin__letter_contant .btn { position: absolute; top: 280px; left: 35px; width: 390px; font-size: 20px; } }
 @media only screen and (max-width: 320px) { .mapin__letter_contant .btn { width: 220px; } }
 .mapin__letter_return { display: none; background-color: #FFF; margin: 10px; z-index: 200; position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-align: center; width: 95%; height: 95%; }
 .mapin__letter_return i { position: absolute; top: 45px; left: 50%; margin-left: -50px; background: url('../img/icons-s1c846887f2.png') 0 -1898px no-repeat; width: 100px; height: 101px; }
@@ -442,43 +442,43 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .letter__name:-moz-placeholder, .letter__name::-moz-placeholder, .letter__tel:-moz-placeholder, .letter__tel::-moz-placeholder { color: #c0c0c0; opacity: 1; }
 .letter__name::-webkit-input-placeholder, .letter__tel::-webkit-input-placeholder { color: #c0c0c0; }
 @media only screen and (max-width: 1050px) { .letter__name, .letter__tel { width: 200px; } }
-@media only screen and (max-width: 480px) { .letter__name, .letter__tel { position: absolute; width: 370px; } }
+@media only screen and (max-width: 650px) { .letter__name, .letter__tel { position: absolute; width: 370px; } }
 @media only screen and (max-width: 320px) { .letter__name, .letter__tel { width: 200px; } }
 
 @media only screen and (max-width: 1050px) { .letter__name { top: 50px; } }
-@media only screen and (max-width: 480px) { .letter__name { top: 50px; } }
+@media only screen and (max-width: 650px) { .letter__name { top: 0px; } }
 
 .letter__tel { margin-left: 20px; }
 @media only screen and (max-width: 1050px) { .letter__tel { top: 100px; margin-left: 0; } }
-@media only screen and (max-width: 480px) { .letter__tel { top: 100px; margin-left: 0; } }
+@media only screen and (max-width: 650px) { .letter__tel { top: 10px; margin-left: 0; } }
 
 .letter__text { height: 80px; width: 480px; margin-top: 25px; border: 1px solid #efefef; padding: 10px; font-size: 14px; font-family: Arial, sans-serif; resize: none; }
 .letter__text:-moz-placeholder, .letter__text::-moz-placeholder { color: #c0c0c0; opacity: 1; }
 .letter__text::-webkit-input-placeholder { color: #c0c0c0; }
 @media only screen and (max-width: 1050px) { .letter__text { width: 200px; margin-top: 40px; } }
-@media only screen and (max-width: 480px) { .letter__text { position: absolute; top: 125px; width: 370px; } }
+@media only screen and (max-width: 650px) { .letter__text { position: absolute; top: 100px; width: 370px; margin-top: 0; } }
 @media only screen and (max-width: 320px) { .letter__text { width: 200px; } }
 
 .letter__form_name, .letter__form_tel, .letter__form_text { position: relative; float: left; text-align: left; }
 @media only screen and (max-width: 1050px) { .letter__form_name, .letter__form_tel, .letter__form_text { float: none; } }
-@media only screen and (max-width: 480px) { .letter__form_name, .letter__form_tel, .letter__form_text { float: none; } }
 .letter__form_name .has-error, .letter__form_tel .has-error, .letter__form_text .has-error { border-color: #f3aaaa; }
 .letter__form_name .has-error + label, .letter__form_tel .has-error + label, .letter__form_text .has-error + label { position: absolute; left: 1px; font-size: 11px; color: #F3AAAA; text-align: left; }
 
 .letter__form_name { width: 240px; }
-.letter__form_name label { position: absolute; bottom: -15px; }
 @media only screen and (max-width: 1050px) { .letter__form_name { top: 0px; } }
-@media only screen and (max-width: 480px) { .letter__form_name { top: 95px; } }
+@media only screen and (max-width: 650px) { .letter__form_name { height: 40px; top: 50px; } }
+.letter__form_name label { position: absolute; bottom: -17px; }
 
 .letter__form_tel { width: 260px; }
 @media only screen and (max-width: 1050px) { .letter__form_tel { top: 20px; } }
+@media only screen and (max-width: 650px) { .letter__form_tel { height: 40px; top: 65px; } }
 .letter__form_tel label { margin-left: 20px; bottom: -15px; }
 @media only screen and (max-width: 1050px) { .letter__form_tel label { top: 42px; margin-left: 0; } }
-@media only screen and (max-width: 480px) { .letter__form_tel label { top: 145px; margin-left: 0; } }
+@media only screen and (max-width: 650px) { .letter__form_tel label { top: 52px; margin-left: 0; } }
 
 .letter__form_text label { bottom: -15px; }
 @media only screen and (max-width: 1050px) { .letter__form_text label { top: 145px; } }
-@media only screen and (max-width: 480px) { .letter__form_text label { top: 255px; } }
+@media only screen and (max-width: 650px) { .letter__form_text label { top: 205px; } }
 
 .write__scroll { display: block; height: 50px; margin-top: -50px; background-color: #F45; }
 
@@ -487,7 +487,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 
 .ymaps-2-1-23-zoom, .ymaps-2-1-23-button_size_s .ymaps-2-1-23-button__text, .ymaps-2-1-23-search__input, .ymaps-2-1-26-controls__toolbar, .ymaps-2-1-26-controls__control { display: none !important; }
 
-.btn__close { position: absolute; top: 20px; right: 20px; z-index: 999; width: 25px; height: 25px; background-color: transparent; }
+.btn__close { position: absolute; top: 15px; right: 15px; z-index: 999; width: 25px; height: 25px; background-color: transparent; }
 .btn__close i { display: block; background: url('../img/icons-s1c846887f2.png') 0 -299px no-repeat; width: 14px; height: 14px; margin-left: 5px; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }

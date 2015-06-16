@@ -1306,13 +1306,15 @@ body
 	overflow: hidden
 	padding: 1px
 	+clr
-	+r(480)
+	// +r(480)
+	+r(650)
 		height: 995px
 	#map
 		position: absolute
 		z-index: 1
 		+gray
-		+r(480)
+		// +r(480)
+		+r(650)
 			height: 995px
 	&__contakt
 		position: relative
@@ -1325,7 +1327,8 @@ body
 		z-index: 4
 		+r(830)
 			margin-right: -75px
-		+r(480)
+		// +r(480)
+		+r(650)
 			width: 295px
 			margin-top: 490px
 			margin-right: 45px
@@ -1335,7 +1338,8 @@ body
 			padding: 45px 20px 30px 10px
 		.btn
 			width: 240px
-			+r(480)
+			// +r(480)
+			+r(650)
 				width: 280px
 				font-size: 20px
 			+r(320)
@@ -1398,7 +1402,8 @@ body
 			margin-right: -75px
 			left: -100px
 			margin-top: 90px
-		+r(480)
+		// +r(480)
+		+r(650)
 			width: 460px
 			height: 390px
 			left: 0
@@ -1417,7 +1422,8 @@ body
 				width: 240px
 				+r(1050)
 					width: 220px
-				+r(480)
+				// +r(480)
+				+r(650)
 					position: absolute
 					top: 280px
 					left: 35px
@@ -1458,7 +1464,8 @@ body
 	+placeholder-color(#c0c0c0)
 	+r(1050)
 		width: 200px
-	+r(480)
+	// +r(480)
+	+r(650)
 		position: absolute
 		width: 370px
 	+r(320)
@@ -1466,15 +1473,17 @@ body
 .letter__name
 	+r(1050)
 		top: 50px
-	+r(480)
-		top: 50px
+	// +r(480)
+	+r(650)
+		top: 0px
 .letter__tel
 	margin-left: 20px
 	+r(1050)
 		top: 100px
 		margin-left: 0
-	+r(480)
-		top: 100px
+	// +r(480)
+	+r(650)
+		top: 10px
 		margin-left: 0
 .letter__text
 	height: 80px
@@ -1489,10 +1498,12 @@ body
 	+r(1050)
 		width: 200px
 		margin-top: 40px
-	+r(480)
+	// +r(480)
+	+r(650)
 		position: absolute
-		top: 125px
+		top: 100px
 		width: 370px
+		margin-top: 0
 	+r(320)
 		width: 200px
 .letter__form_name,
@@ -1502,8 +1513,6 @@ body
 	float: left
 	text-align: left
 	+r(1050)
-		float: none
-	+r(480)
 		float: none
 	.has-error
 		border-color: #f3aaaa
@@ -1516,33 +1525,39 @@ body
 
 .letter__form_name
 	width: 240px
-	label
-		position: absolute
-		bottom: -15px
 	+r(1050)
 		top: 0px
-	+r(480)
-		top: 95px
+	// +r(480)
+	+r(650)
+		height: 40px
+		top: 50px
+	label
+		position: absolute
+		bottom: -17px
 .letter__form_tel
 	width: 260px
 	+r(1050)
 		top: 20px
+	+r(650)
+		height: 40px
+		top: 65px
 	label
 		margin-left: 20px
 		bottom: -15px
 		+r(1050)
 			top: 42px
 			margin-left: 0
-		+r(480)
-			top: 145px
+		+r(650)
+			top: 52px
 			margin-left: 0
 .letter__form_text
 	label
 		bottom: -15px
 		+r(1050)
 			top: 145px
-		+r(480)
-			top: 255px
+		// +r(480)
+		+r(650)
+			top: 205px
 
 .write__scroll
 	// position: relative
@@ -1575,8 +1590,8 @@ body
 
 .btn__close
 	position: absolute
-	top: 20px
-	right: 20px
+	top: 15px
+	right: 15px
 	z-index: 999
 	width: 25px
 	height: 25px
