@@ -17,7 +17,7 @@ $(document).ready(function() {
 // header menu 480
 
 $('.header button, .header__menu li').on('click', function(){
-  $('.header__menu').toggleClass('show480')
+  $('.header__menu').toggleClass('show600')
 });
 
 
@@ -408,10 +408,26 @@ $(document).ready(function() {
 
 // чтобы Хедер при скроле вел себя как при position: relative
 
-$(document).scroll(function(){
-    var scr = 0 - $(this).scrollLeft();
-    $('.header').css("left", scr);
+// $(document).scroll(function(){
+//     var scr = 0 - $(this).scrollLeft();
+//     $('.header').css("left", scr);
+//   });
+
+
+
+
+  function scrollFixedElements() {
+      var scroll_left = $(this).scrollLeft();
+      $(".header").css({
+          left: - scroll_left
+      });
+  }
+  scrollFixedElements();
+  $(window).scroll(function(){
+      scrollFixedElements()
   });
+
+
 
 
 //  bilder.html запрет работаты для ссылок Регистрации и Входа
@@ -631,4 +647,7 @@ $('.sidebar button').click(function(){
   };
 })(jQuery);
 
-$('.header').scrollupbar();
+
+  $('.header').scrollupbar();
+
+
