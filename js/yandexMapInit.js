@@ -1,3 +1,4 @@
+
 ymaps.ready(function() {
     var myMap = new ymaps.Map('map', {
             center: [55.74630, 37.6105],
@@ -20,8 +21,21 @@ ymaps.ready(function() {
       balloonShadow: false
     });
     myMap.geoObjects.add(myPlacemark);
-    myMap.behaviors
-        .disable(['rightMouseButtonMagnifier','scrollZoom', 'drag'])
+     myMap.behaviors
+         .disable(['scrollZoom']);
+
+
+
+      $( document ).ready(function() {
+       // alert(3434);
+       // console.log('width:' + screen.width);
+      if( screen.width <= 760 ) {
+        myMap.behaviors
+            .disable(['rightMouseButtonMagnifier', 'drag']);
+      };
+    });
+
+
 });
 
 

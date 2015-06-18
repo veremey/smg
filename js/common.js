@@ -16,9 +16,10 @@ head.ready(function() {
 $(document).ready(function() {
 // header menu 480
 
-$('.header button').on('click', function(){
+$('.header button, .header__menu li').on('click', function(){
   $('.header__menu').toggleClass('show480')
 });
+
 
 // Крутилка
 
@@ -405,7 +406,7 @@ $(document).ready(function() {
 });
 
 
-// чтобы меню при скроле вело себя как при position: relative
+// чтобы Хедер при скроле вел себя как при position: relative
 
 $(document).scroll(function(){
     var scr = 0 - $(this).scrollLeft();
