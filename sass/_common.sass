@@ -26,11 +26,11 @@ body
 	line-height: 1.4
 	width: 100%
 	background-color: #000
-	+r(480)
-		width: 480px
-	+r(320)
-		min-width: 320px
-		width: 320px
+	// +r(480)
+	// 	width: 480px
+	// +r(320)
+	// 	min-width: 320px
+	// 	width: 320px
 
 .main
 	&__prev
@@ -151,7 +151,8 @@ body
 			margin-top: 0
 			margin-right: 0
 			width: 148px
-		+r(320)
+		// +r(320)
+		+r(478)
 			right: 60px
 		&_tel
 			float: right
@@ -178,12 +179,12 @@ body
 			width: 800px
 		+r(830)
 			width: 480px
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 310px
 	button
 		display: none
 		+s(m320)
-		// +r(480)
 		+r(600)
 			display: block
 			position: absolute
@@ -191,7 +192,8 @@ body
 			right: 10px
 			width: 65px
 			z-index: 99
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 40px
 			right: 0
 .logo
@@ -202,7 +204,8 @@ body
 	+r(600)
 		margin: 10px 0 10px 10px
 		+s(m_logo)
-	+r(320)
+	// +r(320)
+	+r(478)
 		margin: 15px 0 15px 10px
 		+s(logo_small)
 	h1
@@ -248,9 +251,11 @@ body
 		+r(570)
 			width: 460px
 			margin-left: 15px
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 320px
-			margin-left: 40px
+			// margin-left: 40px
+			margin: 0 auto
 	&__list
 		width: 265px
 		float: left
@@ -263,6 +268,8 @@ body
 			margin-left: 15px
 			width: 195px
 			margin-right: 15px
+		+r(478)
+			margin-left: 65px
 		p
 			font-size: 20px
 			margin-left: 10px
@@ -286,7 +293,8 @@ body
 			+r(570)
 				margin-bottom: 5px
 				list-style-image: url("../img/list__img_m.png")
-			+r(320)
+			// +r(320)
+			+r(478)
 				margin-bottom: 0
 	&__container
 		position: relative
@@ -296,7 +304,8 @@ body
 			padding-top: 150px
 		+r(570)
 			padding-top: 140px
-		+r(320)
+		// +r(320)
+		+r(478)
 			padding-top: 70px
 		.big__title
 			+r(830)
@@ -310,7 +319,8 @@ body
 				font-size: 26px
 				line-height: 26px
 				margin-bottom: 10px
-			+r(320)
+			// +r(320)
+			+r(478)
 				margin-top: 75px
 				font-size: 20px
 				line-height: 22px
@@ -383,8 +393,11 @@ body
 	// +r(1220)
 	+r(1199)
 		height: 590px
-	+r(320)
+	// +r(320)
+	+r(478)
 		width: 320px
+		padding-top: 50px
+		margin: 0 auto
 	&__img
 		position: absolute
 		width: 650px
@@ -408,8 +421,10 @@ body
 			height: 590px
 			margin-top: -50px
 			+translate(0px, 0px)
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 320px
+			margin: 0 auto
 		li
 			position: relative
 			display: inline-block
@@ -540,8 +555,9 @@ body
 			top: 0
 			left: 40px
 			margin-top: 25px
-		+r(320)
-			top: -25px
+		// +r(320)
+		+r(478)
+			top: -20px
 		&:before
 			content: ""
 			display: none
@@ -558,9 +574,10 @@ body
 			+r(1199)
 				top: 28px
 				left: 250px
-			+r(320)
-				top: 53px
-				left: 169px
+			// +r(320)
+			+r(478)
+				top: 20px
+				left: 245px
 		&_pic
 			+s(w9)
 		.process__list_container
@@ -581,7 +598,8 @@ body
 		+r(1199)
 			top: 125px
 			left: -20px
-		+r(320)
+		// +r(320)
+		+r(478)
 			top: 44px
 			left: 87px
 		&:before
@@ -619,7 +637,8 @@ body
 		+r(1199)
 			top: 135px
 			left: 68px
-		+r(320)
+		// +r(320)
+		+r(478)
 			top: 80px
 			left: 15px
 		a
@@ -665,7 +684,8 @@ body
 		+r(1199)
 			top: 168px
 			left: 208px
-		+r(320)
+		// +r(320)
+		+r(478)
 			top: 110px
 			left: 68px
 		&:before
@@ -703,7 +723,8 @@ body
 		+r(1199)
 			top: 193px
 			left: 91px
-		+r(320)
+		// +r(320)
+		+r(478)
 			top: 133px
 			left: 40px
 		&:before
@@ -741,7 +762,8 @@ body
 		+r(1199)
 			top: 290px
 			left: 50px
-		+r(320)
+		// +r(320)
+		+r(478)
 			top: 178px
 			left: 95px
 		a
@@ -800,7 +822,8 @@ body
 			transition: opacity .4s .6s
 			background-color: #FFF
 			z-index: 399
-			+r(320)
+			// +r(320)
+			+r(478)
 				display: none
 	&__4.is_active
 		a:after
@@ -1124,9 +1147,11 @@ body
 			width: 480px
 		+r(480)
 			width: 460px
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 210px
-			margin-left: 45px
+			// margin-left: 45px
+			margin: 0 auto
 
 .slick__slide_item
 	width: 235px
@@ -1165,6 +1190,8 @@ body
 		+clr
 		+r(480)
 			width: 80%
+		+r(478)
+			width: 100%
 		&:hover
 			+gray-zero
 		&_img
@@ -1218,15 +1245,17 @@ body
 	+r(480)
 		width: 480px
 		margin-left: -10px
-	+r(320)
+	// +r(320)
+	+r(478)
 		width: 320px
 		padding-bottom: 20px
 	.cycle-slideshow
 		+r(480)
 			width: 390px
 			margin: 0 auto
-			+r(320)
-				width: 300px
+		// +r(320)
+		+r(478)
+			width: 300px
 		.slick-list
 			+r(1050)
 				width: 800px
@@ -1234,7 +1263,8 @@ body
 				width: 480px
 			+r(480)
 				width: 460px
-			+r(320)
+			// +r(320)
+			+r(478)
 				width: 300px
 
 .comment
@@ -1263,7 +1293,8 @@ body
 			width: 360px
 		+r(480)
 			padding: 25px 0 40px // !!!!!!!!!!!!!!!!!
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 250px
 			padding: 15px 5px 15px
 	img
@@ -1276,7 +1307,8 @@ body
 			height: 119px
 			width: 119px
 			margin-right: 20px
-		+r(320)
+		// +r(320)
+		+r(478)
 			margin: 0 0 0 50px
 			float: none
 	&__name
@@ -1288,7 +1320,8 @@ body
 		+r(480)
 			font-size: 20px
 			font-weight: bold
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 300px
 			float: left
 	&__who
@@ -1301,7 +1334,8 @@ body
 		+r(480)
 			width: 400px
 			margin: 0 auto
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 250px
 	&__site
 		display: inline-block
@@ -1310,7 +1344,8 @@ body
 		font-family: Arial, sans-serif
 		margin-top: 10px
 		border-bottom: 1px solid #f3be1e
-		+r(320)
+		// +r(320)
+		+r(478)
 			float: left
 		&:hover
 			border-bottom: 1px solid transparent
@@ -1323,7 +1358,8 @@ body
 		+r(480)
 			width: 390px
 			margin-top: 30px
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 235px
 		p
 			font-size: 13px
@@ -1333,7 +1369,8 @@ body
 			margin-top: 15px
 			+r(480)
 				font-size: 16px
-			+r(320)
+			// +r(320)
+			+r(478)
 				float: left
 	.slick-slider
 		overflow: hidden
@@ -1371,7 +1408,8 @@ body
 			width: 295px
 			margin-top: 490px
 			margin-right: 45px
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 260px
 			margin-right: 5px
 			padding: 45px 20px 30px 10px
@@ -1381,7 +1419,8 @@ body
 			+r(650)
 				width: 280px
 				font-size: 20px
-			+r(320)
+			// +r(320)
+			+r(478)
 				width: 250px
 				margin-left: 10px
 	&__item
@@ -1449,7 +1488,8 @@ body
 			float: none
 			margin-top: 30px
 			background-image: url("../img/bdr_m.png")
-		+r(320)
+		// +r(320)
+		+r(478)
 			width: 300px
 			background-image: url("../img/bdr_m_320.png")
 		&_contant
@@ -1468,7 +1508,8 @@ body
 					left: 35px
 					width: 390px
 					font-size: 20px
-				+r(320)
+				// +r(320)
+				+r(478)
 					width: 220px
 		&_return
 			display: none
@@ -1507,7 +1548,8 @@ body
 	+r(650)
 		position: absolute
 		width: 370px
-	+r(320)
+	// +r(320)
+	+r(478)
 		width: 200px
 .letter__name
 	+r(1050)
@@ -1543,7 +1585,8 @@ body
 		top: 100px
 		width: 370px
 		margin-top: 0
-	+r(320)
+	// +r(320)
+	+r(478)
 		width: 200px
 .letter__form_name,
 .letter__form_tel,

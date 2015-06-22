@@ -14,12 +14,20 @@ head.ready(function() {
   });
 
 $(document).ready(function() {
-// header menu 480
 
-$('.header button, .header__menu li').on('click', function(){
+
+if ($(document).width() <= 830) {
+  $('.header').addClass('scroll')
+};
+
+if ($(document).width() <= 600) {
+  $('.header').addClass('small__header'),
+  $('.header__menu').addClass('small__header__menu')
+  };
+
+$('.header button, .small__header__menu li').on('click', function(){
   $('.header__menu').toggleClass('show600')
 });
-
 
 // Крутилка
 
@@ -35,7 +43,6 @@ $('.header button, .header__menu li').on('click', function(){
       });
       return false;
     }));
-
 
  // выборка
 
@@ -161,7 +168,6 @@ $('.header button, .header__menu li').on('click', function(){
       $(this).parents().find('.process__2').addClass('rot');
       return false;
     }));
-
 
 //  AUTO KRUTILKA
 
@@ -298,7 +304,7 @@ $(document).ready(function(){
         }
        },
       {
-      breakpoint: 321,
+      breakpoint: 478,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -444,7 +450,7 @@ $('.sidebar button').click(function(){
 });
 
 
-// scroll app
+// scroll up like a twitter
 
 (function($) {
   'use strict';
@@ -648,6 +654,8 @@ $('.sidebar button').click(function(){
 })(jQuery);
 
 
-  $('.header').scrollupbar();
-
-
+// $('.scroll').scrollupbar();
+// $.scrollupbar($('.header'))
+if ($(document).width() <= 830) {
+  $.scrollupbar($('.header'))
+};
