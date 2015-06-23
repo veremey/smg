@@ -67,6 +67,10 @@ body
 		min-width: 320px
 		width: 100%
 		height: auto
+	+rh(450)
+		min-width: 320px
+		width: 100%
+		height: auto
 	&__menu
 		font-size: 0
 		float: left
@@ -85,6 +89,12 @@ body
 			margin-top: 60px
 			padding-bottom: 10px
 			+translate(-2%, 0%)
+		+rh(450)
+			display: none
+			position: relative
+			margin-top: 60px
+			padding-bottom: 10px
+			+translate(-2%, 0%)
 		.is-active
 			> a
 				border-color: $yellow
@@ -97,6 +107,8 @@ body
 			display: inline-block
 			// +r(480)
 			+r(600)
+				display: block
+			+rh(450)
 				display: block
 			&:hover
 				> a
@@ -121,6 +133,10 @@ body
 				text-decoration: none
 				// +r(480)
 				+r(600)
+					text-align: center
+					&:before
+						display: none
+				+rh(450)
 					text-align: center
 					&:before
 						display: none
@@ -151,6 +167,13 @@ body
 			margin-top: 0
 			margin-right: 0
 			width: 148px
+		+rh(450)
+			position: absolute
+			top: 10px
+			right: 105px
+			margin-top: 0
+			margin-right: 0
+			width: 148px
 		// +r(320)
 		+r(478)
 			right: 60px
@@ -163,6 +186,8 @@ body
 			// +r(480)
 			+r(600)
 				font-size: 16px
+			+rh(450)
+				font-size: 16px
 		&_mail
 			float: right
 			color: $yellow
@@ -173,19 +198,31 @@ body
 				line-height: 30px
 				margin-left: 180px
 				margin-bottom: 5px
+			+rh(450)
+				line-height: 30px
+				margin-left: 180px
+				margin-bottom: 5px
 	.l_center
 		position: relative
 		+r(1050)
 			width: 800px
 		+r(830)
 			width: 480px
-		// +r(320)
+		+rh(450)
+			width: 480px
 		+r(478)
 			width: 310px
 	button
 		display: none
 		+s(m320)
 		+r(600)
+			display: block
+			position: absolute
+			top: 20px
+			right: 10px
+			width: 65px
+			z-index: 99
+		+rh(450)
 			display: block
 			position: absolute
 			top: 20px
@@ -204,7 +241,9 @@ body
 	+r(600)
 		margin: 10px 0 10px 10px
 		+s(m_logo)
-	// +r(320)
+	+rh(450)
+		margin: 10px 0 10px 10px
+		+s(m_logo)
 	+r(478)
 		margin: 15px 0 15px 10px
 		+s(logo_small)
@@ -262,6 +301,7 @@ body
 		margin-right: 130px
 		+r(700)
 			margin-right: 60px
+			width: 260px
 		+r(650)
 			margin-right: 20px
 		+r(570)
@@ -872,7 +912,8 @@ body
 	vertical-align: top
 	+r(480)
 		height: auto
-		width: 480px
+		// width: 480px
+		width: 100%
 		overflow: hidden
 	+r(320)
 		width: 320px
@@ -894,8 +935,6 @@ body
 				left: 0
 		&_wrap
 			position: absolute
-			// width: 1000px
-			// width: 960px //09.06
 			height: 600px
 			text-align: center
 			left: 50%
@@ -933,6 +972,9 @@ body
 			-o-transition: opacity 2.5s ease
 			transition:  opacity 2.5s ease
 			+vcenter
+			+r(480)
+				// width: 350px
+				width: 80%
 			+r(320)
 				width: 300px
 			h3
@@ -943,7 +985,7 @@ body
 				font-weight: 400
 				font-family: Arial, sans-serif
 			p
-				width: 450px
+				// width: 450px
 				color: #FFF
 				font-size: 16px
 				margin-top: 15px
@@ -985,6 +1027,8 @@ body
 			+vcenter
 			+r(630)
 				width: 350px
+			+r(480)
+				width: 80%
 			+r(320)
 				width: 300px
 			h3

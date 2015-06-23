@@ -26,7 +26,7 @@ if ($(document).width() <= 600) {
   };
 
 $('.header button, .small__header__menu li').on('click', function(){
-  $('.header__menu').toggleClass('show600')
+  $('.header__menu').toggleClass('dblock')
 });
 
 // Крутилка
