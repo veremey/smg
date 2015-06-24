@@ -27,8 +27,9 @@
 	&__main
 		width: 945px
 		margin: 0 auto
-		// margin-bottom: 20px
 		z-index: 2
+		+r(479)
+			width: 100%
 		+r(320)
 			width: 320px
 		&_img
@@ -58,6 +59,14 @@
 				width: 480px
 				margin: 0 auto
 				margin-left: -30px
+			+r(478)
+				width: 465px
+				margin-left: -60px
+				overflow: hidden
+			+r(450)
+				width: 130%
+			+r(370)
+				margin-left: -50px
 			+r(320)
 				width: 340px
 				margin-left: -5px
@@ -73,9 +82,10 @@
 			height: auto
 			padding-bottom: 140px
 			padding-top: 50px
+			margin-top: -25px
 		img
 			+r(480)
-				width: 440px
+				width: 90%
 				height: auto
 				margin: 0 auto
 			+r(320)

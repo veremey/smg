@@ -513,6 +513,9 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .slick-loading .slick-list { background: white slick-image-url("ajax-loader.gif") center center no-repeat; }
 .slick-list.dragging { cursor: pointer; cursor: hand; }
 
+@media only screen and (max-width: 478px) { .carousel__main .slick-list { width: 80%; margin: 0 auto; } }
+@media only screen and (max-width: 478px) { .carousel__main .slick-slide { width: 400px; overflow: hidden; } }
+
 .slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
 .slick-track { position: relative; left: 0; top: 0; display: block; zoom: 1; }
@@ -698,6 +701,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .carousel { position: relative; margin: 0 auto; z-index: 2; }
 @media only screen and (max-width: 480px) { .carousel { margin-bottom: -50px; } }
 .carousel__main { width: 945px; margin: 0 auto; z-index: 2; }
+@media only screen and (max-width: 479px) { .carousel__main { width: 100%; } }
 @media only screen and (max-width: 320px) { .carousel__main { width: 320px; } }
 @media only screen and (max-width: 800px) { .carousel__main_img { width: 800px; } }
 .carousel__main img { width: 943px; }
@@ -709,11 +713,14 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 @media only screen and (max-width: 550px) { .carousel__main img { margin-left: 0px; } }
 @media only screen and (max-width: 500px) { .carousel__main img { margin-left: -30px; } }
 @media only screen and (max-width: 480px) { .carousel__main img { width: 480px; margin: 0 auto; margin-left: -30px; } }
+@media only screen and (max-width: 478px) { .carousel__main img { width: 465px; margin-left: -60px; overflow: hidden; } }
+@media only screen and (max-width: 450px) { .carousel__main img { width: 130%; } }
+@media only screen and (max-width: 370px) { .carousel__main img { margin-left: -50px; } }
 @media only screen and (max-width: 320px) { .carousel__main img { width: 340px; margin-left: -5px; } }
 @media only screen and (max-width: 320px) { .carousel__main .slick-list { width: 300px; } }
 .carousel__preview { height: 750px; background-color: #FCCC50; text-align: center; }
-@media only screen and (max-width: 480px) { .carousel__preview { height: auto; padding-bottom: 140px; padding-top: 50px; } }
-@media only screen and (max-width: 480px) { .carousel__preview img { width: 440px; height: auto; margin: 0 auto; } }
+@media only screen and (max-width: 480px) { .carousel__preview { height: auto; padding-bottom: 140px; padding-top: 50px; margin-top: -25px; } }
+@media only screen and (max-width: 480px) { .carousel__preview img { width: 90%; height: auto; margin: 0 auto; } }
 @media only screen and (max-width: 320px) { .carousel__preview img { width: 380px; margin-left: -30px; } }
 .carousel__preview .slick-slide { cursor: pointer; margin: 0 30px; width: 280px !important; }
 @media only screen and (max-width: 1400px) { .carousel__preview .slick-slide { margin: 0 20px; } }
@@ -796,8 +803,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 @media only screen and (max-width: 1200px) { .inside__img { height: 4655px; } }
 @media only screen and (max-width: 830px) { .inside__img { height: 3435px; } }
 @media only screen and (max-width: 600px) { .inside__img { height: 2820px; } }
-@media only screen and (max-width: 480px) { .inside__img { width: 480px; height: 3437px; } }
-@media only screen and (max-width: 320px) { .inside__img { width: 320px; height: 2110px; } }
+@media only screen and (max-width: 480px) { .inside__img { width: 100%; height: 3437px; } }
+@media only screen and (max-width: 320px) { .inside__img { height: 2110px; } }
 .inside__img_wrap { position: absolute; width: 2000px; left: 50%; margin-left: -1000px; text-align: center; }
 .inside__img img { margin: -16px auto 0; }
 @media only screen and (max-width: 1200px) { .inside__img img { width: 1500px; } }
@@ -807,9 +814,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 @media only screen and (max-width: 320px) { .inside__img img { width: 340px; } }
 
 .bad { -webkit-transform: translate(0, -106px); -moz-transform: translate(0, -106px); -ms-transform: translate(0, -106px); -o-transform: translate(0, -106px); transform: translate(0, -106px); -webkit-transform: translate(0, -60px); -moz-transform: translate(0, -60px); -ms-transform: translate(0, -60px); -o-transform: translate(0, -60px); transform: translate(0, -60px); }
-@media only screen and (max-width: 480px) { .bad { display: inline-block; height: 0; background-color: #1c1c1c; -webkit-transform: translate(150px, -66px); -moz-transform: translate(150px, -66px); -ms-transform: translate(150px, -66px); -o-transform: translate(150px, -66px); transform: translate(150px, -66px); } }
-@media only screen and (max-width: 480px) and (max-width: 320px) { .bad { -webkit-transform: translate(60px, -66px); -moz-transform: translate(60px, -66px); -ms-transform: translate(60px, -66px); -o-transform: translate(60px, -66px); transform: translate(60px, -66px); } }
-
+@media only screen and (max-width: 480px) { .bad { height: 0; text-align: center; background-color: #1c1c1c; -webkit-transform: translate(0px, -66px); -moz-transform: translate(0px, -66px); -ms-transform: translate(0px, -66px); -o-transform: translate(0px, -66px); transform: translate(0px, -66px); } }
 .bad a { font-family: "Bad Script", Arial, sans-serif; font-weight: 400; background-color: #1c1c1c; z-index: 300; font-size: 36px; padding: 10px 20px 0; border-bottom: none; text-decoration: underline; }
 .bad a:hover { text-decoration: none; border-bottom: none; }
 @media only screen and (max-width: 830px) { .bad a { font-size: 30px; } }

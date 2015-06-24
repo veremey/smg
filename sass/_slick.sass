@@ -24,7 +24,6 @@
 	+r(480)
 		width: 420px
 		margin: 0 30px
-	// +r(320)
 	+r(478)
 		width: 250px
 		margin: 0 auto
@@ -36,6 +35,15 @@
 		cursor: pointer
 		cursor: hand
 
+.carousel__main
+	.slick-list
+		+r(478)
+			width: 80%
+			margin: 0 auto
+	.slick-slide
+		+r(478)
+			width: 400px
+			overflow: hidden
 .slick-slider .slick-list,
 .slick-track,
 .slick-slide,
@@ -65,10 +73,6 @@
 	float: left
 	height: 100%
 	min-height: 1px
-	// img
-	// 	display: block
-	// 	max-width: 100%
-	// +r(320)
 	+r(478)
 		width: 300px
 	&.slick-loading img
@@ -89,7 +93,6 @@
 .slick-next
 	position: absolute
 	top: 0
-	// margin-top: -14px
 	+hide-text
 	height: 100%
 	width: 30px
