@@ -16,18 +16,18 @@ head.ready(function() {
 $(document).ready(function() {
 
 
-if ($(document).width() <= 830) {
-  $('.header').addClass('scroll')
-};
-
-if ($(document).width() <= 600) {
-  $('.header').addClass('small__header'),
-  $('.header__menu').addClass('small__header__menu')
+  if ($(document).width() <= 830) {
+    $('.header').addClass('scroll')
   };
 
-$('.header button, .small__header__menu li').on('click', function(){
-  $('.header__menu').toggleClass('dblock')
-});
+  if ($(document).width() <= 830) {
+    $('.header').addClass('small__header'),
+    $('.header__menu').addClass('small__header__menu')
+    };
+
+  $('.header button, .small__header__menu li').on('click', function(){
+    $('.header__menu').toggleClass('dblock')
+  });
 
 // Крутилка
 
@@ -169,25 +169,6 @@ $('.header button, .small__header__menu li').on('click', function(){
       return false;
     }));
 
-//  AUTO KRUTILKA
-
-
-    $('.pentagon').on('click', function(){
-      $(this).css({'background-color' : 'transparent'})
-        $(this).parent().animate( function(){
-          $(this).find(".process__1").addClass('is_active')
-          .parents().find('.port').css({
-            "-ms-transform" : "rotate(-8deg)",
-            "-webkit-transform" : "rotate(-8deg)",
-             "transform" : "rotate(-8deg)",
-             'top' : '85px',
-             'left' : '345px',
-             'background-image' : 'url(img/pol1_1.png)'
-             });
-          });
-    });
-    // });
-
 });
 // Крутилка  END
 
@@ -229,11 +210,7 @@ $(document).ready(function() {
         return false;
   });
 
-
-
 // ***** слайдер проворачивающий экземпляры сайтов  ****
-
-
 });
 
 $(document).ready(function(){
@@ -318,14 +295,8 @@ $(document).ready(function(){
     slidesToScroll: 1,
   });
 
-
 });
-
-
-
 //  FORM VALIDATION
-
-
 $(document).ready(function() {
     function validate() {
     $('.js-validate').each(function(){
@@ -410,30 +381,6 @@ $(document).ready(function() {
   validate();
 
 });
-
-
-// чтобы Хедер при скроле вел себя как при position: relative
-
-// $(document).scroll(function(){
-//     var scr = 0 - $(this).scrollLeft();
-//     $('.header').css("left", scr);
-//   });
-
-
-
-
-  function scrollFixedElements() {
-      var scroll_left = $(this).scrollLeft();
-      $(".header").css({
-          left: - scroll_left
-      });
-  }
-  scrollFixedElements();
-  $(window).scroll(function(){
-      scrollFixedElements()
-  });
-
-
 
 
 //  bilder.html запрет работаты для ссылок Регистрации и Входа
@@ -653,9 +600,6 @@ $('.sidebar button').click(function(){
   };
 })(jQuery);
 
-
-// $('.scroll').scrollupbar();
-// $.scrollupbar($('.header'))
 if ($(document).width() <= 830) {
   $.scrollupbar($('.header'))
 };
