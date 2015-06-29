@@ -269,6 +269,13 @@ $(document).ready(function(){
     return false;
   });
 
+  window.addEventListener("orientationchange", function() {
+    $('.js-carousel-preview').unslick();
+    alert('hbhbsajdjkjk')
+  }, false);
+
+
+
   $('.slick-slideshow').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
