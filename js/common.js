@@ -1,6 +1,8 @@
 head.ready(function() {
     // письмо в конце страницы
 
+
+
     $(".mapin__letter").hide();
   $(".js__write").on("click", function(){
 		$(this).parents().find('.mapin__letter').show(".mapin__letter");
@@ -205,10 +207,10 @@ $(document).ready(function() {
   });
 
 
-  $('.carousel__preview_img').click(function() {
-    $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
-        return false;
-  });
+  // $('.carousel__preview_img').click(function() {
+  //   $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
+  //       return false;
+  // });
 
 // ***** слайдер проворачивающий экземпляры сайтов  ****
 });
@@ -241,8 +243,8 @@ $(document).ready(function(){
     dots: false,
     arrows: true,
     infinite: true,
-    centerMode: false,
-    focusOnSelect: true,
+    centerMode: true,
+    focusOnSelect: false,
     responsive: [
       {
         breakpoint: 800,
@@ -257,7 +259,7 @@ $(document).ready(function(){
         breakpoint: 480,
         settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
         }
       }
     ]
@@ -268,13 +270,6 @@ $(document).ready(function(){
     $(this).addClass("is-active")
     return false;
   });
-
-  window.addEventListener("orientationchange", function() {
-    $('.js-carousel-preview').unslick();
-    alert('hbhbsajdjkjk')
-  }, false);
-
-
 
   $('.slick-slideshow').slick({
     slidesToShow: 4,
@@ -303,6 +298,7 @@ $(document).ready(function(){
   });
 
 });
+
 //  FORM VALIDATION
 $(document).ready(function() {
     function validate() {
@@ -610,3 +606,4 @@ $('.sidebar button').click(function(){
 if ($(document).width() <= 830) {
   $.scrollupbar($('.header'))
 };
+
