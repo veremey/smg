@@ -222,6 +222,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    swipe: false,
     asNavFor: '.js-carousel-preview',
     responsive: [
       {
@@ -247,14 +248,24 @@ $(document).ready(function(){
     focusOnSelect: false,
     responsive: [
       {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
         breakpoint: 800,
         settings: {
         slidesToShow: 2,
         slidesToScroll: 2
         }
-      }
-    ],
-    responsive: [
+      },
       {
         breakpoint: 480,
         settings: {
