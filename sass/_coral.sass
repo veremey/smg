@@ -54,20 +54,19 @@
 			+r(500)
 				margin-left: -30px
 			+r(480)
-				width: 480px
+				width: 500px
 				margin: 0 auto
-				margin-left: -30px
-			+r(478)
-				width: 465px
-				margin-left: -60px
-				overflow: hidden
-			+r(450)
-				width: 130%
-			+r(370)
-				margin-left: -50px
+				// margin-left: -30px
+			+r(470)
+				width: 480px
+			// 	margin-left: -60px
+			// 	overflow: hidden
+			+r(460)
+				width: 100%
+			// +r(370)
+			// 	margin-left: -50px
 			+r(320)
 				width: 340px
-				margin-left: -5px
 		.slick-list
 			+r(320)
 				width: 300px
@@ -79,8 +78,6 @@
 		+r(480)
 			height: auto
 			padding-bottom: 150px
-			// padding-top: 50px  //29.06
-			// margin-top: -25px  //29.06
 		img
 			display: block
 			max-width: 100%
@@ -89,6 +86,8 @@
 			margin: 180px auto 20px
 			+r(1400)
 				box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 0 20px rgba(0,0,0,0.1) inset
+			+r(950)
+				width: 90%
 			+r(480)
 				width: 90%
 				height: auto
@@ -98,45 +97,10 @@
 				margin-left: -30px
 		.slick-slide
 			cursor: pointer
-			margin-right: 10px
-			// margin: 0 30px
-			// width: 280px!important
-			// +r(1400)
-				// margin: 0 20px 35px
-			// +r(1300)
-				// width: 276px!important
-			// +r(480)
-				// width: 460px!important
+		.slick-active
 			&:hover
 				img
 					+opacity(1)
-				&:after
-					display: block
-				img
-					+opacity(1)
-			&:after
-				content: ""
-				position: absolute
-				display: none
-				z-index: 2
-				top: 0
-				right: 0
-				bottom: 0
-				left: 0
-			// img
-				// display: block
-				// max-width: 100%
-				// box-shadow: 0 10px 50px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset
-				// +opacity(.8)
-				// +r(1400)
-				// 	box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 0 20px rgba(0,0,0,0.1) inset
-		// .slick-list
-		// 	padding-top: 155px
-		// 	z-index: 2
-		// 	height: 55%
-		// 	margin: -50px auto 0
-		// 	+r(965)
-		// 		height: 50%
 		.slick-prev
 			background: #FCCC50
 			left: 0px

@@ -27,6 +27,11 @@ $(document).ready(function() {
     $('.header__menu').addClass('small__header__menu')
     };
 
+
+//   if ($(document).width() <= 480) {
+//     $('.js-carousel-preview').unslick();
+// };
+
   $('.header button, .small__header__menu li').on('click', function(){
     $('.header__menu').toggleClass('dblock')
   });
@@ -207,15 +212,63 @@ $(document).ready(function() {
   });
 
 
-  // $('.carousel__preview_img').click(function() {
-  //   $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
-  //       return false;
-  // });
+  $('.carousel__preview_img').click(function() {
+    $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
+        return false;
+  });
 
 // ***** слайдер проворачивающий экземпляры сайтов  ****
 });
 
 $(document).ready(function(){
+
+
+
+      //  $('.js-carousel').slick({
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1,
+      //   arrows: false,
+      //   fade: true,
+      //   asNavFor: '.js-carousel-preview',
+      //   responsive: [
+      //     {
+      //       breakpoint: 758,
+      //       settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       dots: true,
+      //       fade: false,
+      //       }
+      //     }
+      //   ]
+      // });
+      // $('.js-carousel-preview').slick({
+      //   slidesToShow: 4,
+      //   slidesToScroll: 1,
+      //   asNavFor: '.js-carousel',
+      //   dots: false,
+      //   arrows: true,
+      //   infinite: true,
+      //   centerMode: false,
+      //   focusOnSelect: true,
+      //   responsive: [
+      //     {
+      //       breakpoint: 980,
+      //       settings: {
+      //       slidesToShow: 6,
+      //       slidesToScroll: 6
+      //       }
+      //     }
+      //   ]
+      // });
+
+$(".js-carousel-preview .slick-slide").on("click",function (){
+    $(this).parent().find(".slick-slide").removeClass("is-active");
+    $(this).addClass("is-active")
+    return false;
+  });
+
+
 
  $('.js-carousel').slick({
     slidesToShow: 1,
@@ -237,57 +290,86 @@ $(document).ready(function(){
       }
     ]
   });
-  $('.js-carousel-preview').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.js-carousel',
-    dots: false,
-    arrows: true,
-    infinite: true,
-    centerMode: true,
-    focusOnSelect: false,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      // {
-      //   breakpoint: 1050,
-      //   settings: {
-      //     slidesToShow: 2
-      //   }
-      // },
-      {
-        breakpoint: 800,
-        settings: {
-        slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-        }
-      }
-    ]
-  });
+
+      $('.js-carousel-preview').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.js-carousel',
+        dots: false,
+        arrows: true,
+        infinite: true,
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+          {
+              breakpoint: 1300,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+          {
+            breakpoint: 800,
+            settings: {
+            slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 6,
+              vertical: true
+            }
+          }
+        ]
+      });
 
 
-    // $('.js-carousel-preview').unslick({
-    //     responsive: [
-    //   {
-    //     breakpoint: 480,
-    //     }
-    //   ]
-    // });
+    // $('.dell-preview').unslick();
+
+  // $('.js-carousel-preview').slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   asNavFor: '.js-carousel',
+  //   dots: false,
+  //   arrows: true,
+  //   infinite: true,
+  //   centerMode: true,
+  //   focusOnSelect: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1300,
+  //       settings: {
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     // {
+  //     //   breakpoint: 1050,
+  //     //   settings: {
+  //     //     slidesToShow: 2
+  //     //   }
+  //     // },
+  //     {
+  //       breakpoint: 800,
+  //       settings: {
+  //       slidesToShow: 2
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //       }
+  //     }
+  //   ]
+  // });
 
 
-  $(".js-carousel-preview .slick-slide").on("click",function (){
-    $(this).parent().find(".slick-slide").removeClass("is-active");
-    $(this).addClass("is-active")
-    return false;
-  });
+
+
+  // $(".js-carousel-preview .slick-slide").on("click",function (){
+  //   $(this).parent().find(".slick-slide").removeClass("is-active");
+  //   $(this).addClass("is-active")
+  //   return false;
+  // });
 
   $('.slick-slideshow').slick({
     slidesToShow: 4,
