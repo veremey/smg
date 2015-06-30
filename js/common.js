@@ -253,28 +253,35 @@ $(document).ready(function(){
           slidesToShow: 3
         }
       },
-      {
-        breakpoint: 1050,
-        settings: {
-          slidesToShow: 2
-        }
-      },
+      // {
+      //   breakpoint: 1050,
+      //   settings: {
+      //     slidesToShow: 2
+      //   }
+      // },
       {
         breakpoint: 800,
         settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 2
         }
       },
       {
         breakpoint: 480,
         settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
         }
       }
     ]
   });
+
+
+    // $('.js-carousel-preview').unslick({
+    //     responsive: [
+    //   {
+    //     breakpoint: 480,
+    //     }
+    //   ]
+    // });
+
 
   $(".js-carousel-preview .slick-slide").on("click",function (){
     $(this).parent().find(".slick-slide").removeClass("is-active");
