@@ -222,46 +222,6 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-
-
-      //  $('.js-carousel').slick({
-      //   slidesToShow: 1,
-      //   slidesToScroll: 1,
-      //   arrows: false,
-      //   fade: true,
-      //   asNavFor: '.js-carousel-preview',
-      //   responsive: [
-      //     {
-      //       breakpoint: 758,
-      //       settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1,
-      //       dots: true,
-      //       fade: false,
-      //       }
-      //     }
-      //   ]
-      // });
-      // $('.js-carousel-preview').slick({
-      //   slidesToShow: 4,
-      //   slidesToScroll: 1,
-      //   asNavFor: '.js-carousel',
-      //   dots: false,
-      //   arrows: true,
-      //   infinite: true,
-      //   centerMode: false,
-      //   focusOnSelect: true,
-      //   responsive: [
-      //     {
-      //       breakpoint: 980,
-      //       settings: {
-      //       slidesToShow: 6,
-      //       slidesToScroll: 6
-      //       }
-      //     }
-      //   ]
-      // });
-
 $(".js-carousel-preview .slick-slide").on("click",function (){
     $(this).parent().find(".slick-slide").removeClass("is-active");
     $(this).addClass("is-active")
@@ -322,54 +282,6 @@ $(".js-carousel-preview .slick-slide").on("click",function (){
           }
         ]
       });
-
-
-    // $('.dell-preview').unslick();
-
-  // $('.js-carousel-preview').slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   asNavFor: '.js-carousel',
-  //   dots: false,
-  //   arrows: true,
-  //   infinite: true,
-  //   centerMode: true,
-  //   focusOnSelect: false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1300,
-  //       settings: {
-  //         slidesToShow: 3
-  //       }
-  //     },
-  //     // {
-  //     //   breakpoint: 1050,
-  //     //   settings: {
-  //     //     slidesToShow: 2
-  //     //   }
-  //     // },
-  //     {
-  //       breakpoint: 800,
-  //       settings: {
-  //       slidesToShow: 2
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //       }
-  //     }
-  //   ]
-  // });
-
-
-
-
-  // $(".js-carousel-preview .slick-slide").on("click",function (){
-  //   $(this).parent().find(".slick-slide").removeClass("is-active");
-  //   $(this).addClass("is-active")
-  //   return false;
-  // });
 
   $('.slick-slideshow').slick({
     slidesToShow: 4,

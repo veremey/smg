@@ -498,7 +498,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .footer { background-color: #000; text-align: center; }
 .footer p { color: #808080; font-size: 13px; font-family: Arial, sans-serif; line-height: 55px; }
 
-.ymaps-2-1-23-zoom, .ymaps-2-1-23-button_size_s .ymaps-2-1-23-button__text, .ymaps-2-1-23-search__input, .ymaps-2-1-26-controls__toolbar, .ymaps-2-1-26-controls__control { display: none !important; }
+.ymaps-2-1-23-zoom, .ymaps-2-1-23-button_size_s .ymaps-2-1-23-button__text, .ymaps-2-1-23-search__input, .ymaps-2-1-26-controls__toolbar, .ymaps-2-1-26-controls__control, .ymaps-2-1-27-controls__toolbar, .ymaps-2-1-27-controls__control { display: none !important; }
 
 .btn__close { position: absolute; top: 15px; right: 15px; z-index: 999; width: 25px; height: 25px; background-color: transparent; }
 .btn__close i { display: block; background: url('../img/icons-s1c846887f2.png') 0 -299px no-repeat; width: 14px; height: 14px; margin-left: 5px; }
