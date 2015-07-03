@@ -530,10 +530,10 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .slick-prev.slick-disabled, .slick-next.slick-disabled { opacity: 0.2; }
 .slick-prev:before, .slick-next:before { height: 50px; line-height: 50px; }
 
-.slick-prev { left: -30px; }
+.slick-prev { left: 0px; }
 .slick-prev:before { content: ""; display: inline-block; vertical-align: middle; background: url('../img/icons-s1c846887f2.png') 0 -1706px no-repeat; width: 23px; height: 38px; }
 
-.slick-next { right: -30px; }
+.slick-next { right: 0px; }
 .slick-next:before { content: ""; display: inline-block; vertical-align: middle; background: url('../img/icons-s1c846887f2.png') 0 -1598px no-repeat; width: 23px; height: 38px; }
 
 .slick-cycle .slick-prev { left: 0; }
@@ -714,21 +714,21 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 @media only screen and (max-width: 900px) { .carousel__main img { margin-left: 0px; } }
 @media only screen and (max-width: 800px) { .carousel__main img { width: 800px; margin-left: -30px; } }
 @media only screen and (max-width: 700px) { .carousel__main img { width: 700px; margin-left: -30px; } }
-@media only screen and (max-width: 600px) { .carousel__main img { width: 550px; margin-left: 15px; } }
+@media only screen and (max-width: 600px) { .carousel__main img { width: 550px; margin-left: 9px; } }
 @media only screen and (max-width: 550px) { .carousel__main img { margin-left: 0px; } }
 @media only screen and (max-width: 500px) { .carousel__main img { margin-left: -30px; } }
 @media only screen and (max-width: 480px) { .carousel__main img { width: 500px; margin: 0 auto; } }
 @media only screen and (max-width: 470px) { .carousel__main img { width: 480px; } }
 @media only screen and (max-width: 460px) { .carousel__main img { width: 100%; } }
 @media only screen and (max-width: 320px) { .carousel__main img { width: 340px; } }
-@media only screen and (max-width: 320px) { .carousel__main .slick-list { width: 300px; } }
+@media only screen and (max-width: 320px) { .carousel__main .slick-list { width: 300px; margin: 0 auto; } }
 .carousel__preview { height: 750px; background-color: #FCCC50; margin-top: -50px; }
 @media only screen and (max-width: 480px) { .carousel__preview { height: auto; padding-bottom: 150px; } }
 .carousel__preview img { display: block; max-width: 100%; box-shadow: 0 10px 50px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; margin: 180px auto 20px; }
 @media only screen and (max-width: 1400px) { .carousel__preview img { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 0 0 20px rgba(0, 0, 0, 0.1) inset; } }
 @media only screen and (max-width: 950px) { .carousel__preview img { width: 90%; } }
 @media only screen and (max-width: 480px) { .carousel__preview img { width: 90%; height: auto; margin: 10px auto; } }
-@media only screen and (max-width: 320px) { .carousel__preview img { width: 380px; margin-left: -30px; } }
+@media only screen and (max-width: 320px) { .carousel__preview img { width: 300px; margin: 10px auto; } }
 .carousel__preview .slick-slide { cursor: pointer; }
 .carousel__preview .slick-active:hover img { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .carousel__preview .slick-prev { background: #FCCC50; left: 0px; top: 0; margin-top: 0; height: 100%; width: 35px; }

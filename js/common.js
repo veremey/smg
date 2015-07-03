@@ -80,7 +80,6 @@ $(document).ready(function() {
       return false;
     });
 
-
     $('.process__2').click(function() {
         if($(this).hasClass('rot')) {
           $(this).parents().find('.port').css({
@@ -108,7 +107,6 @@ $(document).ready(function() {
       return false;
     });
 
-
     $(".process__3").on("click", (function(){
       $(this).parents().find('.process__1').removeClass('rot');
       $(this).parents().find('.process__6').removeClass('rot');
@@ -124,7 +122,6 @@ $(document).ready(function() {
       });
       return false;
     }));
-
 
     $(".process__4").on("click", (function(){
       $(this).parents().find('.process__1').removeClass('rot');
@@ -142,7 +139,6 @@ $(document).ready(function() {
       return false;
     }));
 
-
     $(".process__5").on("click", (function(){
       $(this).parents().find('.port').css({
         "-ms-transform" : "rotate(231deg)",
@@ -157,8 +153,6 @@ $(document).ready(function() {
       $(this).parents().find('.process__1').addClass('rot');
       return false;
     }));
-
-
 
     $(".process__6").on("click", (function(){
       $(this).parents().find('.port').css({
@@ -176,6 +170,7 @@ $(document).ready(function() {
       return false;
     }));
 
+
 });
 // Крутилка  END
 
@@ -183,6 +178,20 @@ $(document).ready(function() {
 // *********  Плавное перелистывание стр ****
 
 $(document).ready(function() {
+
+
+    // автокрутилка проба пера :-)
+
+
+  $(".pentagon").click(function(){
+    $('.proccess__click').removeClass('is_active');
+    $('.process__1').addClass('is_active');
+    return false;
+  });
+
+
+
+
 
    $(document).on('click', '#key__link', function() {
         $('html, body').animate({ scrollTop: $('#key').offset().top }, 2000 );
@@ -211,11 +220,12 @@ $(document).ready(function() {
 
   });
 
+  //клик на картинку - крутит вверх
 
-  $('.carousel__preview_img').click(function() {
-    $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
-        return false;
-  });
+  // $('.carousel__preview_img').click(function() {
+  //   $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
+  //       return false;
+  // });
 
 // ***** слайдер проворачивающий экземпляры сайтов  ****
 });
