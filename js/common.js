@@ -218,14 +218,18 @@ $(document).ready(function() {
         return false;
     });
 
+   //клик на картинку - крутит вверх
+
+     if ($(document).width() >= 481) {
+       $('.carousel__preview_img').click(function() {
+         $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
+             return false;
+         });
+       };
+
   });
 
-  //клик на картинку - крутит вверх
 
-  // $('.carousel__preview_img').click(function() {
-  //   $('html, body').animate({ scrollTop: $('#main').offset().top }, 800 );
-  //       return false;
-  // });
 
 // ***** слайдер проворачивающий экземпляры сайтов  ****
 });
