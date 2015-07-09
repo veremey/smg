@@ -288,7 +288,7 @@ $(".js-carousel-preview .slick-slide").on("click",function (){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 481,
             settings: {
               slidesToShow: 6,
               vertical: true
