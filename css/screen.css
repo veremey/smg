@@ -127,7 +127,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 .process__cyrcle { width: 1200px; margin: 0 auto; position: relative; *zoom: 1; }
 .process__cyrcle:after { content: " "; display: table; clear: both; }
 
-.port { position: absolute; background-image: url("../img/pol11.png"); width: 429px; height: 460px; top: 93px; left: 344px; z-index: 90; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
+.port { position: absolute; background-image: url("../img/pol11.png"); width: 429px; height: 460px; top: 87px; left: 365px; z-index: 90; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
 
 .process__list_container { position: absolute; height: 0; border: none; z-index: 300; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .process__list_container p { margin: 10px; font-size: 13px; line-height: 18px; color: #565656; font-family: "Exo 2", Arial, sans-serif; font-weight: 300; }
@@ -236,7 +236,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; width:
 @media only screen and (max-width: 478px) { .process .is_active .process__list_container { display: none; } }
 .process__4.is_active a:after { left: 95% !important; }
 
-.pentagon { position: absolute; top: 371px; left: 50%; margin-left: -95px; width: 117px; height: 125px; background: transparent url("../img/pause.png"); z-index: 399; }
+.pentagon { position: absolute; top: 371px; left: 50%; margin-left: -95px; width: 117px; height: 125px; background: #000 url("../img/pause.png"); z-index: 399; }
 .pentagon img { position: absolute; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 .pentagon .p1 { left: 71px; top: 22px; -ms-transform: rotate(-8deg); -webkit-transform: rotate(-8deg); transform: rotate(-8deg); }
 .pentagon .p2 { left: -426px; top: -60px; -ms-transform: rotate(53deg); -webkit-transform: rotate(53deg); transform: rotate(53deg); }
