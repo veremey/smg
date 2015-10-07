@@ -45,43 +45,76 @@ $(document).ready(function() {
         '-moz-transition' : 'all 1s',
         '-o-transition' : 'all 1s',
         '-webkit-transition' : 'all 1s;',
-        'transition' : 'all 1s',
-        'background-image' : 'url(img/pol11.png)'
+        'transition' : 'all 1s'
+        // 'background-image' : 'url(img/pol11.png)'
       });
       return false;
     }));
 
  // выборка
 
+
+    // console.clear();
+
+    // функция для определения угла наклона элемента
+    function getDegreeElementById(port){
+        var element = document.getElementById(port);
+        var style = window.getComputedStyle(element, null);
+        // получаем значение стилей
+        var valueStyle = style.getPropertyValue("-webkit-transform") ||
+            style.getPropertyValue("-moz-transform") ||
+            style.getPropertyValue("-ms-transform") ||
+            style.getPropertyValue("-o-transform") ||
+            style.getPropertyValue("transform");
+        // если стилей нет, то угол 0 градусов
+        if(valueStyle == 'none') return 0;
+        // разбираем полученное значение
+        console.log(valueStyle);
+        var values = valueStyle.split('(')[1];
+        values = values.split(')')[0];
+        values = values.split(',');
+        // получаем синус и косинус
+        var cos = values[0];
+        var sin = values[1];
+        // вычисляем угол
+        var degree = Math.round(Math.asin(sin) * (180/Math.PI));
+        if(cos<0){
+            addDegree = 90 - Math.round(Math.asin(sin) * (180/Math.PI));
+            degree = 90 + addDegree;
+        };
+        if(degree < 0){
+            degree = 360 + degree;
+        };
+        return degree;
+
+    };
+    var degr = getDegreeElementById('port');
+    var now = degr + 55;
+    // alert(rotateHim);
+
+
+
     $('.process__1').click(function() {
-        if($(this).hasClass('is_active')) {
-          $(this).parents().find('.port').css({
-            '-ms-transform' : 'rotate(-5deg)',
-            '-webkit-transform' : 'rotate(*5deg)',
-             'transform' : 'rotate(-5deg)',
+        if($('.process__1').hasClass('is_active')) {
+          $('.process__1').parents().find('.port').css({
+            '-ms-transform' : 'rotate('+now+'deg)',
+            '-webkit-transform' : 'rotate('+now+'deg)',
+             'transform' : 'rotate('+now+'deg)',
              'width' : '429px',
              'height' : '460px',
              'background-image' : 'url(img/pol11.png)'
             });
           // $(this).next().addClass('is_active');
-      } else {
-        $(this).parents().find('.port').css({
-          '-ms-transform' : 'rotate(-5deg)',
-          '-webkit-transform' : 'rotate(-5deg)',
-           'transform' : 'rotate(-5deg)',
-           'width' : '429px',
-           'height' : '460px',
-           'background-image' : 'url(img/pol11.png)'});
-        }
-      return false;
+      };
+      alert(degr);
     });
 
     $('.process__2').click(function() {
         if($(this).hasClass('is_active')) {
           $(this).parents().find('.port').css({
-            '-ms-transform' : 'rotate(55deg)',
-            '-webkit-transform' : 'rotate(55deg)',
-             'transform' : 'rotate(55deg)',
+            '-ms-transform' : 'rotate('+now+'deg)',
+            '-webkit-transform' : 'rotate('+now+'deg)',
+             'transform' : 'rotate('+now+'deg)',
              'width' : '429px',
              'height' : '460px',
              'background-image' : 'url(img/pol12_55.png)'

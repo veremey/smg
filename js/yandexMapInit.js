@@ -26,7 +26,7 @@ ymaps.ready(function() {
 
 
 
-      $(document).ready(function() {
+    $(document).ready(function() {
        // alert(3434);
        // console.log('width:' + screen.width);
       if( screen.width <= 760 ) {
